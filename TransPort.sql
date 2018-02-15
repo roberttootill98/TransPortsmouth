@@ -1,7 +1,7 @@
 create database TransPortsmouth;
 
 create table Establishment(
-est_Id int(8) not null,
+est_Id int(8) not null auto_increment,
 name varchar(60) not null,
 address varchar(150),
 town varchar(54),
@@ -11,7 +11,7 @@ constraint PKest primary key (est_Id)
 );
 
 create table Resturant (
-resturant_Id int(8) not null,
+resturant_Id int(8) not null auto_increment,
 est_Id int(8) not null,
 theme varchar(20) not null,
 type varchar(20) not null
@@ -20,7 +20,7 @@ constraint FKestRest foreign key (est_Id) references Establishment(est_Id)
 );
 
 create table University (
-uni_Id int(8) not null,
+uni_Id int(8) not null auto_increment,
 est_Id int(8) not null,
 canteen bool default False,
 free_computer bool default False
@@ -29,7 +29,7 @@ constraint FKestUni foreign key (est_Id) references Establishment(est_Id)
 );
 
 create table NightClub (
-club_Id int(8) not null,
+club_Id int(8) not null auto_increment,
 est_Id int(8) not null,
 costOfEntry double(2,2)
 constraint PKclub primary key (club_Id)
@@ -37,7 +37,7 @@ constraint FKestClub foreign key (est_Id) references Establishment(est_Id)
 );
 
 create table Bar (
-bar_Id int(8) not null,
+bar_Id int(8) not null auto_increment,
 est_Id int(8) not null,
 atomsphere varchar (20),
 type varchar (20)
