@@ -14,8 +14,8 @@ constraint PKest primary key (est_Id)
 create table Resturant (
 resturant_Id int(8) not null auto_increment,
 est_Id int(8) not null,
-theme varchar(20) not null,
-type varchar(20) not null,
+theme varchar(40) not null,
+type varchar(40) not null,
 constraint PKresturant primary key (resturant_Id),
 constraint FKestRest foreign key (est_Id) references Establishment(est_Id)
 );
@@ -40,8 +40,8 @@ constraint FKestClub foreign key (est_Id) references Establishment(est_Id)
 create table Bar (
 bar_Id int(8) not null auto_increment,
 est_Id int(8) not null,
-atomsphere varchar (20),
-type varchar (20),
+atomsphere varchar (40),
+type varchar (40),
 constraint PKbar primary key (bar_Id),
 constraint FKestBar foreign key (est_Id) references Establishment(est_Id)
 );
@@ -49,7 +49,7 @@ constraint FKestBar foreign key (est_Id) references Establishment(est_Id)
 create table Shop (
 shop_Id int(8) not null auto_incremement,
 est_Id int(8) not null,
-type varchar(20) not null,
+type varchar(40) not null,
 website varchar(100),
 constraint PKshop primary key (shop_Id),
 constraint FKestShop foreign key (est_Id) references Establishment(est_Id)
