@@ -27,7 +27,7 @@ Fri_Close time,
 Sat_Open time,
 Sat_Close time,
 Sun_Open time,
-Sun_Close time,
+Sun_Close time
 );
 
 
