@@ -4,6 +4,9 @@ insert into Establishment (Name, Phone, Address, Town, Postcode, Description) va
 insert into Establishment (Name, Phone, Address, Town, Postcode, Description) values ("The Astoria", "02392863741", "37-39 Guildhall Walk", "Portsmouth", "PO1 2RY", "Nightclub with VIP balcony, Offers two different dance floors with different musical preference");
 insert into Establishment (Name, Phone, Address, Town, Postcode, Description) values ("Honest Politician", "02392298877", "47 Elm Grove", "Portsmouth", "PO5 1JF", "A casual bar which offers cocktails, pool and darts");
 
+/*Inserting into Time*/
+insert into Work_Time values (1, '10:00:00', '23:00:00', '10:00:00', '23:00:00', '10:00:00', '23:00:00', '10:00:00', '23:00:00', '10:00:00', '00:00:00', '10:00:00', '00:00:00', '10:00:00', '22:30:00');
+
 /*Inserting into Resturant*/
 insert into Resturant (Est_Id, Theme, Type) values (1, "Latin Food Chain", "Sit Down, Family");
 
