@@ -2,7 +2,6 @@ create database TransPortsmouth;
 use TransPortsmouth;
 
 create table Establishment(
-<<<<<<< HEAD
 Est_Id int(8) primary key auto_increment,
 Name varchar(60) not null,
 Phone varchar(13),
@@ -11,6 +10,26 @@ Town varchar(54),
 Postcode varchar(8),
 Description varchar (500)
 );
+
+/*Time table data might be moved to Establishment table*/
+create table Time(
+Est_Id int(8) primary key,
+Mon_Open time,
+Mon_Close time,
+Tue_Open time,
+Tue_Close time,
+Wed_Open time,
+Wed_Close time,
+Thu_Open time,
+Thu_Close time,
+Fri_Open time,
+Fri_Close time,
+Sat_Open time,
+Sat_Close time,
+Sun_Open time,
+Sun_Close time,
+);
+
 
 create table Resturant (
 Resturant_Id int(8) primary key auto_increment,
