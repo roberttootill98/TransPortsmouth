@@ -12,7 +12,7 @@ Description varchar (500)
 );
 
 /*Time table data might be moved to Establishment table*/
-create table Time(
+create table Work_Time(
 Est_Id int(8) primary key,
 Mon_Open time,
 Mon_Close time,
