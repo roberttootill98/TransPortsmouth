@@ -15,7 +15,7 @@ Est_Id int(8) primary key,
 Phone varchar(13),
 Email varchar(80),
 Website varchar(120),
-Facebook varchar(80).
+Facebook varchar(80),
 constraint FKestContact foreign key (Est_Id) references Establishment (Est_Id)
 );
   
@@ -72,10 +72,8 @@ constraint FKestBar foreign key (Est_Id) references Establishment(Est_Id)
 );
 
 create table Shop (
-shop_Id int(8) not null auto_incremement,
-est_Id int(8) not null,
-type varchar(40) not null,
-website varchar(100),
-constraint PKshop primary key (shop_Id),
+Shop_Id int(8) primary key auto_increment,
+Est_Id int(8) not null,
+Type varchar(40) not null,
 constraint FKestShop foreign key (Est_Id) references Establishment(Est_Id)
 );
