@@ -4,13 +4,21 @@ use TransPortsmouth;
 create table Establishment(
 Est_Id int(8) primary key auto_increment,
 Name varchar(60) not null,
-Phone varchar(13),
 Address varchar(150),
 Town varchar(54),
 Postcode varchar(8),
 Description varchar (500)
 );
 
+create table Contact_Info(
+Est_Id int(8) primary key,
+Phone varchar(13),
+Email varchar(80),
+Website varchar(120),
+Facebook varchar(80).
+constraint FKestContact foreign key (Est_Id) references Establishment (Est_Id)
+);
+  
 /*Time table data might be moved to Establishment table*/
 create table Work_Time(
 Est_Id int(8) primary key,
@@ -27,7 +35,8 @@ Fri_Close time,
 Sat_Open time,
 Sat_Close time,
 Sun_Open time,
-Sun_Close time
+Sun_Close time,
+constraint FKestTime foreign key (Est_Id) references Establishment (Est_Id)
 );
 
 
@@ -36,7 +45,7 @@ Resturant_Id int(8) primary key auto_increment,
 Est_Id int(8) not null,
 Theme varchar(20) not null,
 Type varchar(20) not null,
-constraint FKestRest foreign key (est_Id) references Establishment(est_Id)
+constraint FKestRest foreign key (Est_Id) references Establishment(Est_Id)
 );
 
 create table University (
@@ -44,14 +53,14 @@ Uni_Id int(8) primary key auto_increment,
 Est_Id int(8) not null,
 Canteen bool default False,
 Free_PCs bool default False,
-constraint FKestUni foreign key (est_Id) references Establishment(est_Id)
+constraint FKestUni foreign key (Est_Id) references Establishment(Est_Id)
 );
 
 create table NightClub (
 Club_Id int(8) primary key auto_increment,
 Est_Id int(8) not null,
 CostOfEntry double(2,2),
-constraint FKestClub foreign key (est_Id) references Establishment(est_Id)
+constraint FKestClub foreign key (Est_Id) references Establishment(Est_Id)
 );
 
 create table Bar (
@@ -59,7 +68,7 @@ Bar_Id int(8) primary key auto_increment,
 Est_Id int(8) not null,
 Atmosphere varchar (20),
 Type varchar (20),
-constraint FKestBar foreign key (est_Id) references Establishment(est_Id)
+constraint FKestBar foreign key (Est_Id) references Establishment(Est_Id)
 );
 
 create table Shop (
@@ -68,5 +77,5 @@ est_Id int(8) not null,
 type varchar(40) not null,
 website varchar(100),
 constraint PKshop primary key (shop_Id),
-constraint FKestShop foreign key (est_Id) references Establishment(est_Id)
+constraint FKestShop foreign key (Est_Id) references Establishment(Est_Id)
 );
