@@ -10,6 +10,14 @@ Postcode varchar(8),
 Description varchar (500)
 );
 
+create table Review(
+Review_Id int(8) primary key auto_increment,
+Est_Id int(8) not null,
+Title varchar(20),
+Content varchar(288) not null,
+constraint FKestReview foreign key (Est_Id) references Establishment (Est_Id)
+);
+
 create table Contact_Info(
 Est_Id int(8) primary key,
 Phone varchar(13),
