@@ -85,3 +85,12 @@ Est_Id int(8) not null,
 Type varchar(40) not null,
 constraint FKestShop foreign key (Est_Id) references Establishment(Est_Id)
 );
+
+
+create table Cafe (
+Cafe_Id int(8) primary key auto_increment,
+Est_Id int(8) not null,
+Theme varchar(20) not null,
+Type varchar(20) not null,
+constraint FKestRest foreign key (Est_Id) references Establishment(Est_Id)
+);
