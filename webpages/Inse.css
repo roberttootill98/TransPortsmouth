@@ -43,7 +43,7 @@ margin-top: 10px;
 #header #nav ul li{
 line-height: 15px;
 list-style-type: none;
-display: inline-block;
+display: inline;
 padding: 1px 8px 1px 8px;
 font-size: 20px;
 font-family: "Lobster";
