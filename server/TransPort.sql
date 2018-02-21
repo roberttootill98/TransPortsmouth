@@ -98,5 +98,6 @@ create table Gym (
 Gym_Id int(8) primary key auto_increment,
 Est_Id int(8) not null,
 Monthly_Fee double(2,2),
-Offer_Trials bool default 0
+Offer_Trials bool default 0,
+Classes_Available varchar(80)
 );
