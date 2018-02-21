@@ -71,6 +71,15 @@ CostOfEntry double(2,2),
 constraint FKestClub foreign key (Est_Id) references Establishment(Est_Id)
 );
 
+  create table ClubEvent (
+    CEvent_Id int(8) primary key,
+    Club_Id int(8) not null,
+    EventName varchar(30) not null,
+    TicketPrice double(2,2),
+    EventDate date,
+    Attraction varchar(50)
+    );
+
 create table Bar (
 Bar_Id int(8) primary key auto_increment,
 Est_Id int(8) not null,
