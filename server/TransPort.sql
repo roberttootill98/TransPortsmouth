@@ -1,6 +1,8 @@
+/*Only use these two lines if the database does not already exist*/
 create database TransPortsmouth;
 use TransPortsmouth;
 
+/*Creates the main table. All companies and locations should have exactly 1 establishment entry*/
 create table Establishment(
 Est_Id int(8) primary key auto_increment,
 Name varchar(60) not null,
@@ -10,6 +12,7 @@ Postcode varchar(8),
 Description varchar (500)
 );
 
+/*Creates review table, if work is achieved fast enough will link this table with a user table*/
 create table Review(
 Review_Id int(8) primary key auto_increment,
 Est_Id int(8) not null,
@@ -18,6 +21,7 @@ Content varchar(288) not null,
 constraint FKestReview foreign key (Est_Id) references Establishment (Est_Id)
 );
 
+/*Contant info for establishments are stored here, so that information does not repeat, such as when a company which is both a bar and a nightclub*/
 create table Contact_Info(
 Est_Id int(8) primary key,
 Phone varchar(13),
@@ -27,7 +31,7 @@ Facebook varchar(80),
 constraint FKestContact foreign key (Est_Id) references Establishment (Est_Id)
 );
   
-/*Time table data might be moved to Establishment table*/
+/*Time table to store open and close times. NOTE: May possibly add holiday opening times*/
 create table Work_Time(
 Est_Id int(8) primary key,
 Mon_Open time,
