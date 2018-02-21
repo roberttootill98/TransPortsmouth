@@ -1,4 +1,4 @@
-/*Inserting into Establishment*/
+/*Inserting into Establishment, Be sure to remember which entires into table, since the ID autoincrements*/
 insert into Establishment (Name, Address, Town, Postcode, Description) values ("Las Iguanas", "108-111 East Side Plaza, Gunwharf Quays", "Portsmouth", "PO1 3SY", "Flame grilled Latin American food and sharing dishes");
 insert into Establishment (Name, Address, Town, Postcode, Description) values ("Lion Gate Building", "Lion Terrace", "Portsmouth", "PO1 3HF", "University Building: primarily used by Computing and Mathmatics Students");
 insert into Establishment (Name, Address, Town, Postcode, Description) values ("The Astoria", "37-39 Guildhall Walk", "Portsmouth", "PO1 2RY", "Nightclub with VIP balcony, Offers two different dance floors with different musical preference");
