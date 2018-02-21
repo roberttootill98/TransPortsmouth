@@ -2,6 +2,7 @@
 create database TransPortsmouth;
 use TransPortsmouth;
 
+/*Database tables creation START*/
 /*Creates the main table. All companies and locations should have exactly 1 establishment entry*/
 create table Establishment(
 Est_Id int(8) primary key auto_increment,
@@ -105,3 +106,5 @@ Offer_Trials bool default 0,
 Classes_Available varchar(80),
 constraint FKestGym foreign key (Est_Id) references Establishment(Est_Id)
 );
+
+/*Database tables creation END*/
