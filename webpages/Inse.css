@@ -35,12 +35,12 @@ margin-top: 10px;
 }
 
 
-#header #nav{
+header #nav{
   margin-top: -40px;
   text-align: center;
 }
 
-#header #nav ul li{
+header #nav ul li{
 line-height: 15px;
 list-style-type: none;
 display: inline;
@@ -50,12 +50,12 @@ font-family: "Lobster";
 }
 
 
-#header #nav a{
+header #nav a{
 text-decoration: none;
 color: white;
 }
 
-#header #nav ul li a:hover{
+header #nav ul li a:hover{
 color: yellow;
 }
 
@@ -145,7 +145,7 @@ h1{
     max-height: 40%;
     margin-top: 14px;
   }
-  #header #nav ul li
+  header #nav ul li
   {
     font-size: 1em;
   }
