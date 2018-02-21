@@ -47,7 +47,6 @@ Sun_Close time,
 constraint FKestTime foreign key (Est_Id) references Establishment (Est_Id)
 );
 
-
 create table Resturant (
 Resturant_Id int(8) primary key auto_increment,
 Est_Id int(8) not null,
@@ -71,15 +70,6 @@ CostOfEntry double(2,2),
 constraint FKestClub foreign key (Est_Id) references Establishment(Est_Id)
 );
 
-  create table ClubEvent (
-    CEvent_Id int(8) primary key,
-    Club_Id int(8) not null,
-    EventName varchar(30) not null,
-    TicketPrice double(2,2),
-    EventDate date,
-    Attraction varchar(50)
-    );
-
 create table Bar (
 Bar_Id int(8) primary key auto_increment,
 Est_Id int(8) not null,
@@ -88,15 +78,6 @@ Type varchar (20),
 constraint FKestBar foreign key (Est_Id) references Establishment(Est_Id)
 );
 
-  create table BarEvent (
-    BEvent_Id int(8) primary key,
-    Bar_Id int(8) not null,
-    EventName varchar(30) not null,
-    EventType varchar (30) not null,
-    TicketPrice double(2,2),
-    EventDate date,
-    );
-    
 create table Shop (
 Shop_Id int(8) primary key auto_increment,
 Est_Id int(8) not null,
@@ -108,7 +89,7 @@ create table Cafe (
 Cafe_Id int(8) primary key auto_increment,
 Est_Id int(8) not null,
 Atmosphere varchar (20),
-Type varchar (20),
+Type varchar(20),
 constraint FKestCafe foreign key (Est_Id) references Establishment(Est_Id)
 );
 
