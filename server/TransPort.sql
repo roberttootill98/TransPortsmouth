@@ -87,7 +87,7 @@ constraint FKestShop foreign key (Est_Id) references Establishment(Est_Id)
 );
 
 create table Cafe (
-Bar_Id int(8) primary key auto_increment,
+Cafe_Id int(8) primary key auto_increment,
 Est_Id int(8) not null,
 Atmosphere varchar (20),
 Type varchar (20),
