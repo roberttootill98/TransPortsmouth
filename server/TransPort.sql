@@ -88,6 +88,15 @@ Type varchar (20),
 constraint FKestBar foreign key (Est_Id) references Establishment(Est_Id)
 );
 
+  create table BarEvent (
+    BEvent_Id int(8) primary key,
+    Bar_Id int(8) not null,
+    EventName varchar(30) not null,
+    EventType varchar (30) not null,
+    TicketPrice double(2,2),
+    EventDate date,
+    );
+    
 create table Shop (
 Shop_Id int(8) primary key auto_increment,
 Est_Id int(8) not null,
