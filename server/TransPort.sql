@@ -91,7 +91,7 @@ Cafe_Id int(8) primary key auto_increment,
 Est_Id int(8) not null,
 Atmosphere varchar (20),
 Type varchar (20),
-constraint FKestBar foreign key (Est_Id) references Establishment(Est_Id)
+constraint FKestCafe foreign key (Est_Id) references Establishment(Est_Id)
 );
 
 create table Gym (
