@@ -10,7 +10,7 @@ background-color: grey;
 }
 
 header{
-width: 100%;
+
 height: 140px;
 background: purple;
 text-align: left;
@@ -44,7 +44,7 @@ header #nav ul li{
 line-height: 15px;
 list-style-type: none;
 display: inline;
-padding: 1px 8px 1px 8px;
+padding: 1px 8px 1px 20px;
 font-size: 20px;
 font-family: "Lobster";
 }
@@ -110,16 +110,14 @@ h1{
 
 @media (max-width: 650px) {
   #wrapper #table1 td{
-    margin-left: 40px;
-    min-width: 70%;
+
+
     display: inline-block;
     margin-top: 2%;
     font-size: .8em;
   }
   .pic1 {
-    margin-left: 0%;
-    max-width: 70%;
-    max-height: 70%;
+    margin-left: 0;
     margin-top: 18px;
   }
   #footer{
@@ -145,6 +143,11 @@ h1{
     max-height: 40%;
     margin-top: 14px;
   }
+
+  header {
+    padding: 0em;
+  }
+
   header #nav ul li
   {
     font-size: 1em;
