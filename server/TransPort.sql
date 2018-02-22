@@ -108,3 +108,13 @@ constraint FKestGym foreign key (Est_Id) references Establishment(Est_Id)
 );
 
 /*Database tables creation END*/
+
+/*User table for if we choose to make it, NOTE: when adding data of this table be sure to encrypt Password and Email*/
+/*Example of encrypting data: insert into User (Username, Password, Email) values ("Username","pass", aes_encrpyt('name@email.co.uk', SHA2('Gacha', 002)));*/
+
+create table User (
+User_Id int(8) primary key auto_increment,
+Username varchar(30) unique,
+Password varbinary(208),
+Email varbinary(208) unique
+);
