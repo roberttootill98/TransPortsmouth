@@ -110,8 +110,8 @@ constraint FKestGym foreign key (Est_Id) references Establishment(Est_Id)
 /*Database tables creation END*/
 
 /*User table for if we choose to make it, NOTE: when adding data of this table be sure to encrypt Password and Email*/
-/*Example of encrypting data: insert into User (Username, Password, Email) values ("Username","pass", aes_encrypt('name@email.co.uk', SHA2('Gacha', 256)));*/
-
+/*Example of encrypting data: insert into User (Username, Password, Email) values ("Username",aes_encrypt('pass', SHA2('Trophy', 512)), aes_encrypt('name@email.co.uk', SHA2('Gacha', 256)));*/
+/*Example of decrypting data: select Username,aes_decrypt(Password, SHA2('Trophy',512)), aes_decrypt(Email, SHA2('Gacha',256)) from User; */
 create table User (
 User_Id int(8) primary key auto_increment,
 Username varchar(30) unique,
