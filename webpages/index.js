@@ -4,7 +4,7 @@ let categories = ["bar", "nightclub"]
 
 function boot() {
   console.log("getting contact");
-  getContact();
+  getCategory();
 }
 
 async function getCategory() {
