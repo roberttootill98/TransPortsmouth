@@ -52,7 +52,7 @@ Sun_Close time,
 constraint FKestTime foreign key (Est_Id) references Establishment (Est_Id)
 );
 
-create table Resturant (
+create table Restaurant (
 Resturant_Id int(8) primary key auto_increment,
 Est_Id int(8) not null,
 Theme varchar(20) not null,
