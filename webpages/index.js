@@ -27,10 +27,7 @@ function useResponse(table) {
   for (let cat of categories) {
     let el = document.createElement("li");
     el.textContent = cat;
-<<<<<<< HEAD
-=======
-
->>>>>>> b320f0340e4b6ca0573f318dc43973af6dac9e16
+    el.classList.add("category");
     container.appendChild(el);
 
   }
