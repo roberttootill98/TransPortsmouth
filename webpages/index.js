@@ -1,6 +1,6 @@
 'use strict'
 
-
+let categories = ["bar", "nightclub"]
 
 function boot() {
   console.log("getting contact");
@@ -10,7 +10,7 @@ function boot() {
 async function getCategory() {
   //const url = '/api/category?cat=' + category;
   const url = '/api/category';
-  
+
   const response = await fetch(url);
   if(response.ok) {
     useResponse(await response.json());
@@ -23,6 +23,13 @@ async function getCategory() {
 function useResponse(table) {
   console.log(table);
   console.log("using resp");
+  const container = document.getElementById("categoryContainer");
+  for (cat of categories) {
+    let el = document.createElement("li");
+    el.textContext(cat)
+    container.appendChild(el);
+
+  }
 }
 
 
