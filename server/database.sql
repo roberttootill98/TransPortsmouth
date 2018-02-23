@@ -19,6 +19,7 @@ Review_Id int(8) primary key auto_increment,
 Est_Id int(8) not null,
 Title varchar(20),
 Content varchar(288) not null,
+Score int(8) default 0,
 constraint FKestReview foreign key (Est_Id) references Establishment (Est_Id)
 );
 
@@ -119,3 +120,19 @@ Username varchar(30) unique,
 Password varbinary(208),
 Email varbinary(208) unique
 );
+
+/*Alternate version of Review table which requires Users to be signed in to make a review*/
+create table Review(
+Review_Id int(8) primary key auto_increment,
+Est_Id int(8) not null,
+User_Id int(8) not null,
+Creator varchar(30) not null,
+Title varchar(20),
+Content varchar(288) not null,
+Score int(8) default 0,
+constraint FKestReview foreign key (Est_Id) references Establishment (Est_Id)
+constraint FKUserReview foreign key (User_Id) references User (User_Id)
+constraint FKReviewCreator foreign key (Creator) references Establishment (Username)
+
+);
+
