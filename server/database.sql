@@ -11,7 +11,7 @@ Address varchar(150) unique,
 Town varchar(54) not null,
 Postcode varchar(8) not null,
 Description varchar (500),
-Category varchar(10)
+Category varchar(30)
 );
 
 /*Creates review table, if work is achieved fast enough will link this table with a user table*/
