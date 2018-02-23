@@ -1,11 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Lobster| Corben:bold);
+@import url(https://fonts.googleapis.com/css?family=Lobster | Corben:bold);
 
 body{
   padding: 0px;
   width: 100%;
   height: 100%;
   margin: auto;
-  font-family: Arial;
+  font-family: Corben;
   background-color: grey;
 }
 
@@ -17,21 +17,23 @@ header{
 }
 
 
-
+#text{
+  font-family: Corben;
+}
 #wrapper{
-width: 700px;
-height: auto;
-margin: 0px auto;
+  width: 700px;
+  height: auto;
+  margin: 0px auto;
 }
 #main{
-height: 300px;
+  height: 300px;
 }
 #footer{
-border-top: 1px solid grey;
-height: 40px;
-text-align:center;
-font-size: .8em;
-margin-top: 18em;
+  border-top: 1px solid grey;
+  height: 40px;
+  text-align:center;
+  font-size: .8em;
+  margin-top: 10px;
 }
 
 
@@ -41,32 +43,31 @@ header nav{
 }
 
 header nav ul li{
-line-height: 15px;
-list-style-type: none;
-display: inline;
-padding: 1px 8px 1px 20px;
-font-size: 20px;
-font-family: "Lobster";
+  line-height: 15px;
+  list-style-type: none;
+  display: inline;
+  padding: 1px 8px 1px 20px;
+  font-size: 20px;
+  font-family: "Lobster";
 }
 
 
 header nav a{
-text-decoration: none;
-color: white;
+  text-decoration: none;
+  color: white;
 }
 
 header nav ul li a:hover{
-color: yellow;
+  color: yellow;
 }
 
 
 
 h1{
   color: white;
-  margin-right: 10px;
+  margin-right: 0.5em;
   float: right;
   font-size: 1.6em;
-  font-family: "Corben:bold";
 }
 
 
@@ -109,11 +110,13 @@ h1{
   font-size: 1.2em;
 }
 
+
+
 @media (max-width: 650px) {
   #wrapper #table1 td{
 
 
-    display: inline-block;
+    display: inline;
     margin-top: 2%;
     font-size: .8em;
   }
@@ -121,7 +124,7 @@ h1{
     margin-left: 0;
     margin-top: 18px;
   }
-  .footer{
+  #footer{
     text-align: left;
   }
 
@@ -153,7 +156,7 @@ h1{
   {
     font-size: 1em;
   }
-  .footer{
+  #footer{
     text-align:left;
     font-size: .8em;
   }
