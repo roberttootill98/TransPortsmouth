@@ -121,7 +121,7 @@ h1{
     margin-left: 0;
     margin-top: 18px;
   }
-  #footer{
+  .footer{
     text-align: left;
   }
 
@@ -153,7 +153,7 @@ h1{
   {
     font-size: 1em;
   }
-  #footer{
+  .footer{
     text-align:left;
     font-size: .8em;
   }
