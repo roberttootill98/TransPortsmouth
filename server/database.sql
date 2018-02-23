@@ -60,6 +60,7 @@ Type varchar(20) not null,
 constraint FKestRest foreign key (Est_Id) references Establishment(Est_Id)
 );
 
+/*Note: Bool datatype in SQL is actually just a tinyInt, so is stored as 0 or 1, Webscript team please remember to interpret this!*/
 create table University (
 Uni_Id int(8) primary key auto_increment,
 Est_Id int(8) not null,
