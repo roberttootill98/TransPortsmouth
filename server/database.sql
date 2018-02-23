@@ -7,7 +7,7 @@ use TransPortsmouth;
 create table Establishment(
 Est_Id int(8) primary key auto_increment,
 Name varchar(60) not null,
-Address varchar(150),
+Address varchar(150) unique,
 Town varchar(54),
 Postcode varchar(8),
 Description varchar (500)
