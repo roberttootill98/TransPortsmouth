@@ -24,7 +24,7 @@ function useResponse(table) {
   console.log(table);
   console.log("using resp");
   const container = document.getElementById("categoryContainer");
-  for (cat of categories) {
+  for (let cat of categories) {
     let el = document.createElement("li");
     el.textContext(cat)
     container.appendChild(el);
