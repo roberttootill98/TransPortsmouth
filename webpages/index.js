@@ -3,18 +3,14 @@
 
 
 function boot() {
-
-  //let test = document.getElementById('test');
-  //let text = document.createElement("p");
-  //text.textContent = data.name;
-  //test.appendChild(text);
   console.log("getting contact");
   getContact();
 }
 
-async function getContact() {
+async function getCategory() {
+  //const url = '/api/category?cat=' + category;
   const url = '/api/category';
-
+  
   const response = await fetch(url);
   if(response.ok) {
     useResponse(await response.json());
