@@ -72,7 +72,7 @@ constraint FKestUni foreign key (Est_Id) references Establishment(Est_Id)
 create table NightClub (
 Club_Id int(8) primary key auto_increment,
 Est_Id int(8) not null,
-CostOfEntry double(2,2),
+CostOfEntry double(4,2),
 constraint FKestClub foreign key (Est_Id) references Establishment(Est_Id)
 );
 
