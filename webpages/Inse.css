@@ -1,19 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 
 body{
-padding: 0px;
-width: 100%;
-height: 100%;
-margin: auto;
-font-family: Arial;
-background-color: grey;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  font-family: Arial;
+  background-color: grey;
 }
 
 header{
 
-height: 140px;
-background: purple;
-text-align: left;
+  height: 140px;
+  background: purple;
+  text-align: left;
 }
 
 
@@ -35,12 +35,12 @@ margin-top: 18em;
 }
 
 
-header #nav{
+header nav{
   margin-top: -40px;
   text-align: center;
 }
 
-header #nav ul li{
+header nav ul li{
 line-height: 15px;
 list-style-type: none;
 display: inline;
@@ -50,12 +50,12 @@ font-family: "Lobster";
 }
 
 
-header #nav a{
+header nav a{
 text-decoration: none;
 color: white;
 }
 
-header #nav ul li a:hover{
+header nav ul li a:hover{
 color: yellow;
 }
 
@@ -148,7 +148,7 @@ h1{
     padding: 0em;
   }
 
-  header #nav ul li
+  header nav ul li
   {
     font-size: 1em;
   }
