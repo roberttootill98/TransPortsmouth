@@ -1,9 +1,6 @@
 'use strict'
 
-let data = {
-  "name":"max",
-  "surname":"tune"
-}
+
 
 function boot() {
 
