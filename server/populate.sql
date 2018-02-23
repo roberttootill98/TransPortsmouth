@@ -12,7 +12,7 @@ insert into Contact_Info values (1, "023 9229 3797", "Gunwharf@iguanas.co.uk","h
 insert into Work_Time values (1, '10:00:00', '23:00:00', '10:00:00', '23:00:00', '10:00:00', '23:00:00', '10:00:00', '23:00:00', '10:00:00', '00:00:00', '10:00:00', '00:00:00', '10:00:00', '22:30:00');
 
 /*Inserting into Resturant*/
-insert into Resturant (Est_Id, Theme, Type) values (1, "Latin Food Chain", "Sit Down, Family");
+insert into Restaurant (Est_Id, Theme, Type) values (1, "Latin Food Chain", "Sit Down, Family");
 
 /*Inserting into University*/
 insert into University (Est_Id, Canteen, Free_PCs) values (2, False, True);
