@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Lobster| Corben:bold);
 
 body{
   padding: 0px;
@@ -66,6 +66,7 @@ h1{
   margin-right: 10px;
   float: right;
   font-size: 1.6em;
+  font-family: "Corben:bold";
 }
 
 
@@ -120,7 +121,7 @@ h1{
     margin-left: 0;
     margin-top: 18px;
   }
-  #footer{
+  .footer{
     text-align: left;
   }
 
@@ -152,7 +153,7 @@ h1{
   {
     font-size: 1em;
   }
-  #footer{
+  .footer{
     text-align:left;
     font-size: .8em;
   }
