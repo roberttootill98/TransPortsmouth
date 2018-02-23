@@ -26,7 +26,8 @@ function useResponse(table) {
   const container = document.getElementById("categoryContainer");
   for (let cat of categories) {
     let el = document.createElement("li");
-    el.textContext(cat)
+    el.textContext = cat;
+
     container.appendChild(el);
 
   }
