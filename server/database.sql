@@ -111,9 +111,10 @@ constraint FKestGym foreign key (Est_Id) references Establishment(Est_Id)
 
 /*Database tables creation END*/
 
-/*User table for if we choose to make it, NOTE: when adding data of this table be sure to encrypt Password and Email*/
+/*Extra tables for if we choose to make it, NOTE: when adding data of this table be sure to encrypt Password and Email*/
+
 /*Example of encrypting data: insert into User (Username, Password, Email) values ("Username",aes_encrypt('pass', SHA2('Trophy', 512)), aes_encrypt('name@email.co.uk', SHA2('Gacha', 256)));*/
-/*Example of decrypting data: select Username,aes_decrypt(Password, SHA2('Trophy',512)), aes_decrypt(Email, SHA2('Gacha',256)) from User; */
+/*Example of decrypting data: select Username,aes_decrypt(Password, SHA2('Trophy',512)) as Password, aes_decrypt(Email, SHA2('Gacha',256)) as Email from User; */
 create table User (
 User_Id int(8) primary key auto_increment,
 Username varchar(30) unique,
@@ -130,9 +131,15 @@ Creator varchar(30) not null,
 Title varchar(20),
 Content varchar(288) not null,
 Score int(8) default 0,
-constraint FKestReview foreign key (Est_Id) references Establishment (Est_Id)
-constraint FKUserReview foreign key (User_Id) references User (User_Id)
+constraint FKestReview foreign key (Est_Id) references Establishment (Est_Id),
+constraint FKUserReview foreign key (User_Id) references User (User_Id),
 constraint FKReviewCreator foreign key (Creator) references Establishment (Username)
-
 );
 
+create table Favourite(
+User_Id int(8) not null,
+Est_Id int(8) not null,
+Primary key (User_Id, Est_Id),
+constraint FKestFav foreign key (Est_Id) references Establishment (Est_Id),
+constraint FKuserFav foreign key (User_Id) references User (User_Id)  
+);
