@@ -4,6 +4,6 @@
     "host": "localhost",
     "user": "root",
     "password": "root",
-    "database": "plannerDB"
+    "database": "TransPortsmouth"
   }
 }
