@@ -1,6 +1,6 @@
 'use strict'
 
-let categories = ["bar", "nightclub"]
+let categories = ["bar", "nightclub", "Restaurant", "Univeristy", "shop", "Cafe", "gym"]
 
 function boot() {
   console.log("getting contact");
@@ -26,7 +26,7 @@ function useResponse(table) {
   const container = document.getElementById("categoryContainer");
   for (let cat of categories) {
     let el = document.createElement("li");
-    el.textContext(cat)
+    el.textContent = cat;
     container.appendChild(el);
 
   }
