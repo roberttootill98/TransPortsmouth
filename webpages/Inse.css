@@ -10,12 +10,15 @@ body{
 }
 
 header{
-
   height: 140px;
   background: purple;
   text-align: left;
 }
 
+.category {
+  color: blue;
+  cursor: pointer;
+}
 
 #text{
   font-family: Corben;

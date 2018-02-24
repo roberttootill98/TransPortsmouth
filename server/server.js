@@ -8,10 +8,8 @@ app.get('/api/category', getAll);
 
 db.init();
 
-
-
 async function getAll(req, res) {
-  res.json(await db.showAll("University"));
+  res.json(await db.showAll(req.query.cat));
 }
 
 app.listen(8080);

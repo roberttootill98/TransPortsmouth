@@ -1,35 +1,63 @@
 'use strict'
 
-let categories = ["bar", "nightclub", "Restaurant", "Univeristy", "shop", "Cafe", "gym"]
+let categoriesarray = ["bar", "nightclub", "Restaurant", "Univeristy", "shop", "Cafe", "gym"]
+let category = "University";
 
 function boot() {
-  console.log("getting contact");
+  useResponse();
   getCategory();
+  addListeners();
 }
+
+function addListeners() {
+  const categories = document.querySelectorAll(".category");
+  console.log(categories);
+  for(let cat of categories) {
+    cat.addEventListener("onclick", changeCategory);
+    console.log("added click")
+  }
+}
+
+function changeCategory(e) {
+  console.log(e.textContent);
+  console.log("clicked");
+}
+
 
 async function getCategory() {
   //const url = '/api/category?cat=' + category;
-  const url = '/api/category';
+  //category = "University"
+  const url = '/api/category?cat=' + category;
+  //console.log("url =" url);
+  console.log(url);
 
   const response = await fetch(url);
   if(response.ok) {
-    useResponse(await response.json());
+    displayCategory(await response.json());
   } else {
     console.error('error getting', response.status, response.statusText);
     //document.querySelector('body > main').innerHTML = 'sorry, something went wrong...';
   }
 }
 
-function useResponse(table) {
+function displayCategory(table) {
   console.log(table);
-  console.log("using resp");
   const container = document.getElementById("categoryContainer");
-  for (let cat of categories) {
-    let el = document.createElement("li");
+  for (let cat of table) {
+    let el = document.createElement("button");
     el.textContent = cat;
     el.classList.add("category");
     container.appendChild(el);
+  }
+}
 
+function useResponse(table) {
+  const container = document.getElementById("categoryContainer");
+  for (let cat of categoriesarray) {
+    let el = document.createElement("button");
+    el.textContent = cat;
+    el.classList.add("category");
+    container.appendChild(el);
   }
 }
 
