@@ -9,7 +9,27 @@ insert into Establishment (Name, Address, Town, Postcode, Description, Category)
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Wave Maiden", "36 Osborne Road", "Portsmouth", "PO5 3LT", "A mash up of British and American cuisine that often has live music and great atmosphere", "Restaurant");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Brasserie Blanc", "1 Gunwharf Quays", "Portsmouth", "PO1 3FR", "Known for seafood dishes known for French inspired menu", "Restaurant");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Abarbistro", "58 White Road", "Portsmouth", "PO1 2JA", "Beautifully presented dishes with a variety of cuisines", "Restaurant");
-insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Chambers", "27 Landport Terrace", "PO1 2RG", "Lounge and Restaurant housed in a cosy building with unique decor", "Restaurant");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Chambers", "27 Landport Terrace", "Portsmouth" , "PO1 2RG", "Lounge and Restaurant housed in a cosy building with unique decor", "Restaurant");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Haldi", "93 Albert Road", "Portsmouth", "PO5 2SG", "", 'Restaurant');
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Spice", "44 Osborne Road", "Portsmouth", "PO5 3LT", "" , 'Restaurant');
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Purple Mango", "27 Albet Road", "Portsmouth", "PO5 2SE", "", 'Restaurant');
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("T & J Mahal", "39 Elm Grove", "Portsmouth", "PO5 1JF", "", 'Restaurant');
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Massala Room", "245 London Road", "Portsmouth", "PO2 9HA", "", 'Restaurant');
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Gandhi Restaurant", "139-141 Kingston Road", "Portsmouth", "PO2 7EB", "", 'Restaurant');
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Spice Route Indian Cusine", "101 Palmerston Road", "Portsmouth", "PO5 3PS", "", 'Restaurant');
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Kadir's Indian Street Food", "217 Alber Road", "Portsmouth", "PO4 0JP", "", 'Restaurant');
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Kassia, Southsea", "82 Osborne Road", "Portsmouth", "PO5 3LU", "", 'Restaurant');
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Akash", "99 Albert Road", "Portsmouth", "PO5 2SG", "", 'Restaurant');
+
+
+
+
+
+
+
+
+
+
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Lion Gate Building", "Lion Terrace", "Portsmouth", "PO1 3HF", "University Building: primarily used by Computing and Mathmatics Students", 'University');
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Astoria", "37-39 Guildhall Walk", "Portsmouth", "PO1 2RY", "Nightclub with VIP balcony, Offers two different dance floors with different musical preference", 'NightClub');
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Honest Politician", "47 Elm Grove", "Portsmouth", "PO5 1JF", "A casual bar which offers cocktails, pool and darts", 'Bar');
