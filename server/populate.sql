@@ -11,7 +11,7 @@ insert into Establishment (Name, Address, Town, Postcode, Description, Category)
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Abarbistro", "58 White Road", "Portsmouth", "PO1 2JA", "Beautifully presented dishes with a variety of cuisines", "Restaurant");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Chambers", "27 Landport Terrace", "Portsmouth" , "PO1 2RG", "Lounge and Restaurant housed in a cosy building with unique decor", "Restaurant");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Haldi", "93 Albert Road", "Portsmouth", "PO5 2SG", "", 'Restaurant');
-insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Spice", "44 Osborne Road", "Portsmouth", "PO5 3LT", "" , 'Restaurant');
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Spice Merchants", "44 Osborne Road", "Portsmouth", "PO5 3LT", "" , 'Restaurant');
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Purple Mango", "27 Albet Road", "Portsmouth", "PO5 2SE", "", 'Restaurant');
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("T & J Mahal", "39 Elm Grove", "Portsmouth", "PO5 1JF", "", 'Restaurant');
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Massala Room", "245 London Road", "Portsmouth", "PO2 9HA", "", 'Restaurant');
