@@ -20,6 +20,16 @@ insert into Establishment (Name, Address, Town, Postcode, Description, Category)
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Kadir's Indian Street Food", "217 Alber Road", "Portsmouth", "PO4 0JP", "", 'Restaurant');
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Kassia, Southsea", "82 Osborne Road", "Portsmouth", "PO5 3LU", "", 'Restaurant');
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Akash", "99 Albert Road", "Portsmouth", "PO5 2SG", "", 'Restaurant');
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tin Tin", "28 The Hard", "Portsmouth", "PO1 3DT", "Chinese Restaurant and Takeaway", "Restaurant");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Noble House Chinese", "43 Osborne Road", "Portsmouth", "PO5 3LT", "Chinese restraunt with Cantonese specialities", "Restaurant");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Real China", "7 Albert Road", "Portsmouth", "PO5 2SE", "Classic chinese restraunt", "Restaurant");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Wok and Chips", "129 Winter Road", "Portsmouth", "PO4 8DS", "Casual chinese restraunt", "Restaurant");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Kam Too", "44 St. Marys Road", "Portsmouth", "PO1 5PH", "Chinese restaurant with a huge variety of dishes", "Restaurant");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Golden Bowl", "71 Fawcett Road", "Portsmouth", "PO4 0DB", "Fun and quirky Chinese restaurant", "Restaurant");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Mayfair", "96 Castle Road", "Portsmouth", "PO5 3AZ", "Popular chinese restaurant and takeaway, particularly with chinese nationals", "Restaurant");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Yan Woo", "33 Kingston Road", "Portsmouth", "PO2 7DP", "Great chinese restaurant for groups", "Restaurant");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Mary Rose & Dragon", "19 St Georges Road", "Portsmouth", "PO1 2EW", "Unique chinese restaurant located in an old pub", "Restaurant");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Spicy House", "8 Grove Road South", "Portsmouth", "PO5 3QT", "Popular chinese takeaway but has a small space for eating in", "Restaurant");
 
 
 
