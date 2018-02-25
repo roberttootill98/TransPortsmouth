@@ -30,10 +30,16 @@ insert into Establishment (Name, Address, Town, Postcode, Description, Category)
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Yan Woo", "33 Kingston Road", "Portsmouth", "PO2 7DP", "Great chinese restaurant for groups", "Restaurant");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Mary Rose & Dragon", "19 St Georges Road", "Portsmouth", "PO1 2EW", "Unique chinese restaurant located in an old pub", "Restaurant");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Spicy House", "8 Grove Road South", "Portsmouth", "PO5 3QT", "Popular chinese takeaway but has a small space for eating in", "Restaurant");
-
-
-
-
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Soprano's", "108 Palmerston Road", "Portsmouth", "PO5 2PT", "", 'Restaurant');
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Don Claudio Italian Restaurant", "15 Jubilee Terrance", "Portsmouth", "PO5 3AS", "" , 'Restaurant');
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Carluccio's", "Blake House,Gunwarf Quays", "Portsmouth", "PO1 3TH", "", 'Restaurant');
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Zizzi", "Gunwarf Quays", "Portsmouth", "PO1 3TA", "", 'Restaurant');
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Circolo Pizzeria", "78 Osborne Road", "Portsmouth", "PO5 3LU", "", 'Restaurant');
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Bella Italia", "Waterfront, Gunwharf Quays, Unit R10", "Portsmouth", "PO1 3TA", "", 'Restaurant');
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Italian Bar & Grill", "30 Great Southsea Street", "Portsmouth", "PO5 3BY", "", 'Restaurant');
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Strada", "R3 Boulevard Building, Gunwarf Quays", "Portsmouth", "PO1 3TW", "", 'Restaurant');
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Azzurro", "Gunwharf Quays, Seafront, Gunwharf Rd", "Portsmouth", "PO1 3TA", "", 'Restaurant');
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Frankie & Benny's", "79 Gunwharf Rd", "Portsmouth", "PO1 3TZ", "", 'Restaurant');
 
 
 
