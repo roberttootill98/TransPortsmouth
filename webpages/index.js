@@ -41,8 +41,8 @@ async function getCategory() { // fetches establishments
   }
 }
 
-getEstablishment() {
-
+async function getEstablishment() {
+  let establishment = "nothing for now"
   const url = 'api/establishment?est=' + establishment
   const response = await fetch(url);
   if(response.ok) {
