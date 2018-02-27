@@ -22,7 +22,7 @@ function addListeners() {
 function changeCategory(e) {
   console.log(e.toElement.firstChild.data); // This is the catagory (if there is a more efficient way to fetch it, please replace)
   console.log("clicked");
-  category = e.toElement.firstChild.data
+  let category = e.toElement.firstChild.data
   getCategory(catagory)
 
   //Rob, what do you want happenning here?
