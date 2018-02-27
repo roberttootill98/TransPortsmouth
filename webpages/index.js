@@ -40,6 +40,9 @@ async function getCategory() {
   }
 }
 
+//getEstablishment()
+//fetch on url = "/api/establishment?establishment=" + establishment
+
 function displayCategory(table) {
   console.log(table);
   const container = document.getElementById("categoryContainer");
