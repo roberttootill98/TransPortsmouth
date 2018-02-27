@@ -22,8 +22,6 @@ function changeCategory(e) {
   console.log(e.textContent);
   console.log("clicked");
 }
-
-
 async function getCategory() {
   //const url = '/api/category?cat=' + category;
   //category = "University"
