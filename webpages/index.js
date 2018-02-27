@@ -40,7 +40,16 @@ async function getCategory() { // fetches establishments
   }
 }
 
-//getEstablishment()
+getEstablishment() {
+
+  const url = 'api/establishment?est=' + establishment
+  const response = await fetch(url);
+  if(response.ok) {
+    displayEstablishment(await response.json())
+  }
+  else {
+    console.error('error getting', response.status, response.statusText);
+}
 //fetch on url = "/api/establishment?establishment=" + establishment
 
 function displayCategory(table) {
@@ -53,6 +62,12 @@ function displayCategory(table) {
     container.appendChild(el);
   }
 }
+
+  displayEstablishment(estRecord){
+    console.log(estRecord)
+
+  }
+
 
 function useResponse(table) {
   const container = document.getElementById("categoryContainer");
