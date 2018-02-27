@@ -29,7 +29,7 @@ function changeCategory(e) {
 }
 
 
-async function getCategory(catagory) { // fetches establishments
+async function getCategory(category) { // fetches establishments
   //const url = '/api/category?cat=' + category;
   //category = "University"
   const url = '/api/category?cat=' + category;
