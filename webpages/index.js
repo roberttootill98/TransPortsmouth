@@ -14,7 +14,7 @@ function addListeners() {
   console.log(categories);
   for(let cat of categories) {
     console.log(cat)
-    cat.addEventListener("onclick", changeCategory);
+    cat.addEventListener("click", changeCategory);
     console.log("added click")
   }
 }
