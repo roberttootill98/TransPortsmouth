@@ -13,6 +13,7 @@ function addListeners() {
   const categories = document.querySelectorAll(".category");
   console.log(categories);
   for(let cat of categories) {
+    console.log(cat)
     cat.addEventListener("onclick", changeCategory);
     console.log("added click")
   }
