@@ -20,8 +20,11 @@ function addListeners() {
 }
 
 function changeCategory(e) {
-  console.log(e.textContent);
+  console.log();
   console.log("clicked");
+  //getCategory()
+
+  //Rob, what do you want happenning here?
 }
 
 
