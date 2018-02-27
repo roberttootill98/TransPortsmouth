@@ -1,7 +1,7 @@
 'use strict'
 
 let categoriesarray = ["bar", "nightclub", "Restaurant", "Univeristy", "shop", "Cafe", "gym"]
-let category = "University";
+
 
 function boot() {
   useResponse();
@@ -20,9 +20,10 @@ function addListeners() {
 }
 
 function changeCategory(e) {
-  console.log(e.toElement.firstChild.data);
+  console.log(e.toElement.firstChild.data); // This is the catagory (if there is a more efficient way to fetch it, please replace)
   console.log("clicked");
-  //getCategory()
+  category = e.toElement.firstChild.data
+  getCategory(catagory)
 
   //Rob, what do you want happenning here?
 }
