@@ -20,7 +20,7 @@ function addListeners() {
 }
 
 function changeCategory(e) {
-  console.log(e);
+  console.log(e.toElement.firstChild.data);
   console.log("clicked");
   //getCategory()
 
