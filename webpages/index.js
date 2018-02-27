@@ -66,7 +66,7 @@ function displayCategory(table) {
   }
 }
 
-  displayEstablishment(estRecord){
+  function displayEstablishment(estRecord){
     console.log(estRecord)
 
   }
