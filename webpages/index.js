@@ -50,7 +50,9 @@ getEstablishment() {
   }
   else {
     console.error('error getting', response.status, response.statusText);
+  }
 }
+
 //fetch on url = "/api/establishment?establishment=" + establishment
 
 function displayCategory(table) {
