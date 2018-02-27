@@ -23,7 +23,7 @@ function changeCategory(e) {
   console.log(e.toElement.firstChild.data); // This is the catagory (if there is a more efficient way to fetch it, please replace)
   console.log("clicked");
   let category = e.toElement.firstChild.data
-  getCategory(catagory)
+  getCategory(category)
 
   //Rob, what do you want happenning here?
 }
