@@ -86,6 +86,19 @@ insert into Establishment (Name, Address, Town, Postcode, Description, Category)
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Honest Politician", "47 Elm Grove", "Portsmouth", "PO5 1JF", "A casual bar which offers cocktails, pool and darts", 'Bar');
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Lyberry", "29-33 Guildhall Walk", "Portsmouth", "PO1 2RY", "Bar / Nightclub connected to Astoria", 'Bar');
 
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Barley Mow", "29 Castle Road", "Portsmouth", "PO5 3DE", "Cosy and classic English pub", "Bar");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Leopold Tavern", "154 Albert Road", "Portsmouth", "PO4 0Jt", "Recently refurbished modern pub styled in a traditional fashion", "Bar");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Little Johnny Russells", "14 Albert Road", "Portsmouth", "PO6 3DD", "Recently refurbished and revamped bar with a great atmosphere", "Bar");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Deco", "128 Elm Grove", "Portsmouth", "PO5 1LR", "Known for live music and event nights", "Bar");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Slug and Lettuce Southsea", "80-82 Palmerston Road", "Portsmouth", "PO5 3PT", "One of the nationwide chain know afordable but classy drinks, especially cocktails", "Bar");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Old Oyster House", "291 Locksway Road", "Portsmouth", "PO4 8LH", "Traditional pub on Portsmouth's East coast", "Bar");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Waterhole Bar", "Unit 3 Cambridge Road", "Portsmouth", "PO1 2EF", "Student bar inside the student's union known for cheap drinks and events", "Bar");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Isambard Kingdom Brunel- Wetherspoons", "2 Guildhall Walk", "Portsmouth", "PO1 2DD", "This Wetherspoons continues the chain's theme of cheap food and drink", "Bar");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Yates", "13-19 Guildhall Walk", "Portsmouth", "PO1 2RY", "Cheap bar for food and drink, often with a great atmosphere during sporting events", "Bar");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Lord Palmerston- Wetherpsoons", "84-90 Palmerston Road", "Portsmouth", "PO5 3PT", "Known for cheap drinks and food, with themed nights for food deals", "Bar");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The One Eyed Dog", "177-185 Elm Grove", "Portsmouth", "PO5 1LU", "Known for lively entertainemnt and themed events", "Bar");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Brewhouse and Kitchen", "26 Guildhall Walk", "Portsmouth", "PO1 2DD", "More expensive than most pubs, but great traditional Ales and food options", "Bar");
+
 /*Inserting into Contact*/
 insert into Contact_Info values (1, "023 9229 3797", "Gunwharf@iguanas.co.uk","https://www.iguanas.co.uk/restaurants/portsmouth", "https://www.facebook.com/LasIguanasGunwharfQuays/");
 
