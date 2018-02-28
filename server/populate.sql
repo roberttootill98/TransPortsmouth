@@ -78,7 +78,11 @@ insert into Establishment (Name, Address, Town, Postcode, Description, Category)
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Rees Halls", "Rees Halls, Southsea Terrace", "Portsmouth", "PO5 3AP", "Students halls of residence", "University");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Trafalgar Halls", "Trafalgar Halls, Middle Street", "Portsmouth", "PO5 4AY", "Students halls of residence", "University");
 
-insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Astoria", "37-39 Guildhall Walk", "Portsmouth", "PO1 2RY", "Nightclub with VIP balcony, Offers two different dance floors with different musical preference", 'NightClub');
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Astoria", "37-39 Guildhall Walk", "Portsmouth", "PO1 2RY", "Popular and lively nightclub with themed events including student nights, 80s nights and dance nights", "NightClub");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Popworld", "1 King Henry I Street", "Portsmouth", "PO1 2PT", "Fun and friendly club dedicated to sing along and pop songs", "NightClub");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Pryzm", "Pryzm Nightclub, Stanhope Road", "Portsmouth", "PO1 1DU", "Portsmouth's newest nightclub, one of a chain of clubs across the country", "NightClub");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Zanzi", "4-8 Guildhall Walk", "Portsmouth", "PO1 2DD", "Small but lively club with themed nights and a jungle design", "NightClub");
+
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Honest Politician", "47 Elm Grove", "Portsmouth", "PO5 1JF", "A casual bar which offers cocktails, pool and darts", 'Bar');
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Lyberry", "29-33 Guildhall Walk", "Portsmouth", "PO1 2RY", "Bar / Nightclub connected to Astoria", 'Bar');
 
