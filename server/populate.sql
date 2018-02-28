@@ -257,5 +257,17 @@ insert into NightClub (Est_Id, CostOfEntry) values (79, 5.00);
 insert into NightClub (Est_Id, CostOfEntry) values (80, 5.00);, 6.00);
 
 /*Inserting into Bar*/
-insert into Bar (Est_Id, Atmosphere, Type) values (4, "Relaxed | Traditonal", "Student Bar");
-insert into Bar (Est_Id, Atmosphere, Type) values (5, "Lively | Loud Music", "Nightclub Bar");
+insert into Bar (Est_Id, Atmosphere, Type) values (81, "Friendly, Social", "Bar");
+insert into Bar (Est_Id, Atmosphere, Type) values (82, "Lively", "Bar/Club Combo");
+insert into Bar (Est_Id, Atmosphere, Type) values (83, "Casual, Local", "Traditional Pub");
+insert into Bar (Est_Id, Atmosphere, Type) values (84, "Casual, local", "Modern Pub");
+insert into Bar (Est_Id, Atmosphere, Type) values (85, "Lively, local", "Bar");
+insert into Bar (Est_Id, Atmosphere, Type) values (86, "Lively", "Bar");
+insert into Bar (Est_Id, Atmosphere, Type) values (87, "Classy, Relaxed", "Cocktail Bar");
+insert into Bar (Est_Id, Atmosphere, Type) values (88, "Friendly, Personal, Casual", "Traditional Pub");
+insert into Bar (Est_Id, Atmosphere, Type) values (89, "Lively, Friendly", "Student Bar");
+insert into Bar (Est_Id, Atmosphere, Type) values (90, "Friendly", "Modern Pub");
+insert into Bar (Est_Id, Atmosphere, Type) values (91, "Lively, Friendly", "Modern Pub");
+insert into Bar (Est_Id, Atmosphere, Type) values (92, "Friendly", "Modern Pub");
+insert into Bar (Est_Id, Atmosphere, Type) values (93, "Lively, Busy", "Bar");
+insert into Bar (Est_Id, Atmosphere, Type) values (94, "Friendly, Personal", "Traditional Pub");
