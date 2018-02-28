@@ -106,6 +106,52 @@ insert into Work_Time values (1, '10:00:00', '23:00:00', '10:00:00', '23:00:00',
 
 /*Inserting into Resturant*/
 insert into Restaurant (Est_Id, Theme, Type) values (1, "Latin Food Chain", "Sit Down, Family");
+insert into Restaurant (Est_Id, Theme, Type) values (2, "French", "Sit Down, Expensive");
+insert into Restaurant (Est_Id, Theme, Type) values (3, "British", "Sit Down, Casual");
+insert into Restaurant (Est_Id, Theme, Type) values (4, "Locally Sourced", "Sit Down, Expensive");
+insert into Restaurant (Est_Id, Theme, Type) values (5, "Locally Sourced", "Sit Down, Adult");
+insert into Restaurant (Est_Id, Theme, Type) values (6, "Locally Sourced", "Sit Down, Expensive");
+insert into Restaurant (Est_Id, Theme, Type) values (7, "Bistro", "Sit Down, Casual");
+insert into Restaurant (Est_Id, Theme, Type) values (8, "Pub", "Pub, Casual");
+insert into Restaurant (Est_Id, Theme, Type) values (9, "French", "Upper Class, Mid Range");
+insert into Restaurant (Est_Id, Theme, Type) values (10, "International", "Casual");
+insert into Restaurant (Est_Id, Theme, Type) values (11, "Sophisticated lounge", "High Class, Expensive");
+insert into Restaurant (Est_Id, Theme, Type) values (12, "Indian", "Sit Down, Casual");
+insert into Restaurant (Est_Id, Theme, Type) values (13, "Indian", "Sit Down, Casual");
+insert into Restaurant (Est_Id, Theme, Type) values (14, "Indian", "Sit Down, Casual");
+insert into Restaurant (Est_Id, Theme, Type) values (15, "Indian", "Sit Down, Casual");
+insert into Restaurant (Est_Id, Theme, Type) values (16, "Indian", "Sit Down, Casual");
+insert into Restaurant (Est_Id, Theme, Type) values (17, "Indian", "Sit Down, Casual");
+insert into Restaurant (Est_Id, Theme, Type) values (18, "Indian", "Sit Down, Casual");
+insert into Restaurant (Est_Id, Theme, Type) values (19, "Indian", "Sit Down, Casual");
+insert into Restaurant (Est_Id, Theme, Type) values (20, "Indian", "Sit Down, Casual");
+insert into Restaurant (Est_Id, Theme, Type) values (21, "Indian", "Sit Down, Casual");
+insert into Restaurant (Est_Id, Theme, Type) values (22, "Chinese", "Sit Down, Cheap");
+insert into Restaurant (Est_Id, Theme, Type) values (23, "Chinese", "Sit Down, Casual");
+insert into Restaurant (Est_Id, Theme, Type) values (24, "Chinese", "Sit Down, Takeaway");
+insert into Restaurant (Est_Id, Theme, Type) values (25, "Chinese", "Sit Down, Takeaway");
+insert into Restaurant (Est_Id, Theme, Type) values (26, "Chinese", "Sit Down, Casual");
+insert into Restaurant (Est_Id, Theme, Type) values (27, "Chinese", "Sit Down, Cheap");
+insert into Restaurant (Est_Id, Theme, Type) values (28, "Chinese", "Sit Down, Takeaway");
+insert into Restaurant (Est_Id, Theme, Type) values (29, "Chinese", "Sit Down, Casual");
+insert into Restaurant (Est_Id, Theme, Type) values (30, "Chinese", "Sit Down, Takeaway");
+insert into Restaurant (Est_Id, Theme, Type) values (31, "Chinese", "Sit Down, Cheap");
+insert into Restaurant (Est_Id, Theme, Type) values (32, "Italian", "Sit Down, Casual");
+insert into Restaurant (Est_Id, Theme, Type) values (33, "Italian", "Sit Down, Personal");
+insert into Restaurant (Est_Id, Theme, Type) values (34, "Italian", "Sit Down, Chain");
+insert into Restaurant (Est_Id, Theme, Type) values (35, "Italian", "Sit Down, Chain");
+insert into Restaurant (Est_Id, Theme, Type) values (36, "Italian", "Sit Down, Casual");
+insert into Restaurant (Est_Id, Theme, Type) values (37, "Italian", "Sit Down, Chain");
+insert into Restaurant (Est_Id, Theme, Type) values (38, "Italian", "Sit Down, Casual");
+insert into Restaurant (Est_Id, Theme, Type) values (39, "Italian", "Sit Down, Chain");
+insert into Restaurant (Est_Id, Theme, Type) values (40, "Italian", "Sit Down, Casual");
+insert into Restaurant (Est_Id, Theme, Type) values (41, "Italian and American", "Sit Down, Chain");
+insert into Restaurant (Est_Id, Theme, Type) values (42, "Thai", "Sit Down, Takeaway");
+insert into Restaurant (Est_Id, Theme, Type) values (43, "Thai", "Sit Down, Takeaway");
+insert into Restaurant (Est_Id, Theme, Type) values (44, "Thai", "Sit Down, Takeaway");
+insert into Restaurant (Est_Id, Theme, Type) values (45, "Thai", "Sit Down, Cosy");
+insert into Restaurant (Est_Id, Theme, Type) values (46, "Steak", "Sit Down, Good for Groups");
+insert into Restaurant (Est_Id, Theme, Type) values (47, "Steak", "Sit Down, Casual");
 
 /*Inserting into University*/
 insert into University (Est_Id, Canteen, Free_PCs) values (2, False, True);
