@@ -5,12 +5,16 @@ const db = require('./ModelSQL.js');
 
 
 app.get('/api/category', getAll);
-app.get('/api/establishment', getEstab);
+//app.get('/api/establishment', getEstab);
 db.init();
 
 async function getAll(req, res) {
   res.json(await db.showAll(req.query.cat));
 }
+
+//async function getEstab(req, res) {
+//  res.json(await db.showAll(req.query.est));
+//}
 
 app.listen(8080);
 
