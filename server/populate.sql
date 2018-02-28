@@ -85,7 +85,6 @@ insert into Establishment (Name, Address, Town, Postcode, Description, Category)
 
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Honest Politician", "47 Elm Grove", "Portsmouth", "PO5 1JF", "A casual bar which offers cocktails, pool and darts", 'Bar');
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Lyberry", "29-33 Guildhall Walk", "Portsmouth", "PO1 2RY", "Bar / Nightclub connected to Astoria", 'Bar');
-
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Barley Mow", "29 Castle Road", "Portsmouth", "PO5 3DE", "Cosy and classic English pub", "Bar");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Leopold Tavern", "154 Albert Road", "Portsmouth", "PO4 0Jt", "Recently refurbished modern pub styled in a traditional fashion", "Bar");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Little Johnny Russells", "14 Albert Road", "Portsmouth", "PO6 3DD", "Recently refurbished and revamped bar with a great atmosphere", "Bar");
