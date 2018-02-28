@@ -154,7 +154,35 @@ insert into Restaurant (Est_Id, Theme, Type) values (46, "Steak", "Sit Down, Goo
 insert into Restaurant (Est_Id, Theme, Type) values (47, "Steak", "Sit Down, Casual");
 
 /*Inserting into University*/
-insert into University (Est_Id, Canteen, Free_PCs) values (2, False, True);
+insert into University (Est_Id, Canteen, Free_PCs) values (48, True, True);
+insert into University (Est_Id, Canteen, Free_PCs) values (49, False, False);
+insert into University (Est_Id, Canteen, Free_PCs) values (50, False, False);
+insert into University (Est_Id, Canteen, Free_PCs) values (51, False, Flase);
+insert into University (Est_Id, Canteen, Free_PCs) values (52, True, False);
+insert into University (Est_Id, Canteen, Free_PCs) values (53, True, True);
+insert into University (Est_Id, Canteen, Free_PCs) values (54, False, False);
+insert into University (Est_Id, Canteen, Free_PCs) values (55, False, False);
+insert into University (Est_Id, Canteen, Free_PCs) values (56, False, True);
+insert into University (Est_Id, Canteen, Free_PCs) values (57, True, True);
+insert into University (Est_Id, Canteen, Free_PCs) values (58, True, True);
+insert into University (Est_Id, Canteen, Free_PCs) values (59, False, True);
+insert into University (Est_Id, Canteen, Free_PCs) values (60, False, False);
+insert into University (Est_Id, Canteen, Free_PCs) values (61, True, False);
+insert into University (Est_Id, Canteen, Free_PCs) values (62, True, False);
+insert into University (Est_Id, Canteen, Free_PCs) values (63, False, False);
+insert into University (Est_Id, Canteen, Free_PCs) values (64, False, Flase);
+insert into University (Est_Id, Canteen, Free_PCs) values (65, True, False);
+insert into University (Est_Id, Canteen, Free_PCs) values (66, True, True);
+insert into University (Est_Id, Canteen, Free_PCs) values (67, False, False);
+insert into University (Est_Id, Canteen, Free_PCs) values (68, True, False);
+insert into University (Est_Id, Canteen, Free_PCs) values (69, False, False);
+insert into University (Est_Id, Canteen, Free_PCs) values (70, False, False);
+insert into University (Est_Id, Canteen, Free_PCs) values (71, False, False);
+insert into University (Est_Id, Canteen, Free_PCs) values (72, False, False);
+insert into University (Est_Id, Canteen, Free_PCs) values (73, False, False);
+insert into University (Est_Id, Canteen, Free_PCs) values (74, False, False);
+insert into University (Est_Id, Canteen, Free_PCs) values (75, False, False);
+insert into University (Est_Id, Canteen, Free_PCs) values (76, False, False);
 
 /*Inserting into NightClub*/
 insert into NightClub (Est_Id, CostOfEntry) values (3, 6.00);
