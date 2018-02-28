@@ -41,6 +41,12 @@ insert into Establishment (Name, Address, Town, Postcode, Description, Category)
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Strada", "R3 Boulevard Building, Gunwarf Quays", "Portsmouth", "PO1 3TW", "", 'Restaurant');
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Azzurro", "Gunwharf Quays, Seafront, Gunwharf Rd", "Portsmouth", "PO1 3TA", "", 'Restaurant');
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Frankie & Benny's", "79 Gunwharf Rd", "Portsmouth", "PO1 3TZ", "", 'Restaurant');
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Koh Thai", "8 King's Road, Southsea", "Portsmouth", "PO5 3AH", "Popular Thai establishment with a great atmosphere", "Restaurant");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Lin's Thai Cafe", "78 Elm Grove, Southsea", "Portsmouth", "PO5 1LN", "Small but personal authentic Thai restaurant", "Restaurant");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Thailand Cafe and Takeaway", "186 Albert Road, Southsea", "Portsmouth", "PO6 3DD", "Offering authentic Thai cuisine to eat in or take away", "Restaurant");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Thai & Laos Kitchen", "176 Fawcett Road, Southsea", "Portsmouth", "PO4 0DP", "A hidden gem serving food with influneces from Thailand and Laos", "Restaurant");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Rancho Steak House", "61 Osborne Road, Southsea", "Portsmouth", "PO5 3LS", "Classic steak house serving mouthwatering meats", "Restaurant");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Shorties Restaurant", "8-9 Bellevue Terrace, SOuthsea", "Portsmouth", "PO5 3AT", "Unique steak and burger restraunt often described as a 'hidden gem'", "Restaurant");
 
 
 
