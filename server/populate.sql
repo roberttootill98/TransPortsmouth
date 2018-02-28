@@ -146,6 +146,12 @@ insert into Contact_Info values (44, "023 9242 1242", NULL,"https://southseafood
 insert into Contact_Info values (45, "07519 731190", NULL, "http://tasteofportsmouth.co.uk/restaurant/thai-laos-kitchen/", "https://www.facebook.com/Thai-Laos-Kitchen-1524812847783615/");
 insert into Contact_Info values (46, "023 9273 7235", "ranchoportsmouth@gmail.com","http://www.ranchosteakhouseportsmouth.com/menu/", "https://en-gb.facebook.com/ranchosteakhouseltd/");
 insert into Contact_Info values (47, "023 9283 1941", NULL,"shortiesrestaurant.com", "https://en-gb.facebook.com/shortiesrestaurant/");
+insert into Contact_Info values (65, "023 9284 3628", "hello@upsu.net","https://www.upsu.net/", "https://www.facebook.com/portsmouthsu");
+insert into Contact_Info values (66, "023 9284 3228", "library@port.ac.uk","https://library.port.ac.uk/", "https://www.facebook.com/uoplibrary");
+insert into Contact_Info values (77, "023 9286 3741", NULL,"http://www.astorianightclub.com/", "https://www.facebook.com/astorianightclub");
+insert into Contact_Info values (78, "023 9283 0150", NULL,"https://www.popworldparty.co.uk/portsmouth", "https://www.facebook.com/PopworldPortsmouth/");
+insert into Contact_Info values (79, "023 9286 2312", "portsmouth@pryzm.co.uk","https://www.pryzm.co.uk/portsmouth", "https://www.facebook.com/PRYZMPortsmouth");
+insert into Contact_Info values (80, NULL, NULL,"https://licklist.co.uk/zanzi", "https://www.facebook.com/pages/zanzi-bar-Portsmouth/543884482431450");
 
 /*Inserting into Time*/
 insert into Work_Time values (1, '10:00:00', '23:00:00', '10:00:00', '23:00:00', '10:00:00', '23:00:00', '10:00:00', '23:00:00', '10:00:00', '00:00:00', '10:00:00', '00:00:00', '10:00:00', '22:30:00');
