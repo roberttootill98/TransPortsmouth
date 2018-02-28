@@ -251,8 +251,10 @@ insert into University (Est_Id, Canteen, Free_PCs) values (75, False, False);
 insert into University (Est_Id, Canteen, Free_PCs) values (76, False, False);
 
 /*Inserting into NightClub*/
-insert into NightClub (Est_Id, CostOfEntry) values (3, 6.00);
-insert into NightClub (Est_Id, CostOfEntry) values ((select Establishment.Est_Id from Establishment where Establishment.Name = 'Lyberry'), 6.00);
+insert into NightClub (Est_Id, CostOfEntry) values (77, 6.00);
+insert into NightClub (Est_Id, CostOfEntry) values (78, 5.00);
+insert into NightClub (Est_Id, CostOfEntry) values (79, 5.00);
+insert into NightClub (Est_Id, CostOfEntry) values (80, 5.00);, 6.00);
 
 /*Inserting into Bar*/
 insert into Bar (Est_Id, Atmosphere, Type) values (4, "Relaxed | Traditonal", "Student Bar");
