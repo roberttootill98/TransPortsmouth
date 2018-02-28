@@ -57,8 +57,8 @@ constraint FKestTime foreign key (Est_Id) references Establishment (Est_Id)
 create table Restaurant (
 Resturant_Id int(8) primary key auto_increment,
 Est_Id int(8) not null,
-Cuisine varchar(20) not null,
-Type varchar(20) not null,
+Cuisine varchar(40) not null,
+Type varchar(80) not null,
 constraint FKestRest foreign key (Est_Id) references Establishment(Est_Id)
 );
 
