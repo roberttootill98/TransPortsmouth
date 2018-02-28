@@ -5,7 +5,7 @@ const db = require('./ModelSQL.js');
 
 
 app.get('/api/category', getAll);
-
+app.get('/api/establishment', getEstab);
 db.init();
 
 async function getAll(req, res) {
