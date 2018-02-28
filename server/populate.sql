@@ -152,6 +152,20 @@ insert into Contact_Info values (77, "023 9286 3741", NULL,"http://www.astoriani
 insert into Contact_Info values (78, "023 9283 0150", NULL,"https://www.popworldparty.co.uk/portsmouth", "https://www.facebook.com/PopworldPortsmouth/");
 insert into Contact_Info values (79, "023 9286 2312", "portsmouth@pryzm.co.uk","https://www.pryzm.co.uk/portsmouth", "https://www.facebook.com/PRYZMPortsmouth");
 insert into Contact_Info values (80, NULL, NULL,"https://licklist.co.uk/zanzi", "https://www.facebook.com/pages/zanzi-bar-Portsmouth/543884482431450");
+insert into Contact_Info values (81, "023 9229 8877", NULL, "http://www.beerintheevening.com/pubs/s/17/17276/Honest_Politician/Southsea", "https://en-gb.facebook.com/thehonestpoliticiansouthsea");
+insert into Contact_Info values (82, "023 9285 1157", "hello@thelyberry.com", "http://www.thelyberry.com/", "https://www.facebook.com/Lyberrybar");
+insert into Contact_Info values (83, "023 9282 3492", NULL, "https://www.barleymowsouthsea.com/html/about_us.html", "https://en-gb.facebook.com/BarleyMowsouthsea/");
+insert into Contact_Info values (84, "023 9282 9748", NULL, NULL, "https://en-gb.facebook.com/portsmouthbeerfestival/posts/708367055988369");
+insert into Contact_Info values (85, "023 9281 2584", NULL, NULL, "https://en-gb.facebook.com/events/399541060408868/");
+insert into Contact_Info values (86, "023 9282 2000", NULL, NULL, "https://en-gb.facebook.com/TheDecoPub/");
+insert into Contact_Info values (87, "023 9286 3981", "slugandlettuce.southsea@stonegatepubs.com", "https://www.slugandlettuce.co.uk/southsea", "https://www.facebook.com/SlugSouthsea");
+insert into Contact_Info values (88, "023 9282 7456", NULL, NULL, "https://www.facebook.com/TheOldOysterHouse/");
+insert into Contact_Info values (89, "023 9284 3650", "waterhole@port.ac.uk", "https://www.upsu.net/life/directory/detail/waterhole-bar-portsmouth-25", "https://www.facebook.com/thewaterhole");
+insert into Contact_Info values (90, "023 9229 5112", NULL, "https://www.jdwetherspoon.com/pubs/all-pubs/england/hampshire/the-isambard-kingdom-brunel-portsmouth", "https://www.facebook.com/jdwetherspoon");
+insert into Contact_Info values (91, "023 9286 3341", "yates.portsmouth@stonegatepubs.com", "https://www.weareyates.co.uk/portsmouth/", "https://www.facebook.com/YatesPortsmouthOfficial/");
+insert into Contact_Info values (92, "023 9272 8000", NULL, "https://www.jdwetherspoon.com/pubs/all-pubs/england/hampshire/the-lord-palmerston-southsea", "https://www.facebook.com/jdwetherspoon");
+insert into Contact_Info values (93, "023 9229 3914", NULL, NULL, "https://en-gb.facebook.com/TheOneEyedDog/");
+insert into Contact_Info values (94, "023 9289 1340", "portsmouth@brewhouseandkitchen.com", "http://www.brewhouseandkitchen.com/venue/portsmouth/", "https://www.facebook.com/BKPortsmouth");
 
 /*Inserting into Time*/
 insert into Work_Time values (1, '10:00:00', '23:00:00', '10:00:00', '23:00:00', '10:00:00', '23:00:00', '10:00:00', '23:00:00', '10:00:00', '00:00:00', '10:00:00', '00:00:00', '10:00:00', '22:30:00');
