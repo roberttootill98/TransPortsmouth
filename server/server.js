@@ -47,4 +47,33 @@ app.listen(8080);
 app.use('/', express.static('webpages', { extensions: ['html'] }));
 
 //in-memory
-let categories = ["bar", "nightclub", "Restaurant", "Univeristy", "shop", "Cafe", "gym"]
+let categories = [
+  {
+    "id": "1",
+    "description": "Bar"
+  },
+  {
+    "id": "2",
+    "description": "NightClub"
+  },
+  {
+    "id": "3",
+    "description": "Restaurant"
+  },
+  {
+    "id": "4",
+    "description": "University"
+  },
+  {
+    "id": "5",
+    "description": "Shop"
+  },
+  {
+    "id": "6",
+    "description": "Cafe"
+  },
+  {
+    "id": "7",
+    "description": "Gym"
+  }
+]
