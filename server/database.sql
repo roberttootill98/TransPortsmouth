@@ -17,7 +17,7 @@ Category varchar(10)
 /*Creates review table, if work is achieved fast enough will link this table with a user table*/
 create table Review(
 Review_Id int primary key auto_increment,
-Est_Id int(8) not null,
+Est_Id int not null,
 Title varchar(20),
 Content varchar(288) not null,
 Score int(8) default 0,
