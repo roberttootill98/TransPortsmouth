@@ -34,7 +34,7 @@ async function getReview(req, res) {
 //add one new review
 async function postReview(req, res) {
   try {
-    await db.addReview(req..query.establishment, req.query.title, req.query.content, req.query.score);
+    await db.addReview(req.query.establishment, req.query.title, req.query.content, req.query.score);
     res.sendStatus(200);
   } catch(e) {
     console.error(e);
