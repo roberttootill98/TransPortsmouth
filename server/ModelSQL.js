@@ -23,16 +23,20 @@ async function showAll(table) {
 
 async function whereAll(table, condition) {
   const checkfield = table + 'Id';
-  const query = 'SELECT * FROM ' + table + ' WHERE ' + checkfield ' = ' + condition;
+  const query = 'SELECT * FROM ' + table + ' WHERE ' + checkfield + ' = ' + condition;
   console.log(query);
   const formattedQuery = sql.format(query);
   const rows = await sql.query(formattedQuery);
   return rows[0];
 }
 
+async function addReview() {
+  console.log("hi");
+}
+
 module.exports = {
   init: init,
   showAll: showAll,
   whereAll: whereAll,
-  postReview: postReview
+  addReview: addReview
 }
