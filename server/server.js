@@ -5,7 +5,7 @@ const db = require('./ModelSQL.js');
 
 app.get('/api/categories', getCategories);
 app.get('/api/category', getCategory);
-app.get('/api/establishment', getEstab);
+app.get('/api/establishment', getEstablishment);
 app.get('/api/review', getReview);
 app.post('/api/review', postReview);
 
