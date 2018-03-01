@@ -13,7 +13,7 @@ db.init();
 
 //static list of categories
 async function getCategories(req, res) {
-  res.json(categories);
+  res.json(categories2);
 }
 
 //list of establishments of type category
@@ -47,6 +47,37 @@ app.listen(8080);
 app.use('/', express.static('webpages', { extensions: ['html'] }));
 
 //in-memory
+let categories2 = [
+  {
+    "id": "1",
+    "description": "Bar"
+  },
+  {
+    "id": "2",
+    "description": "NightClub"
+  },
+  {
+    "id": "3",
+    "description": "Restaurant"
+  },
+  {
+    "id": "4",
+    "description": "University"
+  },
+  {
+    "id": "5",
+    "description": "Shop"
+  },
+  {
+    "id": "6",
+    "description": "Cafe"
+  },
+  {
+    "id": "7",
+    "description": "Gym"
+  }
+]
+/*
 let categories = [
   {
     "id": "1",
@@ -77,3 +108,4 @@ let categories = [
     "description": "Gym"
   }
 ]
+*/

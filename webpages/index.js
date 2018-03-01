@@ -63,8 +63,8 @@ function displayCategories(categories) {
   console.log(categories);
   for (let cat of categories) {
     let el = document.createElement("button");
-    console.log(cat.type);
-    el.textContent = cat.type;
+    console.log(cat.description);
+    el.textContent = cat.description;
     el.classList.add("category");
     container.appendChild(el);
   }
