@@ -20,18 +20,19 @@ async function showAll(table) {
   const rows = await sql.query(formattedQuery);
   return rows[0];
 }
-/*
-(async () => {
-  const sql = await sqlPromise;
-  // handle unexpected errors by just logging them
-  sql.on('error', (err) => {
-    console.error(err);
-    sql.end();
-  });
-});
-*/
+
+async function whereAll(table, condition) {
+  const checkfield = table + 'Id';
+  const query = 'SELECT * FROM ' + table + ' WHERE ' + checkfield ' = ' + condition;
+  console.log(query);
+  const formattedQuery = sql.format(query);
+  const rows = await sql.query(formattedQuery);
+  return rows[0];
+}
 
 module.exports = {
   init: init,
-  showAll: showAll
+  showAll: showAll,
+  whereAll: whereAll,
+  postReview: postReview
 }

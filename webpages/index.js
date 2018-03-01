@@ -5,7 +5,7 @@ let categoriesarray = ["bar", "nightclub", "Restaurant", "Univeristy", "shop", "
 
 function boot() {
   useResponse();
-  getCategory();
+  getCategories();
   addListeners();
 }
 
@@ -19,20 +19,33 @@ function addListeners() {
   }
 }
 
+/*
 function changeCategory(e) {
   console.log(e.toElement.firstChild.data); // This is the catagory (if there is a more efficient way to fetch it, please replace)
   console.log("clicked");
   let category = e.toElement.firstChild.data
-  getCategory(category)
+  getCategory(category);
 
   //Rob, what do you want happenning here?
 }
+*/
 
+//gets all categories
+async function getCategories() {
+  const url = '/api/categories';
 
-async function getCategory(category) { // fetches establishments
-  
+  const response = await fetch(url);
+  if(response.ok) {
+    displayCategory(await response.json());
+  } else {
+    console.error('error getting', response.status, response.statusText);
+    //document.querySelector('body > main').innerHTML = 'sorry, something went wrong...';
+  }
+}
+
+//gets all establishments for one category
+async function getCategory(category) {
   const url = '/api/category?cat=' + category;
-  //console.log("url =" url);
   console.log(url);
 
   const response = await fetch(url);
@@ -44,9 +57,10 @@ async function getCategory(category) { // fetches establishments
   }
 }
 
+//gets one establishment
 async function getEstablishment() {
-  let establishment = "nothing for now"
-  const url = 'api/establishment?est=' + establishment
+  let establishment = 1;
+  const url = 'api/establishment?est=' + establishment;
   const response = await fetch(url);
   if(response.ok) {
     displayEstablishment(await response.json())
@@ -56,7 +70,15 @@ async function getEstablishment() {
   }
 }
 
-//fetch on url = "/api/establishment?establishment=" + establishment
+function displayCategories(table) {
+  const container = document.getElementById("categoryContainer");
+  for (let cat of categoriesarray) {
+    let el = document.createElement("button");
+    el.textContent = cat;
+    el.classList.add("category");
+    container.appendChild(el);
+  }
+}
 
 function displayCategory(table) {
   console.log(table);
@@ -69,21 +91,8 @@ function displayCategory(table) {
   }
 }
 
-  function displayEstablishment(estRecord){
-    console.log(estRecord)
-
-  }
-
-
-function useResponse(table) {
-  const container = document.getElementById("categoryContainer");
-  for (let cat of categoriesarray) {
-    let el = document.createElement("button");
-    el.textContent = cat;
-    el.classList.add("category");
-    container.appendChild(el);
-  }
+function displayEstablishment(estRecord){
+  console.log(estRecord)
 }
-
 
 window.addEventListener("load", boot)
