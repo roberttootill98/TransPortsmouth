@@ -30,8 +30,13 @@ async function whereAll(table, condition) {
   return rows[0];
 }
 
-async function addReview() {
-  console.log("hi");
+async function addReview(est_id, title, content, score) {
+  const query = 'INSERT INTO review (Est_Id, Title, Content, Score)';
+  const values = ' VALUES (' + est_id + ', "' + title + '", "' + content + '", "' + score + '");';
+  const insertQuery = query + values;
+
+  const formattedQuery = sql.format(insertQuery);
+  await sql.query(formattedQuery);
 }
 
 module.exports = {

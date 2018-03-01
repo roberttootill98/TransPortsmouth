@@ -13,7 +13,7 @@ db.init();
 
 //static list of categories
 async function getCategories(req, res) {
-  res.json(categories2);
+  res.json(categories);
 }
 
 //list of establishments of type category
@@ -34,7 +34,7 @@ async function getReview(req, res) {
 //add one new review
 async function postReview(req, res) {
   try {
-    await db.addReview(req.establishment, req.title, req.desc, req.author);
+    await db.addReview(req..query.establishment, req.query.title, req.query.content, req.query.score);
     res.sendStatus(200);
   } catch(e) {
     console.error(e);
@@ -47,37 +47,6 @@ app.listen(8080);
 app.use('/', express.static('webpages', { extensions: ['html'] }));
 
 //in-memory
-let categories2 = [
-  {
-    "id": "1",
-    "description": "Bar"
-  },
-  {
-    "id": "2",
-    "description": "NightClub"
-  },
-  {
-    "id": "3",
-    "description": "Restaurant"
-  },
-  {
-    "id": "4",
-    "description": "University"
-  },
-  {
-    "id": "5",
-    "description": "Shop"
-  },
-  {
-    "id": "6",
-    "description": "Cafe"
-  },
-  {
-    "id": "7",
-    "description": "Gym"
-  }
-]
-/*
 let categories = [
   {
     "id": "1",
@@ -108,4 +77,3 @@ let categories = [
     "description": "Gym"
   }
 ]
-*/
