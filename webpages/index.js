@@ -15,19 +15,7 @@ function addListeners() {
 
 async function selectCategory(e) {
   console.log(e.target.textContent);
-  const categories = await getCategories();
-  console.log(categories);
-  let search = 1;
-  /*
-  for(let cat of categories) {
-    console.log(cat.type);
-    console.log(cat.id);
-    if(cat.type == e.target.textContent) {
-      let search = cat.id;
-    }
-  }
-  */
-  await getCategory(search);
+  await getCategory(e.target.textContent);
 }
 
 //gets all categories

@@ -22,7 +22,6 @@ async function showAll(table) {
 }
 
 async function whereAll(table, condition) {
-  console.log("whereAll");
   const checkfield = table + 'Id';
   const query = 'SELECT * FROM ' + table + ' WHERE ' + checkfield + ' = ' + condition;
   console.log(query);
