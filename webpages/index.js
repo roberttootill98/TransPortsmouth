@@ -1,7 +1,8 @@
 'use strict'
 
 async function boot() {
-  await getCategories();
+  const categories = await getCategories();
+  displayCategories(categories);
   await addListeners();
 }
 
@@ -12,9 +13,21 @@ function addListeners() {
   }
 }
 
-function selectCategory(e) {
+async function selectCategory(e) {
   console.log(e.target.textContent);
-  getCategory(e.target.textContent);
+  const categories = await getCategories();
+  console.log(categories);
+  let search = 1;
+  /*
+  for(let cat of categories) {
+    console.log(cat.type);
+    console.log(cat.id);
+    if(cat.type == e.target.textContent) {
+      let search = cat.id;
+    }
+  }
+  */
+  await getCategory(search);
 }
 
 //gets all categories
@@ -23,7 +36,7 @@ async function getCategories() {
 
   const response = await fetch(url);
   if(response.ok) {
-    displayCategories(await response.json());
+    return await response.json();
   } else {
     console.error('error getting', response.status, response.statusText);
     //document.querySelector('body > main').innerHTML = 'sorry, something went wrong...';
@@ -52,28 +65,25 @@ async function getEstablishment() {
   const response = await fetch(url);
   if(response.ok) {
     displayEstablishment(await response.json())
-  }
-  else {
+  } else {
     console.error('error getting', response.status, response.statusText);
   }
 }
 
 function displayCategories(categories) {
   const container = document.getElementById("categoryContainer");
-  console.log(categories);
   for (let cat of categories) {
-    let el = document.createElement("button");
-    console.log(cat.description);
-    el.textContent = cat.description;
+    let el = document.createElement("li");
+    el.textContent = cat.type;
     el.classList.add("category");
     container.appendChild(el);
   }
 }
 
-function displayCategory(table) {
-  console.log(table);
-  const container = document.getElementById("categoryContainer");
-  for (let cat of table) {
+function displayCategory(establishments) {
+  console.log(establishments);
+  const container = document.getElementById("dataContainer");
+  for (let cat of establishments) {
     let el = document.createElement("button");
     el.textContent = cat;
     el.classList.add("category");
@@ -83,6 +93,10 @@ function displayCategory(table) {
 
 function displayEstablishment(estRecord){
   console.log(estRecord);
+}
+
+function getDirections() {
+
 }
 
 //https://www.google.com/maps/?ll=longitude,latitude
