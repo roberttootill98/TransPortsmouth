@@ -85,4 +85,6 @@ function displayEstablishment(estRecord){
   console.log(estRecord);
 }
 
+//https://www.google.com/maps/@ll=longitude,latitude
+
 window.addEventListener("load", boot)
