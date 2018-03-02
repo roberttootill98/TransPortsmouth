@@ -20,6 +20,10 @@ header{
   cursor: pointer;
 }
 
+.category:hover {
+  color: purple
+}
+
 #text{
   font-family: Corben;
 }
