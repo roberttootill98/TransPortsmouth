@@ -86,5 +86,6 @@ function displayEstablishment(estRecord){
 }
 
 //https://www.google.com/maps/?ll=longitude,latitude
+//http://maps.google.com/?q=your+query (query as address in format "number-road-town")
 
 window.addEventListener("load", boot)
