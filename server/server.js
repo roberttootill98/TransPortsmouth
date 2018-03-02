@@ -13,6 +13,8 @@ db.init();
 
 //static list of categories
 async function getCategories(req, res) {
+  console.log("sending categories");
+  console.log(categories);
   res.json(categories);
 }
 

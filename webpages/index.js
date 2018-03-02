@@ -1,8 +1,10 @@
 'use strict'
 
 async function boot() {
-  const categories = await getCategories();
-  displayCategories(categories);
+  console.log("starting");
+  await getCategories();
+  //const categories = await getCategories();
+  //displayCategories(categories);
   await addListeners();
 }
 
@@ -20,11 +22,13 @@ async function selectCategory(e) {
 
 //gets all categories
 async function getCategories() {
+  console.log("getting categories");
   const url = '/api/categories';
 
   const response = await fetch(url);
   if(response.ok) {
-    return await response.json();
+    //return await response.json();
+    displayCategories(await response.json());
   } else {
     console.error('error getting', response.status, response.statusText);
     //document.querySelector('body > main').innerHTML = 'sorry, something went wrong...';
@@ -59,10 +63,11 @@ async function getEstablishment() {
 }
 
 function displayCategories(categories) {
+  console.log(categories);
   const container = document.getElementById("categoryContainer");
   for (let cat of categories) {
     let el = document.createElement("li");
-    el.textContent = cat.type;
+    el.textContent = cat.description;
     el.classList.add("category");
     container.appendChild(el);
   }
