@@ -15,8 +15,9 @@ async function init() {
 }
 
 async function showAll(table) {
-  const query = 'SELECT * FROM ' + table;
-  const formattedQuery = sql.format(query);
+  const filter = '%' + table + '%'
+  const query = sql.format('SELECT * FROM ?', [table]);
+  //const formattedQuery = sql.format(query);
   const rows = await sql.query(formattedQuery);
   return rows[0];
 }
