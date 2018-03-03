@@ -10,13 +10,14 @@ let sql;
 //fs.unlinkAsync = fs.unlinkAsync || util.promisify(fs.unlink);
 //fs.renameAsync = fs.renameAsync || util.promisify(fs.rename);
 
-
+async function init() {
+  sql = await mysql.createConnection(config.mysql);
+}
 
 async function showAll(table) {
-  const sql = await init();
-  const filter = '%' + table + '%';
-  const query = sql.format('SELECT * FROM ?', [table]);
-  const rows = await sql.query(query);
+  const query = 'SELECT * FROM ' + table;
+  const formattedQuery = sql.format(query);
+  const rows = await sql.query(formattedQuery);
   return rows[0];
 }
 
@@ -37,46 +38,6 @@ async function addReview(est_id, title, content, score) {
   const formattedQuery = sql.format(insertQuery);
   await sql.query(formattedQuery);
 }
-
-
-
-
-let sqlPromise = null;
-
-
-async function init() {
-  if (sqlPromise) return sqlPromise;
-
-  sqlPromise = newConnection();
-  return sqlPromise;
-}
-
-async function shutDown() {
-  if (!sqlPromise) return;
-  const stashed = sqlPromise;
-  sqlPromise = null;
-  await releaseConnection(await stashed);
-}
-
-async function newConnection() {
-  // todo: this should really use connection pools
-  const sql = await mysql.createConnection(config.mysql);
-
-  // handle unexpected errors by just logging them
-  sql.on('error', (err) => {
-    console.error(err);
-    sql.end();
-  });
-
-  return sql;
-}
-
-async function releaseConnection(connection) {
-  await connection.end();
-}
-
-
-
 
 module.exports = {
   init: init,
