@@ -15,6 +15,8 @@ async function init() {
 }
 
 async function showAll(table) {
+  const sql = await init();
+  const filter = '%' + table + '%';
   const query = sql.format('SELECT * FROM ?', [table]);
   const rows = await sql.query(query);
   return rows[0];
