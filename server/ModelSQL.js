@@ -14,10 +14,9 @@ async function init() {
   sql = await mysql.createConnection(config.mysql);
 }
 
-async function showAll(table) {
-  const filter = '%' + table + '%'
-  const query = sql.format('SELECT * FROM ?', [table]);
-  //const formattedQuery = sql.format(query);
+async function showAll(table) {z
+  const query = 'SELECT * FROM ' + table;
+  const formattedQuery = sql.format(query);
   const rows = await sql.query(formattedQuery);
   return rows[0];
 }
