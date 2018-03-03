@@ -77,13 +77,19 @@ function displayCategory(establishments) {
   console.log(establishments);
   const container = document.getElementById("dataContainer");
   for (let cat of establishments) {
-  
+
     let el = document.createElement("button");
     el.textContent = cat.Est_Id;
     el.classList.add("category");
     container.appendChild(el);
   }
 }
+
+async function getEstabName(id){
+
+  const url = 'api/estabName?id=' + id; 
+}
+
 
 function displayEstablishment(estRecord){
   console.log(estRecord);
