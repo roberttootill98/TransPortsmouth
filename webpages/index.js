@@ -77,9 +77,9 @@ function displayCategory(establishments) {
   console.log(establishments);
   const container = document.getElementById("dataContainer");
   for (let cat of establishments) {
-    console.log(cat.Est_Id);
+  
     let el = document.createElement("button");
-    el.textContent = cat;
+    el.textContent = cat.Est_Id;
     el.classList.add("category");
     container.appendChild(el);
   }
