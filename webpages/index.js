@@ -76,11 +76,15 @@ function displayCategories(categories) {
 async function displayCategory(establishments) {
   console.log(establishments);
   const container = document.getElementById("dataContainer");
+  while (container.firstChild) {
+    //The list is LIVE so it will re-index each call
+    container.removeChild(container.firstChild);
+  }
   for (let cat of establishments) {
 
     let el = document.createElement("button");
     let name = await getEstabName(cat.Est_Id);
-    console.log(name);
+
     el.textContent = name;
     el.classList.add("category");
     container.appendChild(el);
