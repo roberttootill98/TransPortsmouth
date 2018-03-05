@@ -95,8 +95,9 @@ async function getEstabName(id){
   for (let name of names) {
     let temp = name.Name;
     console.log(temp);
-    return temp;
+
   }
+  return temp;
 }
 
 
