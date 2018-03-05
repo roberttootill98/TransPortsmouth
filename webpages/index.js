@@ -79,8 +79,8 @@ function displayCategory(establishments) {
   for (let cat of establishments) {
 
     let el = document.createElement("button");
-    getEstabName(cat.Est_Id);
-    el.textContent = cat.Est_Id;
+    let name = getEstabName(cat.Est_Id);
+    el.textContent = name;
     el.classList.add("category");
     container.appendChild(el);
   }
@@ -90,7 +90,10 @@ async function getEstabName(id){
 
   const url = 'api/establishment?id=' + id;
   const response = await fetch(url);
-  console.log(await response.json())
+  let names = await response.json();
+  for (let name of names) {
+    return name.Name;
+  }
 }
 
 
