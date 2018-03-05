@@ -4,6 +4,15 @@ SELECT Category
 FROM Establishment
 GROUP BY Category
 
+/*Select all establishments which are of a category*/
+SELECT Name, Address, Town
+FROM Establishment
+WHERE Category == "X"; /* Where "X" is the desired category*/
+ /*OR*/
+SELECT Name, Address, Town
+FROM Establishment
+INNER JOIN X on Establishment.Est_Id = X.Est_Id; /*Where X is the desired category*/
+ 
 /*Searching for all Restaurants*/
 SELECT Name, Address, Town
 FROM Establishment
