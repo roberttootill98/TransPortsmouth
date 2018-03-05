@@ -25,7 +25,7 @@ async function getCategory(req, res) {
 
 //one category with full details and DIRECTIONS
 async function getEstablishment(req, res) {
-  res.json(await db.whereAll("Establishment", req.query.establishment));
+  res.json(await db.whereAll("Establishment", req.query.id));
 }
 
 //list of reviews

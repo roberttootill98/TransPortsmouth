@@ -87,7 +87,9 @@ function displayCategory(establishments) {
 
 async function getEstabName(id){
 
-  const url = 'api/estabName?id=' + id; 
+  const url = 'api/establishment?id=' + id;
+  const response = await fetch(url);
+  console.log(await response.json()) 
 }
 
 
