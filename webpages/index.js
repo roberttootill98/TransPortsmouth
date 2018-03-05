@@ -105,7 +105,7 @@ async function getEstabName(id){
 }
 
 async function getEstabDetails(e){
-  console.log(e.target);
+  console.log(e.target.textContent);
 }
 
 
