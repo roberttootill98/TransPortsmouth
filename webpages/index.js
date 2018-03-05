@@ -87,13 +87,13 @@ function displayCategory(establishments) {
 }
 
 async function getEstabName(id){
-
+  let temp
   const url = 'api/establishment?id=' + id;
   const response = await fetch(url);
   let names = await response.json();
   console.log(names);
   for (let name of names) {
-    let temp = name.Name;
+    temp = name.Name;
     console.log(temp);
 
   }
