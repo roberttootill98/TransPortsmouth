@@ -79,6 +79,7 @@ function displayCategory(establishments) {
   for (let cat of establishments) {
 
     let el = document.createElement("button");
+    getEstabName(cat.Est_Id);
     el.textContent = cat.Est_Id;
     el.classList.add("category");
     container.appendChild(el);
@@ -89,7 +90,7 @@ async function getEstabName(id){
 
   const url = 'api/establishment?id=' + id;
   const response = await fetch(url);
-  console.log(await response.json()) 
+  console.log(await response.json())
 }
 
 
