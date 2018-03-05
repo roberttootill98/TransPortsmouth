@@ -76,10 +76,11 @@ function displayCategories(categories) {
 async function displayCategory(establishments) {
   console.log(establishments);
   const container = document.getElementById("dataContainer");
-  while (container.firstChild) {
-    //The list is LIVE so it will re-index each call
+
+  while (container.firstChild) { //deletes buttons currently onscreen
     container.removeChild(container.firstChild);
   }
+
   for (let cat of establishments) {
 
     let el = document.createElement("button");
@@ -88,6 +89,7 @@ async function displayCategory(establishments) {
     el.textContent = name;
     el.classList.add("category");
     container.appendChild(el);
+    el.addEventListener("click", getEstabDetails);
   }
 }
 
@@ -99,11 +101,11 @@ async function getEstabName(id){
 
   for (let name of names) {
     return name.Name;
-
-
   }
+}
 
-
+async function getEstabDetails(e){
+  console.log(e.target);
 }
 
 
