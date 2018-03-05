@@ -80,7 +80,8 @@ function displayCategory(establishments) {
 
     let el = document.createElement("button");
     let name = getEstabName(cat.Est_Id);
-    el.textContent = 'test';
+    console.log(name);
+    el.textContent = name;
     el.classList.add("category");
     container.appendChild(el);
   }
