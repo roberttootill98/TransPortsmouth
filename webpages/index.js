@@ -93,7 +93,7 @@ async function getEstabName(id){
   let names = await response.json();
   console.log(names);
   for (let name of names) {
-    return name.Name;
+    console.log(name.Name);
   }
 }
 
