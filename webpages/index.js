@@ -91,6 +91,7 @@ async function getEstabName(id){
   const url = 'api/establishment?id=' + id;
   const response = await fetch(url);
   let names = await response.json();
+  console.log(names);
   for (let name of names) {
     return name.Name;
   }
