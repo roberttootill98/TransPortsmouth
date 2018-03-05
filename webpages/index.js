@@ -79,7 +79,7 @@ function displayCategory(establishments) {
   for (let cat of establishments) {
 
     let el = document.createElement("button");
-    let name = getEstabName(cat.Est_Id);
+    let name = await getEstabName(cat.Est_Id);
     console.log(name);
     el.textContent = name;
     el.classList.add("category");
@@ -95,7 +95,7 @@ async function getEstabName(id){
   console.log(names);
   for (let name of names) {
     temp = name.Name;
-    console.log(temp);
+
 
   }
   console.log(temp);
