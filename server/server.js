@@ -32,7 +32,7 @@ async function getEstablishment(req, res) {
 //one establishment
 
 async function getOneEstab(req, res) {
-  res.json(await db.whereAll("Establishment", req.query., 'Name'));)
+  res.json(await db.whereAll("Establishment", req.query, 'Name'));)
 }
 
 //list of reviews
