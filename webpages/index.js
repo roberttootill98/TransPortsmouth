@@ -50,17 +50,6 @@ async function getCategory(category) {
   }
 }
 
-//gets one establishment
-async function getEstablishment() {
-  let establishment = 1;
-  const url = 'api/establishment?est=' + establishment;
-  const response = await fetch(url);
-  if(response.ok) {
-    displayEstablishment(await response.json())
-  } else {
-    console.error('error getting', response.status, response.statusText);
-  }
-}
 
 function displayCategories(categories) {
   console.log(categories);
@@ -105,13 +94,13 @@ async function getEstabName(id){
 }
 
 async function getEstabDetails(e){
-  console.log(e.target.textContent);
+  console.log(encodeURIComponent(e.target.textContent));
+  const url = 'api/getOneEstab?name=' + encodeURIComponent(e.target.textContent)
+
 }
 
 
-function displayEstablishment(estRecord){
-  console.log(estRecord);
-}
+
 
 function getDirections() {
 

@@ -21,14 +21,19 @@ async function showAll(table) {
   return rows[0];
 }
 
-async function whereAll(table, condition) {
-  const checkfield = 'Est_Id';
+async function whereAll(table, condition, checkfield) {
   const query = 'SELECT * FROM ' + table + ' WHERE ' + checkfield + ' = ' + condition;
   console.log(query);
   const formattedQuery = sql.format(query);
   const rows = await sql.query(formattedQuery);
   return rows[0];
 }
+
+
+
+
+
+
 
 async function addReview(est_id, title, content, score) {
   const query = 'INSERT INTO review (Est_Id, Title, Content, Score)';
