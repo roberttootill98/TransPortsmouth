@@ -73,7 +73,7 @@ function displayCategories(categories) {
   }
 }
 
-function displayCategory(establishments) {
+async function displayCategory(establishments) {
   console.log(establishments);
   const container = document.getElementById("dataContainer");
   for (let cat of establishments) {
