@@ -92,10 +92,23 @@ async function getEstabName(id){
 }
 
 async function getEstabDetails(e){
-  console.log(encodeURIComponent(e.target.textContent));
   const url = 'api/getOneEstab?name=' + encodeURIComponent(e.target.textContent)
   const response = await fetch(url);
-  console.log(await response.json());
+  let estabDetails = await response.json());
+  console.log(estabDetails);
+  for (let detail of details)
+
+    console.log(detail.Name);
+    console.log(detail.Address);
+    console.log(detail.Town);
+    console.log(detail.Postcode);
+  
+
+  }
+
+
+
+  removeButtons()
 
 }
 
