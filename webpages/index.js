@@ -96,7 +96,7 @@ async function getEstabDetails(e){
   const response = await fetch(url);
   let estabDetails = await response.json();
   console.log(estabDetails);
-  for (let detail of details){
+  for (let detail of estabDetail){
 
     console.log(detail.Name);
     console.log(detail.Address);
