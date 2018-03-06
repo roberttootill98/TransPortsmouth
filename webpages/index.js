@@ -67,7 +67,7 @@ async function displayCategory(establishments) {
   const container = document.getElementById("dataContainer");
 
   removeButtons();
-  
+
   for (let cat of establishments) {
 
     let el = document.createElement("button");
@@ -100,7 +100,7 @@ async function getEstabDetails(e){
 }
 
 
-removeButtons(){
+function removeButtons() {
   const container = document.getElementById("dataContainer");
   while (container.firstChild) { //deletes buttons currently onscreen
     container.removeChild(container.firstChild);
