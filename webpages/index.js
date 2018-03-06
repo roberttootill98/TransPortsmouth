@@ -92,6 +92,7 @@ async function getEstabName(id){
 }
 
 async function getEstabDetails(e){
+  console.log(encodeURIComponent(e.target.textContent));
   const url = 'api/getOneEstab?name=' + encodeURIComponent(e.target.textContent)
   const response = await fetch(url);
   let estabDetails = await response.json();
