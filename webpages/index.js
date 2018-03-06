@@ -94,7 +94,7 @@ async function getEstabName(id){
 async function getEstabDetails(e){
   const url = 'api/getOneEstab?name=' + encodeURIComponent(e.target.textContent)
   const response = await fetch(url);
-  let estabDetails = await response.json());
+  let estabDetails = await response.json();
   console.log(estabDetails);
   for (let detail of details)
 
@@ -102,7 +102,7 @@ async function getEstabDetails(e){
     console.log(detail.Address);
     console.log(detail.Town);
     console.log(detail.Postcode);
-  
+
 
   }
 
