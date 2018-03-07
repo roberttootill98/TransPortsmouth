@@ -21,7 +21,14 @@ async function getCategories(req, res) {
 
 //list of establishments of type category
 async function getCategory(req, res) {
-  res.json(await db.showAll(req.query.cat));
+  const query = req.query.cat;
+  //if(query == "Restaurant")
+  switch(query) {
+    case "Restaurant":
+      result = await db.showAll(req.query.cat);
+  }
+  res.json(result);
+  //res.json(await db.showAll(req.query.cat));
 }
 
 //one category with full details and DIRECTIONS
