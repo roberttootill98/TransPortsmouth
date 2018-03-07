@@ -1,5 +1,4 @@
-/*Inserting into Establishment, Be sure to remember which entires into table, since the ID autoincrements
-Also: when it comes to establishments which are multiple categories: Just give it the main one: IE: Lyberry is a Bar, Yates is a Restaurant*/
+/*Inserting into Establishment. Every place in Portsmouth is given a unique ID in the establishment table. The data attached are for information each establishment has in common. E.g. every establishment has an address.*/
 /*1*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Las Iguanas", "108-111 East Side Plaza, Gunwharf Quays", "Portsmouth", "PO1 3SY", "Flame grilled Latin American food and sharing dishes", 'Restaurant');
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Restaurant 27", "27A South Parade, Southsea", "Portsmouth", "PO5 2JF", "Upper class French cuisine", "Restaurant");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Pie and Vinyl", "59-61 Castle Road, Southsea", "Portsmouth", "PO5 3AY", "Unique pie and mash restaurant connected to a record shop. Serves locally sourced pies as well as vegan and gluten free", "Restaurant");
@@ -98,7 +97,7 @@ insert into Establishment (Name, Address, Town, Postcode, Description, Category)
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The One Eyed Dog", "177-185 Elm Grove", "Portsmouth", "PO5 1LU", "Known for lively entertainemnt and themed events", "Bar");
 /*94*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Brewhouse and Kitchen", "26 Guildhall Walk", "Portsmouth", "PO1 2DD", "More expensive than most pubs, but great traditional Ales and food options", "Bar");
 
-/*Inserting into Contact*/
+/*Inserting into Contact. Every item in the establishment table has contact details and these are added here.*/
 insert into Contact_Info values (1, "023 9229 3797", "Gunwharf@iguanas.co.uk","https://www.iguanas.co.uk/restaurants/portsmouth", "https://www.facebook.com/LasIguanasGunwharfQuays/");
 insert into Contact_Info values (2, "023 9287 6272", NULL,"restaurant27.com", "https://www.facebook.com/Restaurant-27-169409896445091/");
 insert into Contact_Info values (3, "023 9275 3914", NULL,"pieandvinyl.co.uk", "https://www.facebook.com/pieandvinyl/");
@@ -167,7 +166,7 @@ insert into Contact_Info values (92, "023 9272 8000", NULL, "https://www.jdwethe
 insert into Contact_Info values (93, "023 9229 3914", NULL, NULL, "https://en-gb.facebook.com/TheOneEyedDog/");
 insert into Contact_Info values (94, "023 9289 1340", "portsmouth@brewhouseandkitchen.com", "http://www.brewhouseandkitchen.com/venue/portsmouth/", "https://www.facebook.com/BKPortsmouth");
 
-/*Inserting into Time*/
+/*Inserting into Time. Every item in the establishment table has opening times, and these are added here.*/
 insert into Work_Time values (1, '10:00:00', '23:00:00', '10:00:00', '23:00:00', '10:00:00', '23:00:00', '10:00:00', '23:00:00', '10:00:00', '00:00:00', '10:00:00', '00:00:00', '10:00:00', '22:30:00');
 insert into Work_Time values (2, Null, Null, Null, Null, '18:30:00', '21:30:00', '18:30:00', '21:30:00', '18:30:00', '21:30:00', '18:30:00', '21:30:00', '12:00:00', '14:30:00');
 insert into Work_Time values (3, '11:00:00', '21:00:00', '11:00:00', '21:00:00', '11:00:00', '21:00:00', '11:00:00', '21:00:00', '11:00:00', '21:00:00', '11:00:00', '21:00:00', '11:00:00', '21:00:00');
@@ -175,7 +174,7 @@ insert into Work_Time values (4, NUll, Null, '18:00:00', '23:00:00', '18:00:00',
 insert into Work_Time values (5, Null, Null, '12:00:00', '23:00:00', '12:00:00', '23:00:00', '12:00:00', '23:00:00', '12:00:00', '00:00:00', '12:00:00', '00:00:00', '12:00:00', '21:00:00');
 insert into Work_Time values (6, NUll, Null, '12:00:00', '21:30:00', '12:00:00', '21:30:00', '12:00:00', '21:30:00', '12:00:00', '21:30:00', '12:00:00', '21:30:00', Null, Null);
 
-/*Inserting into Resturant*/
+/*Inserting into Resturant. Here, the unique information regarding Establishments of type Restaurant are inserted.*/
 insert into Restaurant (Est_Id, Cuisine, Type) values (1, "Latin Food Chain", "Sit Down, Family");
 insert into Restaurant (Est_Id, Cuisine, Type) values (2, "French", "Sit Down, Expensive");
 insert into Restaurant (Est_Id, Cuisine, Type) values (3, "British", "Sit Down, Casual");
@@ -224,7 +223,7 @@ insert into Restaurant (Est_Id, Cuisine, Type) values (45, "Thai", "Sit Down, Co
 insert into Restaurant (Est_Id, Cuisine, Type) values (46, "Steak", "Sit Down, Good for Groups");
 insert into Restaurant (Est_Id, Cuisine, Type) values (47, "Steak", "Sit Down, Casual");
 
-/*Inserting into University*/
+/*Inserting into University. Here, the unique information regarding Establishments of type University are inserted.*/
 insert into University (Est_Id, Canteen, Free_PCs) values (48, True, True);
 insert into University (Est_Id, Canteen, Free_PCs) values (49, False, False);
 insert into University (Est_Id, Canteen, Free_PCs) values (50, False, False);
@@ -255,13 +254,13 @@ insert into University (Est_Id, Canteen, Free_PCs) values (74, False, False);
 insert into University (Est_Id, Canteen, Free_PCs) values (75, False, False);
 insert into University (Est_Id, Canteen, Free_PCs) values (76, False, False);
 
-/*Inserting into NightClub*/
+/*Inserting into NightClub. Here, the unique information regarding Establishments of type Night Club are inserted.*/
 insert into NightClub (Est_Id, CostOfEntry) values (77, 6.00);
 insert into NightClub (Est_Id, CostOfEntry) values (78, 5.00);
 insert into NightClub (Est_Id, CostOfEntry) values (79, 5.00);
 insert into NightClub (Est_Id, CostOfEntry) values (80, 5.00);, 6.00);
 
-/*Inserting into Bar*/
+/*Inserting into Bar. Here, the unique information regarding Establishments of type Bar are inserted.*/
 insert into Bar (Est_Id, Atmosphere, Type) values (81, "Friendly, Social", "Bar");
 insert into Bar (Est_Id, Atmosphere, Type) values (82, "Lively", "Bar/Club Combo");
 insert into Bar (Est_Id, Atmosphere, Type) values (83, "Casual, Local", "Traditional Pub");
