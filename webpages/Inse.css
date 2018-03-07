@@ -16,18 +16,13 @@ header{
 }
 
 .category {
-  color: white;
+  color: blue;
   cursor: pointer;
   margin-top: 20px;
 }
 
 .category:hover {
-  color: blue;
-}
-
-.estab {
-  color: darkblue;
-  cursor: pointer;
+  color: White
 }
 
 #text{
@@ -50,15 +45,19 @@ header{
 }
 
 #categoryContainer {
-  list-style-type: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 #dataContainer {
-  list-style-type: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+#leaveReview {
+  text-align: center;
+  display:inline-grid;
+  grid-template-rows: 3fr 1fr 1fr;
+  padding: 100px;
 }
 
 header nav{
@@ -186,4 +185,5 @@ h1{
   }
 
 }
+
 
