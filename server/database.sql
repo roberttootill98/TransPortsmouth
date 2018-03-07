@@ -18,7 +18,7 @@ Category varchar(10)
 create table Review(
 Review_Id int primary key auto_increment,
 Est_Id int not null,
-Title varchar(20),
+Author varchar(20),
 Content varchar(288) not null,
 Score int(8) default 0,
 constraint FKestReview foreign key (Est_Id) references Establishment (Est_Id)
