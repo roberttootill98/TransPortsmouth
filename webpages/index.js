@@ -50,6 +50,13 @@ async function getCategory(category) {
   }
 }
 
+async function getEstabDetails(e) {
+  console.log(encodeURIComponent(e.target.textContent));
+  const url = 'api/getOneEstab?name=' + encodeURIComponent(e.target.textContent)
+  const response = await fetch(url);
+  let estabDetails = await response.json();
+  displayEstab(estabDetails);
+}
 
 function displayCategories(categories) {
   console.log(categories);
@@ -83,6 +90,7 @@ async function displayCategory(establishments) {
 async function getEstabName(id){
   let temp
   const url = 'api/establishment?id=' + id;
+  console.log(url);
   const response = await fetch(url);
   let names = await response.json();
 
@@ -91,27 +99,17 @@ async function getEstabName(id){
   }
 }
 
-async function getEstabDetails(e){
-  console.log(encodeURIComponent(e.target.textContent));
-  const url = 'api/getOneEstab?name=' + encodeURIComponent(e.target.textContent)
-  const response = await fetch(url);
-  let estabDetails = await response.json();
+function displayEstab(estabDetails) {
   console.log(estabDetails + 'here');
   for (let detail of estabDetails){
-
     console.log(detail.Name);
     console.log(detail.Address);
     console.log(detail.Town);
     console.log(detail.Postcode);
-
-
   }
-
-
-
   removeButtons()
-
 }
+
 
 
 function removeButtons() {
