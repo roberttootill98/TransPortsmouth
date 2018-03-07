@@ -25,6 +25,11 @@ header{
   color: blue;
 }
 
+.estab {
+  color: darkblue;
+  cursor: pointer;
+}
+
 #text{
   font-family: Corben;
 }
