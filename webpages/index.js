@@ -70,7 +70,7 @@ async function displayCategory(establishments) {
 
   for (let cat of establishments) {
 
-    let el = document.createElement("button");
+    let el = document.createElement("li");
     let name = await getEstabName(cat.Est_Id);
 
     el.textContent = name;
