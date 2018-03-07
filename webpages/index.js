@@ -116,6 +116,29 @@ function displayEstab(estabDetails) {
     console.log(detail.Address);
     console.log(detail.Town);
     console.log(detail.Postcode);
+
+    let name = document.createElement("h1");
+    let Address = document.createElement("p");
+    let Town = document.createElement("p");
+    let Postcode = document.createElement("p");
+
+    const container = document.getElementById("dataContainer");
+
+
+    name.textContent = detail.Name;
+    Address.textContent = detail.address;
+    Town.textContent = detail.Town;
+    Postcode.textContent = detail.Postcode;
+
+
+
+    container.appendChild(name);
+    container.appendChild(Address);
+    container.appendChild(Town);
+    container.appendChild(Postcode);
+
+
+
   }
   removeButtons()
 }
