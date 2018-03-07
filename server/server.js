@@ -25,8 +25,9 @@ async function getCategory(req, res) {
   //if(query == "Restaurant")
   switch(query) {
     case "Restaurant":
-      result = await db.showAll(req.query.cat);
+      result = await db.showRestaurants();
   }
+  console.log(result);
   res.json(result);
   //res.json(await db.showAll(req.query.cat));
 }
