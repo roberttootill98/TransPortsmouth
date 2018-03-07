@@ -16,13 +16,13 @@ header{
 }
 
 .category {
-  color: blue;
+  color: white;
   cursor: pointer;
   margin-top: 20px;
 }
 
 .category:hover {
-  color: White
+  color: blue;
 }
 
 #text{
@@ -45,17 +45,19 @@ header{
 }
 
 #categoryContainer {
+  list-style-type: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 #dataContainer {
+  list-style-type: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 header nav{
-  margin-top: -40px;
+  margin-top: -30px;
   text-align: center;
 }
 
@@ -179,3 +181,4 @@ h1{
   }
 
 }
+
