@@ -1,5 +1,7 @@
 'use strict'
 
+let estabs = [];
+
 async function boot() {
   console.log("starting");
   await getCategories();
@@ -52,7 +54,15 @@ async function getCategory(category) {
 
 async function getEstabDetails(e) {
   console.log(encodeURIComponent(e.target.textContent));
-  const url = 'api/getOneEstab?name=' + encodeURIComponent(e.target.textContent)
+  let name;
+  for(let estab of estabs) {
+    if(e.target.textContent.contains(estab)) {
+      console.log(name);
+      name = estab;
+    }
+  }
+  const url = '/api/getOneEstab?name=' + name;
+  //const url = 'api/getOneEstab?name=' + encodeURIComponent(e.target.textContent)
   const response = await fetch(url);
   let estabDetails = await response.json();
   displayEstab(estabDetails);
@@ -83,6 +93,8 @@ async function displayCategory(establishments) {
     el.classList.add("estab");
     container.appendChild(el);
     el.addEventListener("click", getEstabDetails);
+
+    estabs.push(cat.Name);
   }
 }
 
