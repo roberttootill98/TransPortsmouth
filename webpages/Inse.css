@@ -53,6 +53,10 @@ header{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
+#estab {
+  hover: cyan;
+  cursor: pointer;
+}
 #leaveReview {
   text-align: center;
   display:inline-grid;
