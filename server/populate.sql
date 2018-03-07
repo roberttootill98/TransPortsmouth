@@ -1,4 +1,5 @@
 /*Inserting into Establishment. Every place in Portsmouth is given a unique ID in the establishment table. The data attached are for information each establishment has in common. E.g. every establishment has an address.*/
+/*Restaurants*/
 /*1*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Las Iguanas", "108-111 East Side Plaza, Gunwharf Quays", "Portsmouth", "PO1 3SY", "Flame grilled Latin American food and sharing dishes", 'Restaurant');
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Restaurant 27", "27A South Parade, Southsea", "Portsmouth", "PO5 2JF", "Upper class French cuisine", "Restaurant");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Pie and Vinyl", "59-61 Castle Road, Southsea", "Portsmouth", "PO5 3AY", "Unique pie and mash restaurant connected to a record shop. Serves locally sourced pies as well as vegan and gluten free", "Restaurant");
@@ -47,6 +48,7 @@ insert into Establishment (Name, Address, Town, Postcode, Description, Category)
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Rancho Steak House", "61 Osborne Road, Southsea", "Portsmouth", "PO5 3LS", "Classic steak house serving mouthwatering meats", "Restaurant");
 /*47*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Shorties Restaurant", "8-9 Bellevue Terrace, SOuthsea", "Portsmouth", "PO5 3AT", "Unique steak and burger restraunt often described as a 'hidden gem'", "Restaurant");
 
+/*University*/
 /*48*/ insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Anglesea Building", "Anglesea Building, Anglesea Road", "Portsmouth", "PO1 3DJ", "Teaching building for the School of Engineering and School of Law", "University");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Buckingham Building", "Buckingham Building, Lion Terrace", "Portsmouth", "PO1 3HE", "Teaching building seminar rooms and staff offices", "University");
 /*50*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Burnaby Building", "Burnaby Building, Burnaby Road", "Portsmouth", "PO1 3QL", "Teaching building in the University North Quarter", "University");
@@ -77,11 +79,13 @@ insert into Establishment (Name, Address, Town, Postcode, Description, Category)
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Rees Halls", "Rees Halls, Southsea Terrace", "Portsmouth", "PO5 3AP", "Students halls of residence", "University");
 /*76*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Trafalgar Halls", "Trafalgar Halls, Middle Street", "Portsmouth", "PO5 4AY", "Students halls of residence", "University");
 
+/*NightClub*/
 /*77*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Astoria", "37-39 Guildhall Walk", "Portsmouth", "PO1 2RY", "Popular and lively nightclub with themed events including student nights, 80s nights and dance nights", "NightClub");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Popworld", "1 King Henry I Street", "Portsmouth", "PO1 2PT", "Fun and friendly club dedicated to sing along and pop songs", "NightClub");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Pryzm", "Pryzm Nightclub, Stanhope Road", "Portsmouth", "PO1 1DU", "Portsmouth's newest nightclub, one of a chain of clubs across the country", "NightClub");
 /*80*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Zanzi", "4-8 Guildhall Walk", "Portsmouth", "PO1 2DD", "Small but lively club with themed nights and a jungle design", "NightClub");
 
+/*Bar*/
 /*81*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Honest Politician", "47 Elm Grove", "Portsmouth", "PO5 1JF", "A casual bar which offers cocktails, pool and darts", 'Bar');
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Lyberry", "29-33 Guildhall Walk", "Portsmouth", "PO1 2RY", "Bar / Nightclub connected to Astoria", 'Bar');
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Barley Mow", "29 Castle Road", "Portsmouth", "PO5 3DE", "Cosy and classic English pub", "Bar");
@@ -97,6 +101,7 @@ insert into Establishment (Name, Address, Town, Postcode, Description, Category)
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The One Eyed Dog", "177-185 Elm Grove", "Portsmouth", "PO5 1LU", "Known for lively entertainemnt and themed events", "Bar");
 /*94*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Brewhouse and Kitchen", "26 Guildhall Walk", "Portsmouth", "PO1 2DD", "More expensive than most pubs, but great traditional Ales and food options", "Bar");
 
+/*Contacts*/
 /*Inserting into Contact. Every item in the establishment table has contact details and these are added here.*/
 insert into Contact_Info values (1, "023 9229 3797", "Gunwharf@iguanas.co.uk","https://www.iguanas.co.uk/restaurants/portsmouth", "https://www.facebook.com/LasIguanasGunwharfQuays/");
 insert into Contact_Info values (2, "023 9287 6272", NULL,"restaurant27.com", "https://www.facebook.com/Restaurant-27-169409896445091/");
@@ -166,6 +171,7 @@ insert into Contact_Info values (92, "023 9272 8000", NULL, "https://www.jdwethe
 insert into Contact_Info values (93, "023 9229 3914", NULL, NULL, "https://en-gb.facebook.com/TheOneEyedDog/");
 insert into Contact_Info values (94, "023 9289 1340", "portsmouth@brewhouseandkitchen.com", "http://www.brewhouseandkitchen.com/venue/portsmouth/", "https://www.facebook.com/BKPortsmouth");
 
+/*Work Times*/
 /*Inserting into Time. Every item in the establishment table has opening times, and these are added here.*/
 insert into Work_Time values (1, '10:00:00', '23:00:00', '10:00:00', '23:00:00', '10:00:00', '23:00:00', '10:00:00', '23:00:00', '10:00:00', '00:00:00', '10:00:00', '00:00:00', '10:00:00', '22:30:00');
 insert into Work_Time values (2, Null, Null, Null, Null, '18:30:00', '21:30:00', '18:30:00', '21:30:00', '18:30:00', '21:30:00', '18:30:00', '21:30:00', '12:00:00', '14:30:00');
@@ -173,6 +179,9 @@ insert into Work_Time values (3, '11:00:00', '21:00:00', '11:00:00', '21:00:00',
 insert into Work_Time values (4, NUll, Null, '18:00:00', '23:00:00', '18:00:00', '23:00:00', '18:00:00', '23:00:00', '18:00:00', '23:00:00', '18:00:00', '23:00:00', Null, Null);
 insert into Work_Time values (5, Null, Null, '12:00:00', '23:00:00', '12:00:00', '23:00:00', '12:00:00', '23:00:00', '12:00:00', '00:00:00', '12:00:00', '00:00:00', '12:00:00', '21:00:00');
 insert into Work_Time values (6, NUll, Null, '12:00:00', '21:30:00', '12:00:00', '21:30:00', '12:00:00', '21:30:00', '12:00:00', '21:30:00', '12:00:00', '21:30:00', Null, Null);
+insert into Work_Time values (48, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null, Null);
+insert into Work_Time values (77, '22:00:00', '02:00:00', '22:00:00', '02:00:00', Null, Null, '22:00:00', '02:00:00', '22:00:00', '04:00:00', '22:00:00', '04:00:00', Null, Null);
+insert into Work_Time values (81, '13:00:00', '23:00:00', '13:00:00', '23:00:00', '13:00:00', '23:00:00', '13:00:00', '23:00:00', '13:00:00', '00:30:00', '13:00:00', '00:30:00', '13:00:00', '23:00:00');
 
 /*Inserting into Resturant. Here, the unique information regarding Establishments of type Restaurant are inserted.*/
 insert into Restaurant (Est_Id, Cuisine, Type) values (1, "Latin Food Chain", "Sit Down, Family");
