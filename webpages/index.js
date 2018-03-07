@@ -97,6 +97,10 @@ async function getEstabDetails(e){
   const response = await fetch(url);
   let estabDetails = await response.json();
   console.log(estabDetails + 'here');
+  formatEstab(estabDetails)
+}
+
+function formatEstab(){
   for (let detail of estabDetails){
 
     console.log(detail.Name);
@@ -106,7 +110,7 @@ async function getEstabDetails(e){
 
 
   }
-
+}
 
 
   removeButtons()
