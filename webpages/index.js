@@ -73,7 +73,7 @@ async function displayCategory(establishments) {
     let el = document.createElement("li");
     let name = await getEstabName(cat.Est_Id);
 
-    el.textContent = name;
+    el.textContent = cat.name;
     el.classList.add("category");
     container.appendChild(el);
     el.addEventListener("click", getEstabDetails);
