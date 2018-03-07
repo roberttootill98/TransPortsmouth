@@ -54,15 +54,12 @@ async function getCategory(category) {
 
 async function getEstabDetails(e) {
   let name;
-  /*
   for(let estab of estabs) {
-    if(e.target.textContent.contains(estab)) {
+    if(e.target.textContent.includes(estab)) {
       console.log(name);
       name = estab;
     }
   }
-  */
-  name = "Las Iguanas";
   const url = '/api/getOneEstab?name=' + name;
   //const url = 'api/getOneEstab?name=' + encodeURIComponent(e.target.textContent)
   const response = await fetch(url);
