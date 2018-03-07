@@ -110,7 +110,7 @@ async function getEstabName(id){
 }
 
 function displayEstab(estabDetails) {
-  console.log(estabDetails + 'here');
+  console.log(estabDetails);
   for (let detail of estabDetails){
     console.log(detail.Name);
     console.log(detail.Address);
