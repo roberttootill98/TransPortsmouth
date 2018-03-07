@@ -18,11 +18,11 @@ SELECT Name, Address, Town
 FROM Establishment
 INNER JOIN Restaurant on Establishment.Est_Id = Restaurant.Est_Id;
 
-/*Searching for all Restaurants and open times*/
+/*Searching for all of type X and open times (Replace X for establishment type)*/
 SELECT Establishment.Name, Establishment.Address, Establishment.Town,
 Work_Time.Mon_Open, Work_Time.Mon_Close, Work_Time.Tue_Open,Work_Time.Tue_Close, Work_Time.Wed_Open, Work_Time.Wed_Close, Work_Time.Thu_Open, Work_Time.Thu_Close, Work_Time.Fri_Open, Work_Time.Fri_Close,Work_Time.Sat_Open, Work_Time.Sat_Close, Work_Time.Sun_Open, Work_Time.Sun_Close
 FROM Establishment
-INNER JOIN Restaurant on Establishment.Est_Id = Restaurant.Est_Id
+INNER JOIN X on Establishment.Est_Id = X.Est_Id
 INNER JOIN Work_Time on Establishment.Est_Id = Work_Time.Est_Id;
 
 
