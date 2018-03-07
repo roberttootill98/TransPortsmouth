@@ -96,7 +96,7 @@ async function getEstabDetails(e){
   const url = 'api/getOneEstab?name=' + encodeURIComponent(e.target.textContent)
   const response = await fetch(url);
   let estabDetails = await response.json();
-  console.log(estabDetails);
+  console.log(estabDetails + 'here');
   for (let detail of estabDetails){
 
     console.log(detail.Name);
