@@ -111,6 +111,7 @@ async function getEstabName(id){
 
 function displayEstab(estabDetails) {
   console.log(estabDetails);
+    removeButtons()
   for (let detail of estabDetails){
     console.log(detail.Name);
     console.log(detail.Address);
@@ -140,7 +141,7 @@ function displayEstab(estabDetails) {
 
 
   }
-  removeButtons()
+
 }
 
 
