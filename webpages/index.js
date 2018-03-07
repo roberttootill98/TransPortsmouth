@@ -74,7 +74,7 @@ async function displayCategory(establishments) {
     let name = await getEstabName(cat.Est_Id);
 
     el.textContent = cat.Name + "\n" + cat.Address;
-    el.classList.add("category");
+    el.classList.add("estab");
     container.appendChild(el);
     el.addEventListener("click", getEstabDetails);
   }
