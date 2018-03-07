@@ -22,6 +22,7 @@ async function showAll(table) {
 }
 
 async function whereAll(table, condition, checkfield) {
+  console.log(condition);
   const query = 'SELECT * FROM ' + table + ' WHERE ' + checkfield + ' = "' + condition + '"';
   console.log(query + 'is a query');
   const formattedQuery = sql.format(query);
