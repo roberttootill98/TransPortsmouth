@@ -113,6 +113,12 @@ insert into Establishment (Name, Address, Town, Postcode, Description, Category)
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Better Gym", "6 Dickinson Road", "Portsmouth", "PO4 8SH", "", "Gym");
 /*103*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Box-Portsmouth", "235-237 Commercial Road", "Portsmouth", "PO1 4BJ", "", "Gym");
 
+/*Cafe*/
+/*104*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Parade Tea Rooms", "Western Parade, Southsea Common", "Portsmouth", "PO5 3JF", "Cosy and personal tea room with a speciality in cakes", "Cafe");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Spinnaker Cafe", "96 Broad Street, Old Portsmouth", "Portsmouth", "PO1 2JE", "Classic cafe overlooking the harbour", "Cafe");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Southsea Beach Cafe", "Beach Cafe, The Esplanade", "Portsmouth", "PO4 0SP", "Sea views and locally sourced seasonal food are the hallmarks at this casual modern restaurant.", "Cafe");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Smile", "49 Marmion Road, Southsea", "Portsmouth", "PO5 2EJ", "Classic cafe with friendly service.", "Cafe");
+/*108*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Southsea Coffee Co", "63 Osborne Road", "Portsmouth", "PO5 3LS", "Coffee shop that serves small dishes and deserts", "Cafe");
 
 /*Contacts*/
 /*Inserting into Contact. Every item in the establishment table has contact details and these are added here.*/
