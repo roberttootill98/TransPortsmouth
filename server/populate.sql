@@ -424,3 +424,10 @@ insert into Bar (Est_Id, Atmosphere, Type) values (90, "Lively, Friendly", "Mode
 insert into Bar (Est_Id, Atmosphere, Type) values (91, "Friendly", "Modern Pub");
 insert into Bar (Est_Id, Atmosphere, Type) values (92, "Lively, Busy", "Bar");
 insert into Bar (Est_Id, Atmosphere, Type) values (93, "Friendly, Personal", "Traditional Pub");
+
+/*Inserting into Cafe. The unique information regarding the cafe establishments.*/
+insert into Cafe (Est_Id, Atmosphere, Type) values (104, "Classy, Friendly", "Tea Room");
+insert into Cafe (Est_Id, Atmosphere, Type) values (105, "Casual, standard", "Cafe");
+insert into Cafe (Est_Id, Atmosphere, Type) values (106, "Sit down, Classy", "Cafe");
+insert into Cafe (Est_Id, Atmosphere, Type) values (107, "Casual, standard", "Cafe");
+insert into Cafe (Est_Id, Atmosphere, Type) values (108, "Classy, hipster", "Coffee Shop");
