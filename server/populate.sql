@@ -65,28 +65,28 @@ insert into Establishment (Name, Address, Town, Postcode, Description, Category)
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("St Andrews Court", "St Andrews Court, St Michael's Road", "Portsmouth", "PO1 2PR", "Teaching building with multiple computer and seminar classrooms", "University");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("St George's Building", "141 High Street", "Portsmouth", "PO1 2HY", "Teaching and research building", "University");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("St Michael's Building", "St Michael's Building, King Henry I Street", "Portsmouth", "PO1 2DT", "Teaching building with research and seminar facilities", "University");
-insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("St Paul's Sports Centre", "St Paul's Gym, St Paul's Road", "Portsmouth", "PO5 4AQ", "Sports facility containing gym, sports hall and fitness rooms", "University");
+
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("University of Portsmouth Students Union", "UPSU, Cambridge Road", "Portsmouth", "PO1 2EF", "Union buidling for students made up of a shop, bar, multi-use space and staff offices", "University");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("University Library", "University Library, Cambridge Road", "Portsmouth", "PO1 2ST", "Multi-level library with slefstudy, group study and small seminar space", "University");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("William Beatty Building", "22 Hampshire Terrace", "Portsmouth", "PO1 2QB", "Dental Academy", "University");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Langstone student Village", "Langstone Student Village, Furze Lane", "Portsmouth", "PO4 8Lw", "University's Eastern campus made up of sports fields and student accomodation", "University");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Bateson Hall", "Bateson Hall, The Mary Rose Street", "Portsmouth", "PO1 2BL", "Students halls of residence", "University");
-/*70*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Catherine House", "Catherine House, Stanhope Road", "Portsmouth", "PO1 1DZ", "Students halls of residence", "University");
-insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Greetham Street Halls", "Greetham Street Halls, Greetham street", "Portsmouth", "PO5 4FB", "Students halls of residence", "University");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Catherine House", "Catherine House, Stanhope Road", "Portsmouth", "PO1 1DZ", "Students halls of residence", "University");
+/*70*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Greetham Street Halls", "Greetham Street Halls, Greetham street", "Portsmouth", "PO5 4FB", "Students halls of residence", "University");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Harry Law Halls", "Harry Law Halls, Isambard Brunel Road", "Portsmouth", "PO1 2SP", "Students halls of residence", "University");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("James Watson Halls", "28 Guildhall Walk", "Portsmouth", "PO1 2DD", "Students halls of residence", "University");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Margaret Rule Halls", "Margaret Rule Halls, Isambard Brunel Road", "Portsmouth", "PO1 2DS", "Students halls of residence", "University");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Rees Halls", "Rees Halls, Southsea Terrace", "Portsmouth", "PO5 3AP", "Students halls of residence", "University");
-/*76*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Trafalgar Halls", "Trafalgar Halls, Middle Street", "Portsmouth", "PO5 4AY", "Students halls of residence", "University");
+/*75*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Trafalgar Halls", "Trafalgar Halls, Middle Street", "Portsmouth", "PO5 4AY", "Students halls of residence", "University");
 
 /*NightClub*/
-/*77*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Astoria", "37-39 Guildhall Walk", "Portsmouth", "PO1 2RY", "Popular and lively nightclub with themed events including student nights, 80s nights and dance nights", "NightClub");
+/*76*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Astoria", "37-39 Guildhall Walk", "Portsmouth", "PO1 2RY", "Popular and lively nightclub with themed events including student nights, 80s nights and dance nights", "NightClub");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Popworld", "1 King Henry I Street", "Portsmouth", "PO1 2PT", "Fun and friendly club dedicated to sing along and pop songs", "NightClub");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Pryzm", "Pryzm Nightclub, Stanhope Road", "Portsmouth", "PO1 1DU", "Portsmouth's newest nightclub, one of a chain of clubs across the country", "NightClub");
-/*80*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Zanzi", "4-8 Guildhall Walk", "Portsmouth", "PO1 2DD", "Small but lively club with themed nights and a jungle design", "NightClub");
+/*79*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Zanzi", "4-8 Guildhall Walk", "Portsmouth", "PO1 2DD", "Small but lively club with themed nights and a jungle design", "NightClub");
 
 /*Bar*/
-/*81*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Honest Politician", "47 Elm Grove", "Portsmouth", "PO5 1JF", "A casual bar which offers cocktails, pool and darts", 'Bar');
+/*80*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Honest Politician", "47 Elm Grove", "Portsmouth", "PO5 1JF", "A casual bar which offers cocktails, pool and darts", 'Bar');
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Lyberry", "29-33 Guildhall Walk", "Portsmouth", "PO1 2RY", "Bar / Nightclub connected to Astoria", 'Bar');
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Barley Mow", "29 Castle Road", "Portsmouth", "PO5 3DE", "Cosy and classic English pub", "Bar");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Leopold Tavern", "154 Albert Road", "Portsmouth", "PO4 0Jt", "Recently refurbished modern pub styled in a traditional fashion", "Bar");
@@ -95,11 +95,11 @@ insert into Establishment (Name, Address, Town, Postcode, Description, Category)
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Slug and Lettuce Southsea", "80-82 Palmerston Road", "Portsmouth", "PO5 3PT", "One of the nationwide chain know afordable but classy drinks, especially cocktails", "Bar");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Old Oyster House", "291 Locksway Road", "Portsmouth", "PO4 8LH", "Traditional pub on Portsmouth's East coast", "Bar");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Waterhole Bar", "Unit 3 Cambridge Road", "Portsmouth", "PO1 2EF", "Student bar inside the student's union known for cheap drinks and events", "Bar");
-/*90*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Isambard Kingdom Brunel- Wetherspoons", "2 Guildhall Walk", "Portsmouth", "PO1 2DD", "This Wetherspoons continues the chain's theme of cheap food and drink", "Bar");
+/*89*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Isambard Kingdom Brunel- Wetherspoons", "2 Guildhall Walk", "Portsmouth", "PO1 2DD", "This Wetherspoons continues the chain's theme of cheap food and drink", "Bar");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Yates", "13-19 Guildhall Walk", "Portsmouth", "PO1 2RY", "Cheap bar for food and drink, often with a great atmosphere during sporting events", "Bar");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Lord Palmerston- Wetherpsoons", "84-90 Palmerston Road", "Portsmouth", "PO5 3PT", "Known for cheap drinks and food, with themed nights for food deals", "Bar");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The One Eyed Dog", "177-185 Elm Grove", "Portsmouth", "PO5 1LU", "Known for lively entertainemnt and themed events", "Bar");
-/*94*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Brewhouse and Kitchen", "26 Guildhall Walk", "Portsmouth", "PO1 2DD", "More expensive than most pubs, but great traditional Ales and food options", "Bar");
+/*93*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Brewhouse and Kitchen", "26 Guildhall Walk", "Portsmouth", "PO1 2DD", "More expensive than most pubs, but great traditional Ales and food options", "Bar");
 
 /*Contacts*/
 /*Inserting into Contact. Every item in the establishment table has contact details and these are added here.*/
@@ -150,26 +150,26 @@ insert into Contact_Info values (44, "023 9242 1242", NULL,"https://southseafood
 insert into Contact_Info values (45, "07519 731190", NULL, "http://tasteofportsmouth.co.uk/restaurant/thai-laos-kitchen/", "https://www.facebook.com/Thai-Laos-Kitchen-1524812847783615/");
 insert into Contact_Info values (46, "023 9273 7235", "ranchoportsmouth@gmail.com","http://www.ranchosteakhouseportsmouth.com/menu/", "https://en-gb.facebook.com/ranchosteakhouseltd/");
 insert into Contact_Info values (47, "023 9283 1941", NULL,"shortiesrestaurant.com", "https://en-gb.facebook.com/shortiesrestaurant/");
-insert into Contact_Info values (65, "023 9284 3628", "hello@upsu.net","https://www.upsu.net/", "https://www.facebook.com/portsmouthsu");
-insert into Contact_Info values (66, "023 9284 3228", "library@port.ac.uk","https://library.port.ac.uk/", "https://www.facebook.com/uoplibrary");
-insert into Contact_Info values (77, "023 9286 3741", NULL,"http://www.astorianightclub.com/", "https://www.facebook.com/astorianightclub");
-insert into Contact_Info values (78, "023 9283 0150", NULL,"https://www.popworldparty.co.uk/portsmouth", "https://www.facebook.com/PopworldPortsmouth/");
-insert into Contact_Info values (79, "023 9286 2312", "portsmouth@pryzm.co.uk","https://www.pryzm.co.uk/portsmouth", "https://www.facebook.com/PRYZMPortsmouth");
-insert into Contact_Info values (80, NULL, NULL,"https://licklist.co.uk/zanzi", "https://www.facebook.com/pages/zanzi-bar-Portsmouth/543884482431450");
-insert into Contact_Info values (81, "023 9229 8877", NULL, "http://www.beerintheevening.com/pubs/s/17/17276/Honest_Politician/Southsea", "https://en-gb.facebook.com/thehonestpoliticiansouthsea");
-insert into Contact_Info values (82, "023 9285 1157", "hello@thelyberry.com", "http://www.thelyberry.com/", "https://www.facebook.com/Lyberrybar");
-insert into Contact_Info values (83, "023 9282 3492", NULL, "https://www.barleymowsouthsea.com/html/about_us.html", "https://en-gb.facebook.com/BarleyMowsouthsea/");
-insert into Contact_Info values (84, "023 9282 9748", NULL, NULL, "https://en-gb.facebook.com/portsmouthbeerfestival/posts/708367055988369");
-insert into Contact_Info values (85, "023 9281 2584", NULL, NULL, "https://en-gb.facebook.com/events/399541060408868/");
-insert into Contact_Info values (86, "023 9282 2000", NULL, NULL, "https://en-gb.facebook.com/TheDecoPub/");
-insert into Contact_Info values (87, "023 9286 3981", "slugandlettuce.southsea@stonegatepubs.com", "https://www.slugandlettuce.co.uk/southsea", "https://www.facebook.com/SlugSouthsea");
-insert into Contact_Info values (88, "023 9282 7456", NULL, NULL, "https://www.facebook.com/TheOldOysterHouse/");
-insert into Contact_Info values (89, "023 9284 3650", "waterhole@port.ac.uk", "https://www.upsu.net/life/directory/detail/waterhole-bar-portsmouth-25", "https://www.facebook.com/thewaterhole");
-insert into Contact_Info values (90, "023 9229 5112", NULL, "https://www.jdwetherspoon.com/pubs/all-pubs/england/hampshire/the-isambard-kingdom-brunel-portsmouth", "https://www.facebook.com/jdwetherspoon");
-insert into Contact_Info values (91, "023 9286 3341", "yates.portsmouth@stonegatepubs.com", "https://www.weareyates.co.uk/portsmouth/", "https://www.facebook.com/YatesPortsmouthOfficial/");
-insert into Contact_Info values (92, "023 9272 8000", NULL, "https://www.jdwetherspoon.com/pubs/all-pubs/england/hampshire/the-lord-palmerston-southsea", "https://www.facebook.com/jdwetherspoon");
-insert into Contact_Info values (93, "023 9229 3914", NULL, NULL, "https://en-gb.facebook.com/TheOneEyedDog/");
-insert into Contact_Info values (94, "023 9289 1340", "portsmouth@brewhouseandkitchen.com", "http://www.brewhouseandkitchen.com/venue/portsmouth/", "https://www.facebook.com/BKPortsmouth");
+insert into Contact_Info values (64, "023 9284 3628", "hello@upsu.net","https://www.upsu.net/", "https://www.facebook.com/portsmouthsu");
+insert into Contact_Info values (65, "023 9284 3228", "library@port.ac.uk","https://library.port.ac.uk/", "https://www.facebook.com/uoplibrary");
+insert into Contact_Info values (76, "023 9286 3741", NULL,"http://www.astorianightclub.com/", "https://www.facebook.com/astorianightclub");
+insert into Contact_Info values (77, "023 9283 0150", NULL,"https://www.popworldparty.co.uk/portsmouth", "https://www.facebook.com/PopworldPortsmouth/");
+insert into Contact_Info values (78, "023 9286 2312", "portsmouth@pryzm.co.uk","https://www.pryzm.co.uk/portsmouth", "https://www.facebook.com/PRYZMPortsmouth");
+insert into Contact_Info values (79, NULL, NULL,"https://licklist.co.uk/zanzi", "https://www.facebook.com/pages/zanzi-bar-Portsmouth/543884482431450");
+insert into Contact_Info values (80, "023 9229 8877", NULL, "http://www.beerintheevening.com/pubs/s/17/17276/Honest_Politician/Southsea", "https://en-gb.facebook.com/thehonestpoliticiansouthsea");
+insert into Contact_Info values (81, "023 9285 1157", "hello@thelyberry.com", "http://www.thelyberry.com/", "https://www.facebook.com/Lyberrybar");
+insert into Contact_Info values (82, "023 9282 3492", NULL, "https://www.barleymowsouthsea.com/html/about_us.html", "https://en-gb.facebook.com/BarleyMowsouthsea/");
+insert into Contact_Info values (83, "023 9282 9748", NULL, NULL, "https://en-gb.facebook.com/portsmouthbeerfestival/posts/708367055988369");
+insert into Contact_Info values (84, "023 9281 2584", NULL, NULL, "https://en-gb.facebook.com/events/399541060408868/");
+insert into Contact_Info values (85, "023 9282 2000", NULL, NULL, "https://en-gb.facebook.com/TheDecoPub/");
+insert into Contact_Info values (86, "023 9286 3981", "slugandlettuce.southsea@stonegatepubs.com", "https://www.slugandlettuce.co.uk/southsea", "https://www.facebook.com/SlugSouthsea");
+insert into Contact_Info values (87, "023 9282 7456", NULL, NULL, "https://www.facebook.com/TheOldOysterHouse/");
+insert into Contact_Info values (88, "023 9284 3650", "waterhole@port.ac.uk", "https://www.upsu.net/life/directory/detail/waterhole-bar-portsmouth-25", "https://www.facebook.com/thewaterhole");
+insert into Contact_Info values (89, "023 9229 5112", NULL, "https://www.jdwetherspoon.com/pubs/all-pubs/england/hampshire/the-isambard-kingdom-brunel-portsmouth", "https://www.facebook.com/jdwetherspoon");
+insert into Contact_Info values (90, "023 9286 3341", "yates.portsmouth@stonegatepubs.com", "https://www.weareyates.co.uk/portsmouth/", "https://www.facebook.com/YatesPortsmouthOfficial/");
+insert into Contact_Info values (91, "023 9272 8000", NULL, "https://www.jdwetherspoon.com/pubs/all-pubs/england/hampshire/the-lord-palmerston-southsea", "https://www.facebook.com/jdwetherspoon");
+insert into Contact_Info values (92, "023 9229 3914", NULL, NULL, "https://en-gb.facebook.com/TheOneEyedDog/");
+insert into Contact_Info values (93, "023 9289 1340", "portsmouth@brewhouseandkitchen.com", "http://www.brewhouseandkitchen.com/venue/portsmouth/", "https://www.facebook.com/BKPortsmouth");
 
 /*Work Times*/
 /*Inserting into Time. Every item in the establishment table has opening times, and these are added here.*/
@@ -249,11 +249,12 @@ insert into University (Est_Id, Canteen, Free_PCs) values (60, False, False);
 insert into University (Est_Id, Canteen, Free_PCs) values (61, True, False);
 insert into University (Est_Id, Canteen, Free_PCs) values (62, True, False);
 insert into University (Est_Id, Canteen, Free_PCs) values (63, False, False);
-insert into University (Est_Id, Canteen, Free_PCs) values (64, False, Flase);
-insert into University (Est_Id, Canteen, Free_PCs) values (65, True, False);
-insert into University (Est_Id, Canteen, Free_PCs) values (66, True, True);
-insert into University (Est_Id, Canteen, Free_PCs) values (67, False, False);
-insert into University (Est_Id, Canteen, Free_PCs) values (68, True, False);
+
+insert into University (Est_Id, Canteen, Free_PCs) values (64, True, False);
+insert into University (Est_Id, Canteen, Free_PCs) values (65, True, True);
+insert into University (Est_Id, Canteen, Free_PCs) values (66, False, False);
+insert into University (Est_Id, Canteen, Free_PCs) values (67, True, False);
+insert into University (Est_Id, Canteen, Free_PCs) values (68, False, False);
 insert into University (Est_Id, Canteen, Free_PCs) values (69, False, False);
 insert into University (Est_Id, Canteen, Free_PCs) values (70, False, False);
 insert into University (Est_Id, Canteen, Free_PCs) values (71, False, False);
@@ -261,26 +262,25 @@ insert into University (Est_Id, Canteen, Free_PCs) values (72, False, False);
 insert into University (Est_Id, Canteen, Free_PCs) values (73, False, False);
 insert into University (Est_Id, Canteen, Free_PCs) values (74, False, False);
 insert into University (Est_Id, Canteen, Free_PCs) values (75, False, False);
-insert into University (Est_Id, Canteen, Free_PCs) values (76, False, False);
 
 /*Inserting into NightClub. Here, the unique information regarding Establishments of type Night Club are inserted.*/
-insert into NightClub (Est_Id, CostOfEntry) values (77, 6.00);
+insert into NightClub (Est_Id, CostOfEntry) values (76, 6.00);
+insert into NightClub (Est_Id, CostOfEntry) values (77, 5.00);
 insert into NightClub (Est_Id, CostOfEntry) values (78, 5.00);
-insert into NightClub (Est_Id, CostOfEntry) values (79, 5.00);
-insert into NightClub (Est_Id, CostOfEntry) values (80, 5.00);, 6.00);
+insert into NightClub (Est_Id, CostOfEntry) values (79, 5.00);, 6.00);
 
 /*Inserting into Bar. Here, the unique information regarding Establishments of type Bar are inserted.*/
-insert into Bar (Est_Id, Atmosphere, Type) values (81, "Friendly, Social", "Bar");
-insert into Bar (Est_Id, Atmosphere, Type) values (82, "Lively", "Bar/Club Combo");
-insert into Bar (Est_Id, Atmosphere, Type) values (83, "Casual, Local", "Traditional Pub");
-insert into Bar (Est_Id, Atmosphere, Type) values (84, "Casual, local", "Modern Pub");
-insert into Bar (Est_Id, Atmosphere, Type) values (85, "Lively, local", "Bar");
-insert into Bar (Est_Id, Atmosphere, Type) values (86, "Lively", "Bar");
-insert into Bar (Est_Id, Atmosphere, Type) values (87, "Classy, Relaxed", "Cocktail Bar");
-insert into Bar (Est_Id, Atmosphere, Type) values (88, "Friendly, Personal, Casual", "Traditional Pub");
-insert into Bar (Est_Id, Atmosphere, Type) values (89, "Lively, Friendly", "Student Bar");
-insert into Bar (Est_Id, Atmosphere, Type) values (90, "Friendly", "Modern Pub");
-insert into Bar (Est_Id, Atmosphere, Type) values (91, "Lively, Friendly", "Modern Pub");
-insert into Bar (Est_Id, Atmosphere, Type) values (92, "Friendly", "Modern Pub");
-insert into Bar (Est_Id, Atmosphere, Type) values (93, "Lively, Busy", "Bar");
-insert into Bar (Est_Id, Atmosphere, Type) values (94, "Friendly, Personal", "Traditional Pub");
+insert into Bar (Est_Id, Atmosphere, Type) values (80, "Friendly, Social", "Bar");
+insert into Bar (Est_Id, Atmosphere, Type) values (81, "Lively", "Bar/Club Combo");
+insert into Bar (Est_Id, Atmosphere, Type) values (82, "Casual, Local", "Traditional Pub");
+insert into Bar (Est_Id, Atmosphere, Type) values (83, "Casual, local", "Modern Pub");
+insert into Bar (Est_Id, Atmosphere, Type) values (84, "Lively, local", "Bar");
+insert into Bar (Est_Id, Atmosphere, Type) values (85, "Lively", "Bar");
+insert into Bar (Est_Id, Atmosphere, Type) values (86, "Classy, Relaxed", "Cocktail Bar");
+insert into Bar (Est_Id, Atmosphere, Type) values (87, "Friendly, Personal, Casual", "Traditional Pub");
+insert into Bar (Est_Id, Atmosphere, Type) values (88, "Lively, Friendly", "Student Bar");
+insert into Bar (Est_Id, Atmosphere, Type) values (89, "Friendly", "Modern Pub");
+insert into Bar (Est_Id, Atmosphere, Type) values (90, "Lively, Friendly", "Modern Pub");
+insert into Bar (Est_Id, Atmosphere, Type) values (91, "Friendly", "Modern Pub");
+insert into Bar (Est_Id, Atmosphere, Type) values (92, "Lively, Busy", "Bar");
+insert into Bar (Est_Id, Atmosphere, Type) values (93, "Friendly, Personal", "Traditional Pub");
