@@ -101,6 +101,19 @@ insert into Establishment (Name, Address, Town, Postcode, Description, Category)
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The One Eyed Dog", "177-185 Elm Grove", "Portsmouth", "PO5 1LU", "Known for lively entertainemnt and themed events", "Bar");
 /*93*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Brewhouse and Kitchen", "26 Guildhall Walk", "Portsmouth", "PO1 2DD", "More expensive than most pubs, but great traditional Ales and food options", "Bar");
 
+/*Gym*/
+/*94*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("PureGym", "31 Arundel Street", "Portsmouth", "PO1 1NB", "", "Gym");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Fit4less", "Connaught Drill Hall, Stanhope Road", "Portsmouth", "PO1 1DU", "", "Gym");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("St Paul's Gym", "St Paul's Road", "Portsmouth", "PO5 4AQ", "", "Gym");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Pyramids Centre", "Clarance Esplande", "Portsmouth", "PO5 3ST", "", "Gym");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Wimbledon Park Sports Centre", "Taswell Road", "Portsmouth", "PO5 2RG", "", "Gym");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Lougars Gym", "2A Hellyer Road", "Portsmouth", "PO4 9DH", "", "Gym");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Gym", "The Pompey Centre, Rodney Road", "Portsmouth", "PO4 8SX", "", "Gym");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Gym 01", "The Partnership Park, Unit 16, Rodney Road", "Portsmouth", "PO4 8DF", "", "Gym");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Better Gym", "6 Dickinson Road", "Portsmouth", "PO4 8SH", "", "Gym");
+/*103*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Box-Portsmouth", "235-237 Commercial Road", "Portsmouth", "PO1 4BJ", "", "Gym");
+
+
 /*Contacts*/
 /*Inserting into Contact. Every item in the establishment table has contact details and these are added here.*/
 insert into Contact_Info values (1, "023 9229 3797", "Gunwharf@iguanas.co.uk","https://www.iguanas.co.uk/restaurants/portsmouth", "https://www.facebook.com/LasIguanasGunwharfQuays/");
@@ -170,6 +183,18 @@ insert into Contact_Info values (90, "023 9286 3341", "yates.portsmouth@stonegat
 insert into Contact_Info values (91, "023 9272 8000", NULL, "https://www.jdwetherspoon.com/pubs/all-pubs/england/hampshire/the-lord-palmerston-southsea", "https://www.facebook.com/jdwetherspoon");
 insert into Contact_Info values (92, "023 9229 3914", NULL, NULL, "https://en-gb.facebook.com/TheOneEyedDog/");
 insert into Contact_Info values (93, "023 9289 1340", "portsmouth@brewhouseandkitchen.com", "http://www.brewhouseandkitchen.com/venue/portsmouth/", "https://www.facebook.com/BKPortsmouth");
+insert into Contact_Info values (94, "0345 013 3214", "Info.Portsmouth@puregym.com","https://www.facebook.com/puregymportsmouth/");
+insert into Contact_Info values (95, "023 9316 2650", "portsmouth@F4L.com","https://www.facebook.com/F4LPortsmouth/");
+insert into Contact_Info values (96, "023 9284 5555", "sport@port.ac.uk","https://www.facebook.com/UOPsport?fref=nf");
+insert into Contact_Info values (97, "023 9320 0330", "info.pyramids@bhlive.org.uk","https://www.facebook.com/Pyramids.Centre/");
+insert into Contact_Info values (98, "023 9320 0404", "wimbledon@bhlive.org.uk","https://www.facebook.com/pages/Wimbledon-Park-Sports-Centre/239595826164651");
+insert into Contact_Info values (99, "023 9287 7874", "lougarsgym@gmail.com","https://www.facebook.com/lougarsgym/?ref=hl");
+insert into Contact_Info values (100, "0330 055 5910", "membership@thegymgroup.com","https://www.facebook.com/thegymgroup");
+insert into Contact_Info values (101, "023 9217 7323", "info@gym01.com","https://www.facebook.com/Gym01Portsmouth/");
+insert into Contact_Info values (102, "023 9400 1390", "https://www.better.org.uk/leisure-centre/portsmouth/better-gym-portsmouth/contactus","https://www.facebook.com/BetterUK/?fref=ts");
+insert into Contact_Info values (103, "075 8000 0398", "info@theboxportsmouth.com","https://www.facebook.com/theboxportsmouth");
+
+
 
 /*Work Times*/
 /*Inserting into Time. Every item in the establishment table has opening times, and these are added here.*/
@@ -224,7 +249,8 @@ insert into Work_Time values (47,'06:00:00', '23:00:00', '06:00:00', '23:00:00',
 
 
 /*University*/
-/*Some University may be open for longer but are not fully operational morover there are some buildings that are open weekends for exmaple eldon is open on saturday this is a generic time table for the University buildings*/
+/*Some University may be open for longer but are not fully operational */
+/*some buildings are open during weekends*/
 insert into Work_Time values (48,'09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', Null, Null, Null, Null);
 insert into Work_Time values (49,'09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', Null, Null, Null, Null);
 insert into Work_Time values (50,'09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', Null, Null, Null, Null);
@@ -250,6 +276,20 @@ insert into Work_Time values (76,'22:00:00', '02:00:00', '22:00:00', '02:00:00',
 insert into Work_Time values (77, Null, Null, Null, Null, '22:00:00', '02:00:00', '22:00:00', '02:00:00', '21:00:00', '03:00:00', '21:00:00', '03:00:00',Null, Null);
 insert into Work_Time values (78, Null, Null, Null, Null, Null, Null, '22:30:00', '03:00:00', '22:00:00', '03:00:00', '22:00:00', '03:00:00',Null, Null);
 insert into Work_Time values (79, Null, Null, Null, Null, Null, Null, '22:00:00', '02:00:00', '21:00:00', '04:30:00', '21:00:00', '04:30:00','22:00:00', '02:00:00');
+
+
+/*Gym*/
+/*one gym closes between hours of 14:00 till 16:30 from monday to friday*/
+insert into Work_Time values (94,'00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00','00:00:00', '00:00:00');
+insert into Work_Time values (95,'06:30:00', '22:30:00', '06:30:00', '22:30:00', '06:30:00', '22:30:00', '06:30:00', '22:30:00', '06:30:00', '22:30:00', '08:00:00', '20:00:00','08:00:00', '20:00:00');
+insert into Work_Time values (96,'07:00:00', '22:00:00', '07:00:00', '22:00:00', '07:00:00', '22:00:00', '07:00:00', '22:00:00', '07:00:00', '22:00:00', '08:30:00', '18:00:00','08:30:00', '18:00:00');
+insert into Work_Time values (97,'06:30:00', '22:00:00', '06:30:00', '22:00:00', '06:30:00', '22:00:00', '06:30:00', '22:00:00', '06:30:00', '21:00:00', '08:00:00', '18:00:00','08:00:00', '18:00:00');
+insert into Work_Time values (98,'08:30:00', '22:00:00', '08:30:00', '22:00:00', '08:30:00', '22:00:00', '08:30:00', '22:00:00', '08:30:00', '22:00:00', '09:00:00', '17:00:00','09:00:00', '17:00:00');
+insert into Work_Time values (99,'09:00:00', '22:00:00', '09:00:00', '22:00:00', '09:00:00', '22:00:00', '09:00:00', '22:00:00', '09:00:00', '22:00:00', '09:00:00', '16:00:00','10:00:00', '14:00:00');
+insert into Work_Time values (100,'00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00','00:00:00', '00:00:00');
+insert into Work_Time values (101,'09:00:00', '22:00:00', '09:00:00', '21:30:00', '09:00:00', '22:00:00', '09:00:00', '21:30:00', '09:00:00', '20:30:00', '08:30:00', '14:00:00','10:00:00', '13:00:00');
+insert into Work_Time values (102,'06:00:00', '22:00:00', '06:00:00', '22:00:00', '06:00:00', '22:00:00', '06:00:00', '22:00:00', '06:00:00', '20:30:00', '08:00:00', '19:30:00','08:00:00', '19:30:00');
+insert into Work_Time values (103,'11:00:00', '21:30:00', '11:00:00', '21:30:00', '11:00:00', '21:30:00', '11:00:00', '21:30:00', '11:00:00', '20:30:00', '08:00:00', '15:00:00','10:00:00', '13:00:00');
 
 
 /*Inserting into Resturant. Here, the unique information regarding Establishments of type Restaurant are inserted.*/
