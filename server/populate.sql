@@ -173,7 +173,7 @@ insert into Contact_Info values (93, "023 9289 1340", "portsmouth@brewhouseandki
 
 /*Work Times*/
 /*Inserting into Time. Every item in the establishment table has opening times, and these are added here.*/
-/*Resturant times*/
+/*Resturant times , some resturants close during the day time and resume sevice after 5 ish*/
 insert into Work_Time values (1, '10:00:00', '23:00:00', '10:00:00', '23:00:00', '10:00:00', '23:00:00', '10:00:00', '23:00:00', '10:00:00', '00:00:00', '10:00:00', '00:00:00', '10:00:00', '22:30:00');
 insert into Work_Time values (2, Null, Null, Null, Null, '18:30:00', '21:30:00', '18:30:00', '21:30:00', '18:30:00', '21:30:00', '18:30:00', '21:30:00', '12:00:00', '14:30:00');
 insert into Work_Time values (3, '11:00:00', '21:00:00', '11:00:00', '21:00:00', '11:00:00', '21:00:00', '11:00:00', '21:00:00', '11:00:00', '21:00:00', '11:00:00', '21:00:00', '11:00:00', '21:00:00');
