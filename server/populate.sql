@@ -245,6 +245,12 @@ insert into Work_Time values (64,'09:00:00', '17:00:00', '09:00:00', '17:00:00',
 insert into Work_Time values (65,'00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00');
 insert into Work_Time values (66,'09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', Null, Null, Null, Null);
 
+/*NightClub timings*/
+insert into Work_Time values (76,'22:00:00', '02:00:00', '22:00:00', '02:00:00', Null, Null, '22:00:00', '02:00:00', '22:00:00', '04:00:00', '22:00:00', '04:00:00',Null, Null);
+insert into Work_Time values (77, Null, Null, Null, Null, '22:00:00', '02:00:00', '22:00:00', '02:00:00', '21:00:00', '03:00:00', '21:00:00', '03:00:00',Null, Null);
+insert into Work_Time values (78, Null, Null, Null, Null, Null, Null, '22:30:00', '03:00:00', '22:00:00', '03:00:00', '22:00:00', '03:00:00',Null, Null);
+insert into Work_Time values (79, Null, Null, Null, Null, Null, Null, '22:00:00', '02:00:00', '21:00:00', '04:30:00', '21:00:00', '04:30:00','22:00:00', '02:00:00');
+
 
 /*Inserting into Resturant. Here, the unique information regarding Establishments of type Restaurant are inserted.*/
 insert into Restaurant (Est_Id, Cuisine, Type) values (1, "Latin Food Chain", "Sit Down, Family");
