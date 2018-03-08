@@ -223,6 +223,29 @@ insert into Work_Time values (46,'12:00:00', '23:00:00', '17:00:00', '23:00:00',
 insert into Work_Time values (47,'06:00:00', '23:00:00', '06:00:00', '23:00:00', '06:00:00', '23:00:00', '06:00:00', '23:00:00', '06:00:00', '00:00:00', '05:30:00', '00:00:00','12:00:00', '22:30:00');
 
 
+/*University*/
+/*Some University may be open for longer but are not fully operational morover there are some buildings that are open weekends for exmaple eldon is open on saturday this is a generic time table for the University buildings*/
+insert into Work_Time values (48,'09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', Null, Null, Null, Null);
+insert into Work_Time values (49,'09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', Null, Null, Null, Null);
+insert into Work_Time values (50,'09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', Null, Null, Null, Null);
+insert into Work_Time values (51,'09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', Null, Null, Null, Null);
+insert into Work_Time values (52,'09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', Null, Null, Null, Null);
+insert into Work_Time values (53,'09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', Null, Null, Null, Null);
+insert into Work_Time values (54,'09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', Null, Null, Null, Null);
+insert into Work_Time values (55,'09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', Null, Null, Null, Null);
+insert into Work_Time values (56,'09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', Null, Null, Null, Null);
+insert into Work_Time values (57,'09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', Null, Null, Null, Null);
+insert into Work_Time values (58,'09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', Null, Null, Null, Null);
+insert into Work_Time values (59,'09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', Null, Null, Null, Null);
+insert into Work_Time values (60,'07:00:00', '18:00:00', '07:00:00', '18:00:00', '07:00:00', '18:00:00', '07:00:00', '18:00:00', '07:00:00', '18:00:00', '07:00:00', '18:00:00', '07:00:00', '18:00:00',);
+insert into Work_Time values (61,'09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', Null, Null, Null, Null);
+insert into Work_Time values (62,'09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', Null, Null, Null, Null);
+insert into Work_Time values (63,'09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', Null, Null, Null, Null);
+insert into Work_Time values (64,'09:00:00', '17:00:00', '09:00:00', '17:00:00', '09:00:00', '17:00:00', '09:00:00', '17:00:00', '09:00:00', '17:00:00', Null, Null, Null, Null);
+insert into Work_Time values (65,'00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00', '00:00:00');
+insert into Work_Time values (66,'09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', Null, Null, Null, Null);
+
+
 /*Inserting into Resturant. Here, the unique information regarding Establishments of type Restaurant are inserted.*/
 insert into Restaurant (Est_Id, Cuisine, Type) values (1, "Latin Food Chain", "Sit Down, Family");
 insert into Restaurant (Est_Id, Cuisine, Type) values (2, "French", "Sit Down, Expensive");
