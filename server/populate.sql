@@ -431,3 +431,15 @@ insert into Cafe (Est_Id, Atmosphere, Type) values (105, "Casual, standard", "Ca
 insert into Cafe (Est_Id, Atmosphere, Type) values (106, "Sit down, Classy", "Cafe");
 insert into Cafe (Est_Id, Atmosphere, Type) values (107, "Casual, standard", "Cafe");
 insert into Cafe (Est_Id, Atmosphere, Type) values (108, "Classy, hipster", "Coffee Shop");
+
+/*Inserting into Gym. The unique information for the gym establishments.*/
+insert into Gym (Est_Id, Monthly_Fee, Offer_Trials, Classes_Available) values (94, "12.99", TRUE, "Pure Abs, Pure Bootcamp, Pure Circuits, Pure Cycle, Pure Burn, Pure Functional, Pure Kettlebell, Pure Legs Bums & Tums, Pure Pump, Pure Stretch, Pure Tone, Pure Yoga, Tone Induction, Weight Loss Induction, Zumba");
+insert into Gym (Est_Id, Monthly_Fee, Offer_Trials, Classes_Available) values (95, "14.99", TRUE, "Body Conditioning, Body Pump, Boxercise, Burn, Core, HIIT, Indoor Cycling, Tabata, Yoga");
+insert into Gym (Est_Id, Monthly_Fee, Offer_Trials, Classes_Available) values (96, "09.99", FALSE, "20 Minute Abs, Aerobics, Arms Legs and Bums, Ballet Fitness, Battlex, Boxfit, Cardio Combat, Cardio cycling, Cardio Tennis, Circuits, Dance Fitness, Fitball, Guided Meditation, Grit Strength, Grit Cardio, Grit Plyo, Kettlebells, Pilates, Pump, Step n Tone, Yoga, Zumba");
+insert into Gym (Est_Id, Monthly_Fee, Offer_Trials, Classes_Available) values (97, "24.00", TRUE, "Aqua, Circuits, Insanity, Spin");
+insert into Gym (Est_Id, Monthly_Fee, Offer_Trials, Classes_Available) values (98, "24.00", TRUE, "Aqua, Circuits, Insanity, Spin");
+insert into Gym (Est_Id, Monthly_Fee, Offer_Trials, Classes_Available) values (99, "20.00", TRUE, "Circuits, Personal Training");
+insert into Gym (Est_Id, Monthly_Fee, Offer_Trials, Classes_Available) values (100, "15.00", TRUE, "Abs Blast, Body Conditioning, Bootcamp, Circuits, HIIT, Legs Bums & Tums, Swiss Ball, Tabata");
+insert into Gym (Est_Id, Monthly_Fee, Offer_Trials, Classes_Available) values (101, "30.00", TRUE, "Boxing, Brazilian Jiu Jitsu, Kickboxing, Mixed Martial Arts, Sparring, Wrestling, Womens Only BJJ");
+insert into Gym (Est_Id, Monthly_Fee, Offer_Trials, Classes_Available) values (102, "24.95", "TRUE", "Body Balance, Body Conditioning, Body Pump, Core Stability, Cycle,m Stamina & Endurance, Strength & Conditioning, Yoga");
+insert into Gym (Est_Id, Monthly_Fee, Offer_Trials, Classes_Available) values (103, "75.00", "TRUE", "Cross fit");
