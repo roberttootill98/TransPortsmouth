@@ -120,6 +120,26 @@ insert into Establishment (Name, Address, Town, Postcode, Description, Category)
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Smile", "49 Marmion Road, Southsea", "Portsmouth", "PO5 2EJ", "Classic cafe with friendly service.", "Cafe");
 /*108*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Southsea Coffee Co", "63 Osborne Road", "Portsmouth", "PO5 3LS", "Coffee shop that serves small dishes and deserts", "Cafe");
 
+/*Shop*/
+/*109*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Express", "Round House, Ground Floor, Gunwharf Quays", "Portsmouth", "PO1 3SF", "", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Express", "5 Isambard Brunel Road", "Portsmouth", "PO1 2FT", "", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Express", "59-61 Elm Grove", "Portsmouth", "PO5 1JF", "", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Express", "10-12 Palmerston Road", "Portsmouth", "PO5 3QH", "", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Express", "183-191 Albert Road", "Portsmouth", "PO4 0JP", "", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Express", "Eastney Road", "Portsmouth", "PO4 9JB", "", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Express", "133-137 Goldsmith Avenue", "Portsmouth", "PO4 8QZ", "", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Express", "13-17 Kingston Road", "Portsmouth", "PO1 5RX", "", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Extra", "Fratton Way", "Portsmouth", "PO4 8FD", "", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Superstore", "Crasswell Street", "Portsmouth", "PO1 1RS", "", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Sainsbury's", "315 Commercial Road", "Portsmouth", "PO1 4BS", "", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Sainsbury's", "5-7 Guildhall Walk", "Portsmouth", "PO1 2RY", "", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Sainsbury's", "77-79 Palmerston Road", "Portsmouth", "PO5 3PP", "", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Sainsbury's", "196-204 Albert Road, Bella Mews", "Portsmouth", "PO4 0JT", "", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Asda", "The Bridge Shopping Center, Somers Road North", "Portsmouth", "PO1 1SL", "", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Morrisons", "Victory Retail Park, Flathouse Road", "Portsmouth", "PO1 4QP", "", "Shop");
+/*125*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Lidl", "Denmark House, 205 Goldsmith Venue", "Portsmouth", "PO4 0AN", "", "Shop");
+
+
 /*Contacts*/
 /*Inserting into Contact. Every item in the establishment table has contact details and these are added here.*/
 insert into Contact_Info values (1, "023 9229 3797", "Gunwharf@iguanas.co.uk","https://www.iguanas.co.uk/restaurants/portsmouth", "https://www.facebook.com/LasIguanasGunwharfQuays/");
@@ -204,7 +224,23 @@ insert into Contact_Info values (105, "023 9299 0017", NULL, "http://tasteofport
 insert into Contact_Info values (106, "023 9283 2854", "info@southseabeachcafe.co.uk", "http://www.southseabeachcafe.co.uk/", "https://en-gb.facebook.com/southseabeachcafe/");
 insert into Contact_Info values (107, NULL, NULL, "http://tasteofportsmouth.co.uk/cafe/smile-cafe/", "https://en-gb.facebook.com/smilecafesouthsea/");
 insert into Contact_Info values (108, "023 9307 9501", NULL, "http://www.southseacoffee.co.uk/", "https://en-gb.facebook.com/southseacoffee/");
-
+insert into Contact_Info values (109, "0345 675 7128", "customer.service@tesco.co.uk","https://www.facebook.com/tesco");
+insert into Contact_Info values (110, "0345 610 6723", "customer.service@tesco.co.uk","https://www.facebook.com/tesco");
+insert into Contact_Info values (111, "0345 026 9090", "customer.service@tesco.co.uk","https://www.facebook.com/tesco");
+insert into Contact_Info values (112, "0345 610 6337", "customer.service@tesco.co.uk","https://www.facebook.com/tesco");
+insert into Contact_Info values (113, "0345 677 9623", "customer.service@tesco.co.uk","https://www.facebook.com/tesco");
+insert into Contact_Info values (114, "0345 610 2713", "customer.service@tesco.co.uk","https://www.facebook.com/tesco");
+insert into Contact_Info values (115, "0345 671 9256", "customer.service@tesco.co.uk","https://www.facebook.com/tesco");
+insert into Contact_Info values (116, "0345 671 9546", "customer.service@tesco.co.uk","https://www.facebook.com/tesco");
+insert into Contact_Info values (117, "0345 610 6712", "customer.service@tesco.co.uk","https://www.facebook.com/tesco");
+insert into Contact_Info values (118, "0345 677 9555", "customer.service@tesco.co.uk","https://www.facebook.com/tesco");
+insert into Contact_Info values (119, "023 9282 2828", "https://help.sainsburys.co.uk/help/contact_us","https://www.facebook.com/sainsburys/");
+insert into Contact_Info values (120, "023 9230 1130", "https://help.sainsburys.co.uk/help/contact_us","https://www.facebook.com/sainsburys/");
+insert into Contact_Info values (121, "023 9230 1111", "https://help.sainsburys.co.uk/help/contact_us","https://www.facebook.com/sainsburys/");
+insert into Contact_Info values (122, "023 9230 1120", "https://help.sainsburys.co.uk/help/contact_us","https://www.facebook.com/sainsburys/");
+insert into Contact_Info values (123, "023 9284 1800", "customer.service@asda.co.uk","https://www.facebook.com/asda");
+insert into Contact_Info values (124, "023 9287 5532", "fresh@morrisons.com","https://www.facebook.com/Morrisons");
+insert into Contact_Info values (125, "0800 977 7766", "customer.services@lidl.co.uk","https://www.facebook.com/lidluk");
 /*Work Times*/
 /*Inserting into Time. Every item in the establishment table has opening times, and these are added here.*/
 /*Resturant times , some resturants close during the day time and resume sevice after 5 ish*/
@@ -322,6 +358,25 @@ insert into Work_Time values (105, '08:00', '16:00', '08:00', '16:00','08:00', '
 insert into Work_Time values (106, '09:00', '17:00', '09:00', '17:00', '09:00', '17:00', '09:00', '17:00', '09:00', '17:00','08:00', '17:00','08:00', '17:00');
 insert into Work_Time values (107, NULL, NULL, '09:00', '15:30', '09:00', '15:30', '09:00', '15:30', '09:00', '15:30', '09:00', '16:00', '09:30', '15:00',);
 insert into Work_Time values (108, '08:00', '17:00', '08:00', '17:00', '08:00', '17:00', '08:00', '17:00', '08:00', '17:00', '08:30', '17:00', '09:00', '16:00');
+
+/*Shop*/
+insert into Work_Time values (109,'07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00');
+insert into Work_Time values (110,'06:00:00', '00:00:00', '06:00:00', '00:00:00', '06:00:00', '00:00:00', '06:00:00', '00:00:00', '06:00:00', '00:00:00', '06:00:00', '00:00:00', '06:00:00', '00:00:00');
+insert into Work_Time values (111,'06:00:00', '00:00:00', '06:00:00', '00:00:00', '06:00:00', '00:00:00', '06:00:00', '00:00:00', '06:00:00', '00:00:00', '06:00:00', '00:00:00', '06:00:00', '00:00:00');
+insert into Work_Time values (112,'07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00');
+insert into Work_Time values (113,'06:00:00', '23:00:00', '06:00:00', '23:00:00', '06:00:00', '23:00:00', '06:00:00', '23:00:00', '06:00:00', '23:00:00', '06:00:00', '23:00:00', '06:00:00', '23:00:00');
+insert into Work_Time values (114,'07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00');
+insert into Work_Time values (115,'06:00:00', '22:00:00', '06:00:00', '22:00:00', '06:00:00', '22:00:00', '06:00:00', '22:00:00', '06:00:00', '22:00:00', '06:00:00', '22:00:00', '06:00:00', '22:00:00');
+insert into Work_Time values (116,'06:00:00', '22:00:00', '06:00:00', '22:00:00', '06:00:00', '22:00:00', '06:00:00', '22:00:00', '06:00:00', '22:00:00', '06:00:00', '22:00:00', '06:00:00', '22:00:00');
+insert into Work_Time values (117,'07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00', '10:00:00', '16:00:00');
+insert into Work_Time values (118,'07:00:00', '22:00:00', '07:00:00', '22:00:00', '07:00:00', '22:00:00', '07:00:00', '22:00:00', '07:00:00', '22:00:00', '07:00:00', '22:00:00', '10:00:00', '16:00:00');
+insert into Work_Time values (119,'08:00:00', '20:00:00', '08:00:00', '20:00:00', '08:00:00', '20:00:00', '08:00:00', '20:00:00', '08:00:00', '20:00:00', '07:30:00', '20:00:00', '11:00:00', '17:00:00');
+insert into Work_Time values (120,'07:00:00', '22:00:00', '07:30:00', '22:00:00', '07:30:00', '22:00:00', '07:30:00', '22:00:00', '07:30:00', '22:00:00', '08:00:00', '22:00:00', '08:00:00', '21:00:00');
+insert into Work_Time values (121,'07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00');
+insert into Work_Time values (122,'07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00');
+insert into Work_Time values (123,'07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '23:00:00', '07:00:00', '22:00:00', '10:00:00', '16:00:00');
+insert into Work_Time values (124,'07:00:00', '22:00:00', '07:00:00', '22:00:00', '07:00:00', '22:00:00', '07:00:00', '22:00:00', '07:00:00', '22:00:00', '07:00:00', '22:00:00', '10:00:00', '16:00:00');
+insert into Work_Time values (125,'08:00:00', '22:00:00', '08:00:00', '22:00:00', '08:00:00', '22:00:00', '08:00:00', '22:00:00', '08:00:00', '22:00:00', '08:00:00', '22:00:00', '10:00:00', '16:00:00');
 
 /*Inserting into Resturant. Here, the unique information regarding Establishments of type Restaurant are inserted.*/
 insert into Restaurant (Est_Id, Cuisine, Type) values (1, "Latin Food Chain", "Sit Down, Family");
