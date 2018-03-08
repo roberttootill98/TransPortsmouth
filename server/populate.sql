@@ -199,8 +199,11 @@ insert into Contact_Info values (100, "0330 055 5910", "membership@thegymgroup.c
 insert into Contact_Info values (101, "023 9217 7323", "info@gym01.com","https://www.facebook.com/Gym01Portsmouth/");
 insert into Contact_Info values (102, "023 9400 1390", "https://www.better.org.uk/leisure-centre/portsmouth/better-gym-portsmouth/contactus","https://www.facebook.com/BetterUK/?fref=ts");
 insert into Contact_Info values (103, "075 8000 0398", "info@theboxportsmouth.com","https://www.facebook.com/theboxportsmouth");
-
-
+insert into Contact_Info values (104, "023 9243 1265", NULL, "http://paradetearooms.co.uk/", "https://www.facebook.com/ParadeTearoomsSouthsea");
+insert into Contact_Info values (105, "023 9299 0017", NULL, "http://tasteofportsmouth.co.uk/cafe/the-spinnaker-cafe/", "https://en-gb.facebook.com/The-Spinnaker-Cafe-164476677066584/");
+insert into Contact_Info values (106, "023 9283 2854", "info@southseabeachcafe.co.uk", "http://www.southseabeachcafe.co.uk/", "https://en-gb.facebook.com/southseabeachcafe/");
+insert into Contact_Info values (107, NULL, NULL, "http://tasteofportsmouth.co.uk/cafe/smile-cafe/", "https://en-gb.facebook.com/smilecafesouthsea/");
+insert into Contact_Info values (108, "023 9307 9501", NULL, "http://www.southseacoffee.co.uk/", "https://en-gb.facebook.com/southseacoffee/");
 
 /*Work Times*/
 /*Inserting into Time. Every item in the establishment table has opening times, and these are added here.*/
