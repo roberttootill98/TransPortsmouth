@@ -139,6 +139,7 @@ function displayEstab(establishment) {
     Postcode.textContent = detail.Postcode;
 
     reviewContainer.id = "reviewContainer";
+    infoContainer.id = "infoContainer";
 
     container.appendChild(name);
 
