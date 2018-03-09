@@ -139,6 +139,8 @@ function displayEstab(establishment) {
     container.appendChild(Address);
     container.appendChild(Town);
     container.appendChild(Postcode);
+
+    estabs.push(detail);
   }
 
   //add buttons
@@ -152,8 +154,6 @@ function displayEstab(establishment) {
 
   container.appendChild(review);
   container.appendChild(direction);
-  
-  estabs.push(establishment);
 }
 
 function removeButtons() {
@@ -163,12 +163,28 @@ function removeButtons() {
   }
 }
 
-function leaveReview() {
+async function leaveReview() {
+  const id = estabs[0].Est_Id;
 
+  const url = '/api/review&id=' + id;
+
+  const response = await fetch(url);
+  if(response.ok) {
+    //yay
+  } else {
+    console.error('error getting directions', response.status, response.statusText);
+  }
 }
 
 function getDirections() {
-  const mapUrl = 'http://maps.google.com/?q=your+query';
+  const estab = estabs[0];
+
+  for(let data of estabs) {
+    console.log(data);
+  }
+
+
+  const mapUrl = `http://maps.google.com/?q=${estab.Address} ${estab.Town} ${estab.Postcode}`;
   window.open(mapUrl);
 }
 
