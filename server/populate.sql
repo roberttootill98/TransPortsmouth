@@ -477,7 +477,7 @@ insert into University (Est_Id, Canteen, Free_PCs) values (75, False, False);
 insert into NightClub (Est_Id, CostOfEntry) values (76, 6.00);
 insert into NightClub (Est_Id, CostOfEntry) values (77, 5.00);
 insert into NightClub (Est_Id, CostOfEntry) values (78, 5.00);
-insert into NightClub (Est_Id, CostOfEntry) values (79, 5.00);, 6.00);
+insert into NightClub (Est_Id, CostOfEntry) values (79, 5.00);
 
 /*Inserting into Bar. Here, the unique information regarding Establishments of type Bar are inserted.*/
 insert into Bar (Est_Id, Atmosphere, Type) values (80, "Friendly, Social", "Bar");
