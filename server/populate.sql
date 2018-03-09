@@ -533,3 +533,7 @@ insert into Shop (Est_Id, Type) values (123, "Supermarket, Chain");
 insert into Shop (Est_Id, Type) values (124, "Superstore, Chain");
 insert into Shop (Est_Id, Type) values (125, "Supermarket, Chain, Budget");
 
+/*Review Data NOTE: We only need about 20 total for proof of concept.
+There should be about 2-3 in one establishment and multiple with only 1 in the same category. Also have more in other
+cateogries to prove this*/
+
