@@ -74,9 +74,9 @@ async function getEstablishment(e) {
   const response = await fetch(url);
 
   if(response.ok) {
+    displayEstab(await response.json());
     const reviews = await getReviews(id);
     displayReviewOnMainPage(reviews);
-    displayEstab(await response.json());
   } else {
     console.error('error getting establishment', response.status, response.statusText);
     //document.querySelector('body > main').innerHTML = 'sorry, something went wrong...';
