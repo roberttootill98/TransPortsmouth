@@ -29,7 +29,6 @@ async function getCategories() {
 
   const response = await fetch(url);
   if(response.ok) {
-    //return await response.json();
     displayCategories(await response.json());
   } else {
     console.error('error getting', response.status, response.statusText);
@@ -60,11 +59,16 @@ async function getEstabDetails(e) {
       name = estab;
     }
   }
+
   const url = '/api/getOneEstab?name=' + name;
-  //const url = 'api/getOneEstab?name=' + encodeURIComponent(e.target.textContent)
   const response = await fetch(url);
-  let estabDetails = await response.json();
-  displayEstab(estabDetails);
+
+  if(response.ok) {
+    displayEstab(response.json());
+  } else {
+    console.error('error getting', response.status, response.statusText);
+    //document.querySelector('body > main').innerHTML = 'sorry, something went wrong...';
+  }
 }
 
 function displayCategories(categories) {
@@ -85,7 +89,6 @@ async function displayCategory(establishments) {
   removeButtons();
 
   for (let cat of establishments) {
-
     let el = document.createElement("li");
 
     el.textContent = cat.Name + "\n" + cat.Address;
@@ -98,7 +101,7 @@ async function displayCategory(establishments) {
 }
 
 async function getEstabName(id){
-  let temp
+  let temp;
   const url = 'api/establishment?id=' + id;
   console.log(url);
   const response = await fetch(url);
@@ -111,7 +114,7 @@ async function getEstabName(id){
 
 function displayEstab(estabDetails) {
   console.log(estabDetails);
-    removeButtons()
+  removeButtons()
   for (let detail of estabDetails){
     console.log(detail.Name);
     console.log(detail.Address);
@@ -125,26 +128,17 @@ function displayEstab(estabDetails) {
 
     const container = document.getElementById("dataContainer");
 
-
     name.textContent = detail.Name;
     Address.textContent = detail.address;
     Town.textContent = detail.Town;
     Postcode.textContent = detail.Postcode;
 
-
-
     container.appendChild(name);
     container.appendChild(Address);
     container.appendChild(Town);
     container.appendChild(Postcode);
-
-
-
   }
-
 }
-
-
 
 function removeButtons() {
   const container = document.getElementById("dataContainer");
