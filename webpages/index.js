@@ -55,7 +55,6 @@ async function getEstabDetails(e) {
   let name;
   for(let estab of estabs) {
     if(e.target.textContent.includes(estab)) {
-      console.log(name);
       name = estab;
     }
   }
@@ -72,10 +71,9 @@ async function getEstabDetails(e) {
 }
 
 function displayCategories(categories) {
-  console.log(categories);
   const container = document.getElementById("categoryContainer");
   for (let cat of categories) {
-    let el = document.createElement("li");
+    const el = document.createElement("li");
     el.textContent = cat.description;
     el.classList.add("category");
     container.appendChild(el);
@@ -83,27 +81,30 @@ function displayCategories(categories) {
 }
 
 async function displayCategory(establishments) {
-  console.log(establishments);
-  const container = document.getElementById("dataContainer");
-
   removeButtons();
 
+  const container = document.getElementById("dataContainer");
   for (let cat of establishments) {
-    let el = document.createElement("li");
+    const li = document.createElement("li");
+    const h = document.createElement("h1");
+    h.textContent = cat.Name;
+    li.appendChild(h);
+    const p = document.createElement("p");]
+    p.textContent = cat.Address;
+    li.appendChild(p);
 
-    el.textContent = cat.Name + "\n" + cat.Address;
-    el.classList.add("estab");
-    container.appendChild(el);
-    el.addEventListener("click", getEstabDetails);
+    //el.textContent = cat.Name + "\n" + cat.Address;
+    li.classList.add("estab");
+    container.appendChild(li);
+    li.addEventListener("click", getEstabDetails);
 
     estabs.push(cat.Name);
   }
 }
 
 async function getEstabName(id){
-  let temp;
   const url = 'api/establishment?id=' + id;
-  console.log(url);
+
   const response = await fetch(url);
   let names = await response.json();
 
