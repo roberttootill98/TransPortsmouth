@@ -167,7 +167,7 @@ function displayEstab(establishment) {
   container.appendChild(location);
 }
 
-displayReviewOnMainPage(reviews) {
+function displayReviewOnMainPage(reviews) {
   const container = document.getElementById("reviewContainer");
 
   for(let review of reviews) {

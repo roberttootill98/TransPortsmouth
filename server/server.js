@@ -23,7 +23,6 @@ async function getCategory(req, res) {
 
 //one category with full details and DIRECTIONS
 async function getEstablishment(req, res) {
-  console.log(req.query.id);
   res.json(await db.whereAll("Establishment", req.query.id, 'Est_Id'));
 }
 
