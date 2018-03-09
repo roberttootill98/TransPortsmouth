@@ -113,10 +113,13 @@ async function displayCategory(establishments) {
   }
 }
 
-function displayEstab(estabDetails) {
-  console.log(estabDetails);
+function displayEstab(establishment) {
+  estabs = [];
+
   removeButtons()
-  for (let detail of estabDetails){
+
+  const container = document.getElementById("dataContainer");
+  for (let detail of establishment){
     console.log(detail.Name);
     console.log(detail.Address);
     console.log(detail.Town);
@@ -126,8 +129,6 @@ function displayEstab(estabDetails) {
     let Address = document.createElement("p");
     let Town = document.createElement("p");
     let Postcode = document.createElement("p");
-
-    const container = document.getElementById("dataContainer");
 
     name.textContent = detail.Name;
     Address.textContent = detail.address;
@@ -139,6 +140,20 @@ function displayEstab(estabDetails) {
     container.appendChild(Town);
     container.appendChild(Postcode);
   }
+
+  //add buttons
+  const review = document.createElement("button");
+  const direction = document.createElement("button");
+
+  review.textContent = "Leave Review";
+  direction.textContent = "Get Directions";
+  review.addEventListener("click", leaveReview);
+  direction.addEventListener("click", getDirections);
+
+  container.appendChild(review);
+  container.appendChild(direction);
+  
+  estabs.push(establishment);
 }
 
 function removeButtons() {
@@ -148,8 +163,13 @@ function removeButtons() {
   }
 }
 
-function getDirections() {
+function leaveReview() {
 
+}
+
+function getDirections() {
+  const mapUrl = 'http://maps.google.com/?q=your+query';
+  window.open(mapUrl);
 }
 
 //https://www.google.com/maps/?ll=longitude,latitude
