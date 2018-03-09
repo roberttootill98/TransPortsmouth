@@ -141,6 +141,7 @@ insert into Establishment (Name, Address, Town, Postcode, Description, Category)
 
 
 /*Contacts*/
+
 /*Inserting into Contact. Every item in the establishment table has contact details and these are added here.*/
 /*Restaurants*/
 insert into Contact_Info values (1, "023 9229 3797", "Gunwharf@iguanas.co.uk","https://www.iguanas.co.uk/restaurants/portsmouth", "https://www.facebook.com/LasIguanasGunwharfQuays/");
@@ -218,16 +219,16 @@ insert into Contact_Info values (92, "023 9229 3914", NULL, NULL, "https://en-gb
 insert into Contact_Info values (93, "023 9289 1340", "portsmouth@brewhouseandkitchen.com", "http://www.brewhouseandkitchen.com/venue/portsmouth/", "https://www.facebook.com/BKPortsmouth");
 
 /*Gyms*/
-insert into Contact_Info values (94, "0345 013 3214", "Info.Portsmouth@puregym.com","https://www.facebook.com/puregymportsmouth/");
-insert into Contact_Info values (95, "023 9316 2650", "portsmouth@F4L.com","https://www.facebook.com/F4LPortsmouth/");
-insert into Contact_Info values (96, "023 9284 5555", "sport@port.ac.uk","https://www.facebook.com/UOPsport?fref=nf");
-insert into Contact_Info values (97, "023 9320 0330", "info.pyramids@bhlive.org.uk","https://www.facebook.com/Pyramids.Centre/");
-insert into Contact_Info values (98, "023 9320 0404", "wimbledon@bhlive.org.uk","https://www.facebook.com/pages/Wimbledon-Park-Sports-Centre/239595826164651");
-insert into Contact_Info values (99, "023 9287 7874", "lougarsgym@gmail.com","https://www.facebook.com/lougarsgym/?ref=hl");
-insert into Contact_Info values (100, "0330 055 5910", "membership@thegymgroup.com","https://www.facebook.com/thegymgroup");
-insert into Contact_Info values (101, "023 9217 7323", "info@gym01.com","https://www.facebook.com/Gym01Portsmouth/");
-insert into Contact_Info values (102, "023 9400 1390", "https://www.better.org.uk/leisure-centre/portsmouth/better-gym-portsmouth/contactus","https://www.facebook.com/BetterUK/?fref=ts");
-insert into Contact_Info values (103, "075 8000 0398", "info@theboxportsmouth.com","https://www.facebook.com/theboxportsmouth");
+insert into Contact_Info values (94, "0345 013 3214", "Info.Portsmouth@puregym.com", NULL,"https://www.facebook.com/puregymportsmouth/");
+insert into Contact_Info values (95, "023 9316 2650", "portsmouth@F4L.com", NULL,"https://www.facebook.com/F4LPortsmouth/");
+insert into Contact_Info values (96, "023 9284 5555", "sport@port.ac.uk", NULL,"https://www.facebook.com/UOPsport?fref=nf");
+insert into Contact_Info values (97, "023 9320 0330", "info.pyramids@bhlive.org.uk", NULL,"https://www.facebook.com/Pyramids.Centre/");
+insert into Contact_Info values (98, "023 9320 0404", "wimbledon@bhlive.org.uk", NULL,"https://www.facebook.com/pages/Wimbledon-Park-Sports-Centre/239595826164651");
+insert into Contact_Info values (99, "023 9287 7874", "lougarsgym@gmail.com", NULL,"https://www.facebook.com/lougarsgym/?ref=hl");
+insert into Contact_Info values (100, "0330 055 5910", "membership@thegymgroup.com", NULL,"https://www.facebook.com/thegymgroup");
+insert into Contact_Info values (101, "023 9217 7323", "info@gym01.com", NULL,"https://www.facebook.com/Gym01Portsmouth/");
+insert into Contact_Info values (102, "023 9400 1390", NULL, "https://www.better.org.uk/leisure-centre/portsmouth/better-gym-portsmouth/contactus","https://www.facebook.com/BetterUK/?fref=ts");
+insert into Contact_Info values (103, "075 8000 0398", "info@theboxportsmouth.com", NULL,"https://www.facebook.com/theboxportsmouth");
 
 /*Cafes*/
 insert into Contact_Info values (104, "023 9243 1265", NULL, "http://paradetearooms.co.uk/", "https://www.facebook.com/ParadeTearoomsSouthsea");
@@ -323,7 +324,7 @@ insert into Work_Time values (56,'09:00:00', '18:00:00', '09:00:00', '18:00:00',
 insert into Work_Time values (57,'09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', Null, Null, Null, Null);
 insert into Work_Time values (58,'09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', Null, Null, Null, Null);
 insert into Work_Time values (59,'09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', Null, Null, Null, Null);
-insert into Work_Time values (60,'07:00:00', '18:00:00', '07:00:00', '18:00:00', '07:00:00', '18:00:00', '07:00:00', '18:00:00', '07:00:00', '18:00:00', '07:00:00', '18:00:00', '07:00:00', '18:00:00',);
+insert into Work_Time values (60,'07:00:00', '18:00:00', '07:00:00', '18:00:00', '07:00:00', '18:00:00', '07:00:00', '18:00:00', '07:00:00', '18:00:00', '07:00:00', '18:00:00', '07:00:00', '18:00:00');
 insert into Work_Time values (61,'09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', Null, Null, Null, Null);
 insert into Work_Time values (62,'09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', Null, Null, Null, Null);
 insert into Work_Time values (63,'09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', '09:00:00', '18:00:00', Null, Null, Null, Null);
@@ -371,7 +372,7 @@ insert into Work_Time values (103,'11:00:00', '21:30:00', '11:00:00', '21:30:00'
 insert into Work_Time values (104, '09:00', '17:00', '09:00', '17:00', '09:00', '17:00', '09:00', '17:00', '09:00', '17:00', '08:00', '17:00', '08:00', '17:00');
 insert into Work_Time values (105, '08:00', '16:00', '08:00', '16:00','08:00', '16:00','08:00', '16:00','08:00', '16:00','08:00', '16:00','08:00', '16:00');
 insert into Work_Time values (106, '09:00', '17:00', '09:00', '17:00', '09:00', '17:00', '09:00', '17:00', '09:00', '17:00','08:00', '17:00','08:00', '17:00');
-insert into Work_Time values (107, NULL, NULL, '09:00', '15:30', '09:00', '15:30', '09:00', '15:30', '09:00', '15:30', '09:00', '16:00', '09:30', '15:00',);
+insert into Work_Time values (107, NULL, NULL, '09:00', '15:30', '09:00', '15:30', '09:00', '15:30', '09:00', '15:30', '09:00', '16:00', '09:30', '15:00');
 insert into Work_Time values (108, '08:00', '17:00', '08:00', '17:00', '08:00', '17:00', '08:00', '17:00', '08:00', '17:00', '08:30', '17:00', '09:00', '16:00');
 
 /*Shop*/
@@ -402,7 +403,7 @@ insert into Restaurant (Est_Id, Cuisine, Type) values (5, "Locally Sourced", "Si
 insert into Restaurant (Est_Id, Cuisine, Type) values (6, "Locally Sourced", "Sit Down, Expensive");
 insert into Restaurant (Est_Id, Cuisine, Type) values (7, "Bistro", "Sit Down, Casual");
 insert into Restaurant (Est_Id, Cuisine, Type) values (8, "Pub", "Pub, Casual");
-insert into Restaurant (Est_Id, Cuisine, Type) values (9, "French", "Upper Class, Mid Range");Cusine
+insert into Restaurant (Est_Id, Cuisine, Type) values (9, "French", "Upper Class, Mid Range");
 insert into Restaurant (Est_Id, Cuisine, Type) values (10, "International", "Casual");
 insert into Restaurant (Est_Id, Cuisine, Type) values (11, "Sophisticated lounge", "High Class, Expensive");
 insert into Restaurant (Est_Id, Cuisine, Type) values (12, "Indian", "Sit Down, Casual");
@@ -446,7 +447,7 @@ insert into Restaurant (Est_Id, Cuisine, Type) values (47, "Steak", "Sit Down, C
 insert into University (Est_Id, Canteen, Free_PCs) values (48, True, True);
 insert into University (Est_Id, Canteen, Free_PCs) values (49, False, False);
 insert into University (Est_Id, Canteen, Free_PCs) values (50, False, False);
-insert into University (Est_Id, Canteen, Free_PCs) values (51, False, Flase);
+insert into University (Est_Id, Canteen, Free_PCs) values (51, False, False);
 insert into University (Est_Id, Canteen, Free_PCs) values (52, True, False);
 insert into University (Est_Id, Canteen, Free_PCs) values (53, True, True);
 insert into University (Est_Id, Canteen, Free_PCs) values (54, False, False);
@@ -537,22 +538,22 @@ insert into Shop (Est_Id, Type) values (125, "Supermarket, Chain, Budget");
 There should be about 2-3 in one establishment and multiple with only 1 in the same category. Also have more in other
 cateogries to prove this*/
 /*Reviews for various establishments, some establishments have one review, some have multiples. This shows the reviews can be output.*/
-insert into Review(Est_Id, Author, Content, Score) values (32, "John Smith", "Food was cold, and waiters were rude when I asked for it to be returned to the kitchen", "1");
-insert into Review(Est_Id, Author, Content, Score) values (32, "Giorgio del Potro", "The most authentic Italian food I've had outside of Italy, the chef is a true Italian", "10");
-insert into Review(Est_Id, Author, Content, Score) values (32, "Melissa West", "Went here with my family, friendly and sufficient", "7");
-insert into Review(Est_Id, Author, Content, Score) values (12, "Mr Heisenberg", "Perfect for couples, classy and high quality food. Waiters know what they're talking about when it comes to wine.", "8");
-insert into Review(Est_Id, Author, Content, Score) values (12, "Emily Boyle", "Had a lovely meal here, a bit on the expensive side though", "7");
-insert into Review(Est_Id, Author, Content, Score) values (53, "Charles Bond", "Lots of space to work and good studios and computers, but often a bit busy", "7");
-insert into Review(Est_Id, Author, Content, Score) values (58, "Chloe Chan", "The lecture thearter is good and there's a few PCs but the Cafe isn't good", "5");
-insert into Review(Est_Id, Author, Content, Score) values (78, "Anna Matthews", "Really nice since the refurb, had some good nights here", "8");
-insert into Review(Est_Id, Author, Content, Score) values (78, "Ella Donker", "Good music and good variety but drinks are more expensive than other clubs", "6");
-insert into Review(Est_Id, Author, Content, Score) values (82, "Steve Williams", "Good proper British local, not filled with students or hipsters, serves proper drinks", "10");
-insert into Review(Est_Id, Author, Content, Score) values (89, "Masie Michaels", "Cheap drinks and cheap meals, but you get what you pay for", "6");
-insert into Review(Est_Id, Author, Content, Score) values (89, "Nick Nicholas", "Always reliable and a large range of drinks", "8");
-insert into Review(Est_Id, Author, Content, Score) values (99, "Douglas McDonald", "Proper hardcore gym,not great for beginners", "7");
-insert into Review(Est_Id, Author, Content, Score) values (99, "Milly Black", "Not enough classes on but good for personal training", "7");
-insert into Review(Est_Id, Author, Content, Score) values (118, "Tom Graham", "Very large superstore, always well stocked", "9");
-insert into Review(Est_Id, Author, Content, Score) values (125, "Lucy Coombes", "Budget shop, always good deals but own brand stuff", "6");
-insert into Review(Est_Id, Author, Content, Score) values (77, "Lilly McFaden", "Always fun times, good music and cheap drinks", "9");
-insert into Review(Est_Id, Author, Content, Score) values (65, "Paul Pear", "Staff are a bit clueless but good resources", "6");
-insert into Review(Est_Id, Author, Content, Score) values (65, "Gillian Derby", "Always been able to get work done but when it's busy it's REALLY busy");
+insert into Review(Est_Id, Author, Content, Score) values (32, "John Smith", "Food was cold, and waiters were rude when I asked for it to be returned to the kitchen", 1);
+insert into Review(Est_Id, Author, Content, Score) values (32, "Giorgio del Potro", "The most authentic Italian food I've had outside of Italy, the chef is a true Italian", 10);
+insert into Review(Est_Id, Author, Content, Score) values (32, "Melissa West", "Went here with my family, friendly and sufficient", 7);
+insert into Review(Est_Id, Author, Content, Score) values (12, "Mr Heisenberg", "Perfect for couples, classy and high quality food. Waiters know what they're talking about when it comes to wine.", 8);
+insert into Review(Est_Id, Author, Content, Score) values (12, "Emily Boyle", "Had a lovely meal here, a bit on the expensive side though", 7);
+insert into Review(Est_Id, Author, Content, Score) values (53, "Charles Bond", "Lots of space to work and good studios and computers, but often a bit busy", 7);
+insert into Review(Est_Id, Author, Content, Score) values (58, "Chloe Chan", "The lecture thearter is good and there's a few PCs but the Cafe isn't good", 5);
+insert into Review(Est_Id, Author, Content, Score) values (78, "Anna Matthews", "Really nice since the refurb, had some good nights here", 8);
+insert into Review(Est_Id, Author, Content, Score) values (78, "Ella Donker", "Good music and good variety but drinks are more expensive than other clubs", 6);
+insert into Review(Est_Id, Author, Content, Score) values (82, "Steve Williams", "Good proper British local, not filled with students or hipsters, serves proper drinks", 10);
+insert into Review(Est_Id, Author, Content, Score) values (89, "Masie Michaels", "Cheap drinks and cheap meals, but you get what you pay for", 6);
+insert into Review(Est_Id, Author, Content, Score) values (89, "Nick Nicholas", "Always reliable and a large range of drinks", 8);
+insert into Review(Est_Id, Author, Content, Score) values (99, "Douglas McDonald", "Proper hardcore gym,not great for beginners", 7);
+insert into Review(Est_Id, Author, Content, Score) values (99, "Milly Black", "Not enough classes on but good for personal training", 7);
+insert into Review(Est_Id, Author, Content, Score) values (118, "Tom Graham", "Very large superstore, always well stocked", 9);
+insert into Review(Est_Id, Author, Content, Score) values (125, "Lucy Coombes", "Budget shop, always good deals but own brand stuff", 6);
+insert into Review(Est_Id, Author, Content, Score) values (77, "Lilly McFaden", "Always fun times, good music and cheap drinks", 9);
+insert into Review(Est_Id, Author, Content, Score) values (65, "Paul Pear", "Staff are a bit clueless but good resources", 6);
+insert into Review(Est_Id, Author, Content, Score) values (65, "Gillian Derby", "Always been able to get work done but when it's busy it's REALLY busy", 7);
