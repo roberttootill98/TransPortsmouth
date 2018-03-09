@@ -119,10 +119,10 @@ function displayEstab(establishment) {
   removeButtons()
 
   let container = document.getElementById("dataContainer");
-  const estabContainer.createElement("section");
+  const estabContainer = document.createElement("section");
   container.appendChild(estabContainer);
   container = estabContainer;
-  
+
   for(let detail of establishment) {
     const name = document.createElement("h1");
     const Address = document.createElement("p");
