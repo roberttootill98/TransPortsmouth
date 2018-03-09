@@ -120,10 +120,6 @@ function displayEstab(establishment) {
 
   const container = document.getElementById("dataContainer");
   for (let detail of establishment){
-    console.log(detail.Name);
-    console.log(detail.Address);
-    console.log(detail.Town);
-    console.log(detail.Postcode);
 
     let name = document.createElement("h1");
     let Address = document.createElement("p");
@@ -131,7 +127,7 @@ function displayEstab(establishment) {
     let Postcode = document.createElement("p");
 
     name.textContent = detail.Name;
-    Address.textContent = detail.address;
+    Address.textContent = detail.Address;
     Town.textContent = detail.Town;
     Postcode.textContent = detail.Postcode;
 
