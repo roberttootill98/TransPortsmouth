@@ -75,6 +75,7 @@ async function getEstablishment(e) {
 
   if(response.ok) {
     const reviews = await getReviews(id);
+    displayReviewOnMainPage(reviews);
     displayEstab(await response.json());
   } else {
     console.error('error getting establishment', response.status, response.statusText);
@@ -129,16 +130,20 @@ function displayEstab(establishment) {
     const Address = document.createElement("p");
     const Town = document.createElement("p");
     const Postcode = document.createElement("p");
+    const reviewContainer = document.createElement("ul");
 
     name.textContent = detail.Name;
     Address.textContent = detail.Address;
     Town.textContent = detail.Town;
     Postcode.textContent = detail.Postcode;
 
+    reviewContainer.id = "reviewContainer";
+
     container.appendChild(name);
     container.appendChild(Address);
     container.appendChild(Town);
     container.appendChild(Postcode);
+    container.appendChild(reviewContainer);
 
     estabs.push(detail);
   }
@@ -160,6 +165,24 @@ function displayEstab(establishment) {
   container.appendChild(review);
   container.appendChild(direction);
   container.appendChild(location);
+}
+
+displayReviewOnMainPage(reviews) {
+  const container = document.getElementById("reviewContainer");
+
+  for(let review of reviews) {
+    const author = document.createElement("h1");
+    const content = document.createElement("p");
+    const score = document.createElement("p");
+
+    author.textContent = review.Author;
+    content.textContent = review.Content;
+    score.textContent = review.Score;
+
+    container.appendChild(author);
+    container.appendChild(content);
+    container.appendChild(score);
+  }
 }
 
 function removeButtons() {
