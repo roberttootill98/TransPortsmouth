@@ -141,14 +141,20 @@ function displayEstab(establishment) {
   //add buttons
   const review = document.createElement("button");
   const direction = document.createElement("button");
+  const location = document.createElement("input");
 
   review.textContent = "Leave Review";
   direction.textContent = "Get Directions";
   review.addEventListener("click", leaveReview);
   direction.addEventListener("click", getDirections);
 
+  location.type = "text";
+  location.placeholder = "location";
+  location.id = "location";
+
   container.appendChild(review);
   container.appendChild(direction);
+  container.appendChild(location);
 }
 
 function removeButtons() {
