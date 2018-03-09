@@ -149,7 +149,7 @@ function displayEstab(establishment) {
   direction.addEventListener("click", getDirections);
 
   location.type = "text";
-  location.placeholder = "location";
+  location.placeholder = "Location";
   location.id = "location";
 
   container.appendChild(review);
