@@ -3,11 +3,8 @@
 let estabs = [];
 
 async function boot() {
-  console.log("starting");
   await getCategories();
-  //const categories = await getCategories();
-  //displayCategories(categories);
-  await addListeners();
+  addListeners();
 }
 
 function addListeners() {
@@ -22,16 +19,27 @@ async function selectCategory(e) {
   await getCategory(e.target.textContent);
 }
 
+//gets all reviews
+async function getReview() {
+  const url = '/api/categories';
+
+  const response = await fetch(url);
+  if(response.ok) {
+    console.log(response.json());
+  } else {
+    console.error('error getting reviews', response.status, response.statusText);
+  }
+}
+
 //gets all categories
 async function getCategories() {
-  console.log("getting categories");
   const url = '/api/categories';
 
   const response = await fetch(url);
   if(response.ok) {
     displayCategories(await response.json());
   } else {
-    console.error('error getting', response.status, response.statusText);
+    console.error('error getting categories', response.status, response.statusText);
     //document.querySelector('body > main').innerHTML = 'sorry, something went wrong...';
   }
 }
@@ -46,7 +54,7 @@ async function getCategory(category) {
   if(response.ok) {
     displayCategory(await response.json());
   } else {
-    console.error('error getting', response.status, response.statusText);
+    console.error('error getting establishments', response.status, response.statusText);
     //document.querySelector('body > main').innerHTML = 'sorry, something went wrong...';
   }
 }
@@ -65,7 +73,7 @@ async function getEstabDetails(e) {
   if(response.ok) {
     displayEstab(response.json());
   } else {
-    console.error('error getting', response.status, response.statusText);
+    console.error('error getting establishment', response.status, response.statusText);
     //document.querySelector('body > main').innerHTML = 'sorry, something went wrong...';
   }
 }
