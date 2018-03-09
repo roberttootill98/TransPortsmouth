@@ -119,12 +119,11 @@ function displayEstab(establishment) {
   removeButtons()
 
   const container = document.getElementById("dataContainer");
-  for (let detail of establishment){
-
-    let name = document.createElement("h1");
-    let Address = document.createElement("p");
-    let Town = document.createElement("p");
-    let Postcode = document.createElement("p");
+  for(let detail of establishment) {
+    const name = document.createElement("h1");
+    const Address = document.createElement("p");
+    const Town = document.createElement("p");
+    const Postcode = document.createElement("p");
 
     name.textContent = detail.Name;
     Address.textContent = detail.Address;
