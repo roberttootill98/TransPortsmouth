@@ -1,7 +1,7 @@
 'use strict'
 
 let estabs = [];
-let reviews = [];
+let estabId;
 
 async function boot() {
   await getCategories();
@@ -170,18 +170,8 @@ function removeButtons() {
 }
 
 async function leaveReview() {
-  reviews = [];
-  const id = estabs[0].Est_Id;
-
-  const url = '/api/review&id=' + id;
-
-  const response = await fetch(url);
-  if(response.ok) {
-    reviews = await response.json();
-    window.open('review.html');
-  } else {
-    console.error('error getting directions', response.status, response.statusText);
-  }
+  estabId = estabs[0].Est_Id;
+  window.open('review.html');
 }
 
 function getDirections() {
