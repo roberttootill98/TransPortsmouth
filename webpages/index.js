@@ -89,11 +89,10 @@ async function displayCategory(establishments) {
     const h = document.createElement("h1");
     h.textContent = cat.Name;
     li.appendChild(h);
-    const p = document.createElement("p");]
+    const p = document.createElement("p");
     p.textContent = cat.Address;
     li.appendChild(p);
 
-    //el.textContent = cat.Name + "\n" + cat.Address;
     li.classList.add("estab");
     container.appendChild(li);
     li.addEventListener("click", getEstabDetails);
