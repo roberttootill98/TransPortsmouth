@@ -498,3 +498,23 @@ insert into Gym (Est_Id, Monthly_Fee, Offer_Trials, Classes_Available) values (1
 insert into Gym (Est_Id, Monthly_Fee, Offer_Trials, Classes_Available) values (101, "30.00", TRUE, "Boxing, Brazilian Jiu Jitsu, Kickboxing, Mixed Martial Arts, Sparring, Wrestling, Womens Only BJJ");
 insert into Gym (Est_Id, Monthly_Fee, Offer_Trials, Classes_Available) values (102, "24.95", "TRUE", "Body Balance, Body Conditioning, Body Pump, Core Stability, Cycle,m Stamina & Endurance, Strength & Conditioning, Yoga");
 insert into Gym (Est_Id, Monthly_Fee, Offer_Trials, Classes_Available) values (103, "75.00", "TRUE", "Cross fit");
+
+/*Inserting into Shop. the unique info for the shop establishments.*/
+insert into Shop (Est_Id, Type) values (109, "Express, Chain");
+insert into Shop (Est_Id, Type) values (110, "Express, Chain");
+insert into Shop (Est_Id, Type) values (111, "Express, Chain");
+insert into Shop (Est_Id, Type) values (112, "Express, Chain");
+insert into Shop (Est_Id, Type) values (113, "Express, Chain");
+insert into Shop (Est_Id, Type) values (114, "Express, Chain");
+insert into Shop (Est_Id, Type) values (115, "Express, Chain");
+insert into Shop (Est_Id, Type) values (116, "Express, Chain");
+insert into Shop (Est_Id, Type) values (117, "Express, Chain");
+insert into Shop (Est_Id, Type) values (118, "Superstore, Chain");
+insert into Shop (Est_Id, Type) values (119, "Express, Chain");
+insert into Shop (Est_Id, Type) values (120, "Express, Chain");
+insert into Shop (Est_Id, Type) values (121, "Express, Chain");
+insert into Shop (Est_Id, Type) values (122, "Express, Chain");
+insert into Shop (Est_Id, Type) values (123, "Supermarket, Chain");
+insert into Shop (Est_Id, Type) values (124, "Superstore, Chain");
+insert into Shop (Est_Id, Type) values (125, "Supermarket, Chain, Budget");
+
