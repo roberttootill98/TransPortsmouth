@@ -38,7 +38,7 @@ async function addReview(est_id, title, content, score) {
 }
 
 async function showCategory(table) {
-  const query = "SELECT Establishment.Name, Establishment.Address, Establishment.Town," +
+  const query = "SELECT Establishment.Est_Id, Establishment.Name, Establishment.Address, Establishment.Town," +
   " Work_Time.Mon_Open, Work_Time.Mon_Close, Work_Time.Tue_Open,Work_Time.Tue_Close, Work_Time.Wed_Open, Work_Time.Wed_Close, Work_Time.Thu_Open, Work_Time.Thu_Close, Work_Time.Fri_Open, Work_Time.Fri_Close,Work_Time.Sat_Open, Work_Time.Sat_Close, Work_Time.Sun_Open, Work_Time.Sun_Close" +
   " FROM Establishment" +
   ` INNER JOIN ${table} on Establishment.Est_Id = ${table}.Est_Id` +

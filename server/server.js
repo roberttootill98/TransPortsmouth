@@ -7,7 +7,6 @@ app.get('/api/categories', getCategories);
 app.get('/api/category', getCategory);
 app.get('/api/establishment', getEstablishment);
 app.get('/api/review', getReview);
-app.get('/api/getOneEstab', getOneEstab);
 app.post('/api/review', postReview);
 
 db.init();
@@ -28,15 +27,9 @@ async function getEstablishment(req, res) {
   res.json(await db.whereAll("Establishment", req.query.id, 'Est_Id'));
 }
 
-//one establishment
-
-async function getOneEstab(req, res) {
-  res.json(await db.whereAll("Establishment", req.query.name, 'Name'));
-}
-
 //list of reviews
 async function getReview(req, res) {
-  res.json(await db.showAll("review"));
+  res.json(await db.whereAll("Review", req.query.id, "Est_Id"));
 }
 
 //add one new review

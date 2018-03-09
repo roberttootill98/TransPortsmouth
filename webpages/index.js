@@ -20,12 +20,12 @@ async function selectCategory(e) {
 }
 
 //gets all reviews
-async function getReview() {
-  const url = '/api/categories';
+async function getReviews(id) {
+  const url = '/api/review?id=' + id; //estab id
 
   const response = await fetch(url);
   if(response.ok) {
-    console.log(response.json());
+    return await response.json();
   } else {
     console.error('error getting reviews', response.status, response.statusText);
   }
@@ -59,19 +59,22 @@ async function getCategory(category) {
   }
 }
 
-async function getEstabDetails(e) {
-  let name;
+async function getEstablishment(e) {
+  let id;
   for(let estab of estabs) {
-    if(e.target.textContent.includes(estab)) {
-      name = estab;
+    let parentText = e.target.parentNode.textContent;
+    if(parentText.includes(estab.Name)) {
+      id = estab.Est_Id;
+      break;
     }
   }
 
-  const url = '/api/getOneEstab?name=' + name;
+  const url = '/api/establishment?id=' + id;
   const response = await fetch(url);
 
   if(response.ok) {
-    displayEstab(response.json());
+    const reviews = await getReviews(id);
+    displayEstab(await response.json());
   } else {
     console.error('error getting establishment', response.status, response.statusText);
     //document.querySelector('body > main').innerHTML = 'sorry, something went wrong...';
@@ -89,6 +92,7 @@ function displayCategories(categories) {
 }
 
 async function displayCategory(establishments) {
+  estabs = [];
   removeButtons();
 
   const container = document.getElementById("dataContainer");
@@ -103,20 +107,9 @@ async function displayCategory(establishments) {
 
     li.classList.add("estab");
     container.appendChild(li);
-    li.addEventListener("click", getEstabDetails);
+    li.addEventListener("click", getEstablishment);
 
-    estabs.push(cat.Name);
-  }
-}
-
-async function getEstabName(id){
-  const url = 'api/establishment?id=' + id;
-
-  const response = await fetch(url);
-  let names = await response.json();
-
-  for (let name of names) {
-    return name.Name;
+    estabs.push(cat);
   }
 }
 
