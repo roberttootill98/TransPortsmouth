@@ -127,6 +127,7 @@ function displayEstab(establishment) {
 
   for(let detail of establishment) {
     const name = document.createElement("h1");
+    const infoContainer = document.createElement("section");
     const Address = document.createElement("p");
     const Town = document.createElement("p");
     const Postcode = document.createElement("p");
@@ -140,9 +141,12 @@ function displayEstab(establishment) {
     reviewContainer.id = "reviewContainer";
 
     container.appendChild(name);
-    container.appendChild(Address);
-    container.appendChild(Town);
-    container.appendChild(Postcode);
+
+    infoContainer.appendChild(Address);
+    infoContainer.appendChild(Town);
+    infoContainer.appendChild(Postcode);
+
+    container.appendChild(infoContainer)
     container.appendChild(reviewContainer);
 
     estabs.push(detail);
