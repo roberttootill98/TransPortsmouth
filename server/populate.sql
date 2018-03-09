@@ -121,7 +121,7 @@ insert into Establishment (Name, Address, Town, Postcode, Description, Category)
 /*108*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Southsea Coffee Co", "63 Osborne Road", "Portsmouth", "PO5 3LS", "Coffee shop that serves small dishes and deserts", "Cafe");
 
 /*Shop*/
-/*109*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Express", "Round House, Ground Floor, Gunwharf Quays", "Portsmouth", "PO1 3SF", "", "Shop");
+/*109*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Express", "Round House, Ground Floor, Gunwharf Quays", "Portsmouth", "PO1 3SF", "Chain supermarket's small version of it's supermarket", "Shop");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Express", "5 Isambard Brunel Road", "Portsmouth", "PO1 2FT", "Chain supermarket's small version of it's supermarket", "Shop");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Express", "59-61 Elm Grove", "Portsmouth", "PO5 1JF", "Chain supermarket's small version of it's supermarket", "Shop");
 insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Express", "10-12 Palmerston Road", "Portsmouth", "PO5 3QH", "Chain supermarket's small version of it's supermarket", "Shop");
@@ -225,7 +225,7 @@ insert into Contact_Info values (106, "023 9283 2854", "info@southseabeachcafe.c
 insert into Contact_Info values (107, NULL, NULL, "http://tasteofportsmouth.co.uk/cafe/smile-cafe/", "https://en-gb.facebook.com/smilecafesouthsea/");
 insert into Contact_Info values (108, "023 9307 9501", NULL, "http://www.southseacoffee.co.uk/", "https://en-gb.facebook.com/southseacoffee/");
 insert into Contact_Info values (109, "0345 675 7128", "customer.service@tesco.co.uk", "https://www.tesco.com/groceries/?icid=dchp_groceriesshopgroceries", "https://www.facebook.com/tesco");
-insert into Contact_Info values (110, "0345 610 6723", "customer.service@tesco.co.uk", "https://www.tesco.com/groceries/?icid=dchp_groceriesshopgroceries", "https://www.tesco.com/groceries/?icid=dchp_groceriesshopgroceries","https://www.facebook.com/tesco");
+insert into Contact_Info values (110, "0345 610 6723", "customer.service@tesco.co.uk", "https://www.tesco.com/groceries/?icid=dchp_groceriesshopgroceries","https://www.facebook.com/tesco");
 insert into Contact_Info values (111, "0345 026 9090", "customer.service@tesco.co.uk", "https://www.tesco.com/groceries/?icid=dchp_groceriesshopgroceries","https://www.facebook.com/tesco");
 insert into Contact_Info values (112, "0345 610 6337", "customer.service@tesco.co.uk", "https://www.tesco.com/groceries/?icid=dchp_groceriesshopgroceries","https://www.facebook.com/tesco");
 insert into Contact_Info values (113, "0345 677 9623", "customer.service@tesco.co.uk", "https://www.tesco.com/groceries/?icid=dchp_groceriesshopgroceries","https://www.facebook.com/tesco");
