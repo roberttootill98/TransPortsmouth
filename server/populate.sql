@@ -142,6 +142,7 @@ insert into Establishment (Name, Address, Town, Postcode, Description, Category)
 
 /*Contacts*/
 /*Inserting into Contact. Every item in the establishment table has contact details and these are added here.*/
+/*Restaurants*/
 insert into Contact_Info values (1, "023 9229 3797", "Gunwharf@iguanas.co.uk","https://www.iguanas.co.uk/restaurants/portsmouth", "https://www.facebook.com/LasIguanasGunwharfQuays/");
 insert into Contact_Info values (2, "023 9287 6272", NULL,"restaurant27.com", "https://www.facebook.com/Restaurant-27-169409896445091/");
 insert into Contact_Info values (3, "023 9275 3914", NULL,"pieandvinyl.co.uk", "https://www.facebook.com/pieandvinyl/");
@@ -189,13 +190,19 @@ insert into Contact_Info values (44, "023 9242 1242", NULL,"https://southseafood
 insert into Contact_Info values (45, "07519 731190", NULL, "http://tasteofportsmouth.co.uk/restaurant/thai-laos-kitchen/", "https://www.facebook.com/Thai-Laos-Kitchen-1524812847783615/");
 insert into Contact_Info values (46, "023 9273 7235", "ranchoportsmouth@gmail.com","http://www.ranchosteakhouseportsmouth.com/menu/", "https://en-gb.facebook.com/ranchosteakhouseltd/");
 insert into Contact_Info values (47, "023 9283 1941", NULL,"shortiesrestaurant.com", "https://en-gb.facebook.com/shortiesrestaurant/");
+
+/*University*/
 insert into Contact_Info values (64, "023 9284 3628", "hello@upsu.net","https://www.upsu.net/", "https://www.facebook.com/portsmouthsu");
 insert into Contact_Info values (65, "023 9284 3228", "library@port.ac.uk","https://library.port.ac.uk/", "https://www.facebook.com/uoplibrary");
+
+/*Night Clubs*/
 insert into Contact_Info values (76, "023 9286 3741", NULL,"http://www.astorianightclub.com/", "https://www.facebook.com/astorianightclub");
 insert into Contact_Info values (77, "023 9283 0150", NULL,"https://www.popworldparty.co.uk/portsmouth", "https://www.facebook.com/PopworldPortsmouth/");
 insert into Contact_Info values (78, "023 9286 2312", "portsmouth@pryzm.co.uk","https://www.pryzm.co.uk/portsmouth", "https://www.facebook.com/PRYZMPortsmouth");
 insert into Contact_Info values (79, NULL, NULL,"https://licklist.co.uk/zanzi", "https://www.facebook.com/pages/zanzi-bar-Portsmouth/543884482431450");
 insert into Contact_Info values (80, "023 9229 8877", NULL, "http://www.beerintheevening.com/pubs/s/17/17276/Honest_Politician/Southsea", "https://en-gb.facebook.com/thehonestpoliticiansouthsea");
+
+/*Bars*/
 insert into Contact_Info values (81, "023 9285 1157", "hello@thelyberry.com", "http://www.thelyberry.com/", "https://www.facebook.com/Lyberrybar");
 insert into Contact_Info values (82, "023 9282 3492", NULL, "https://www.barleymowsouthsea.com/html/about_us.html", "https://en-gb.facebook.com/BarleyMowsouthsea/");
 insert into Contact_Info values (83, "023 9282 9748", NULL, NULL, "https://en-gb.facebook.com/portsmouthbeerfestival/posts/708367055988369");
@@ -209,6 +216,8 @@ insert into Contact_Info values (90, "023 9286 3341", "yates.portsmouth@stonegat
 insert into Contact_Info values (91, "023 9272 8000", NULL, "https://www.jdwetherspoon.com/pubs/all-pubs/england/hampshire/the-lord-palmerston-southsea", "https://www.facebook.com/jdwetherspoon");
 insert into Contact_Info values (92, "023 9229 3914", NULL, NULL, "https://en-gb.facebook.com/TheOneEyedDog/");
 insert into Contact_Info values (93, "023 9289 1340", "portsmouth@brewhouseandkitchen.com", "http://www.brewhouseandkitchen.com/venue/portsmouth/", "https://www.facebook.com/BKPortsmouth");
+
+/*Gyms*/
 insert into Contact_Info values (94, "0345 013 3214", "Info.Portsmouth@puregym.com","https://www.facebook.com/puregymportsmouth/");
 insert into Contact_Info values (95, "023 9316 2650", "portsmouth@F4L.com","https://www.facebook.com/F4LPortsmouth/");
 insert into Contact_Info values (96, "023 9284 5555", "sport@port.ac.uk","https://www.facebook.com/UOPsport?fref=nf");
@@ -219,11 +228,15 @@ insert into Contact_Info values (100, "0330 055 5910", "membership@thegymgroup.c
 insert into Contact_Info values (101, "023 9217 7323", "info@gym01.com","https://www.facebook.com/Gym01Portsmouth/");
 insert into Contact_Info values (102, "023 9400 1390", "https://www.better.org.uk/leisure-centre/portsmouth/better-gym-portsmouth/contactus","https://www.facebook.com/BetterUK/?fref=ts");
 insert into Contact_Info values (103, "075 8000 0398", "info@theboxportsmouth.com","https://www.facebook.com/theboxportsmouth");
+
+/*Cafes*/
 insert into Contact_Info values (104, "023 9243 1265", NULL, "http://paradetearooms.co.uk/", "https://www.facebook.com/ParadeTearoomsSouthsea");
 insert into Contact_Info values (105, "023 9299 0017", NULL, "http://tasteofportsmouth.co.uk/cafe/the-spinnaker-cafe/", "https://en-gb.facebook.com/The-Spinnaker-Cafe-164476677066584/");
 insert into Contact_Info values (106, "023 9283 2854", "info@southseabeachcafe.co.uk", "http://www.southseabeachcafe.co.uk/", "https://en-gb.facebook.com/southseabeachcafe/");
 insert into Contact_Info values (107, NULL, NULL, "http://tasteofportsmouth.co.uk/cafe/smile-cafe/", "https://en-gb.facebook.com/smilecafesouthsea/");
 insert into Contact_Info values (108, "023 9307 9501", NULL, "http://www.southseacoffee.co.uk/", "https://en-gb.facebook.com/southseacoffee/");
+
+/*Shops*/
 insert into Contact_Info values (109, "0345 675 7128", "customer.service@tesco.co.uk", "https://www.tesco.com/groceries/?icid=dchp_groceriesshopgroceries", "https://www.facebook.com/tesco");
 insert into Contact_Info values (110, "0345 610 6723", "customer.service@tesco.co.uk", "https://www.tesco.com/groceries/?icid=dchp_groceriesshopgroceries","https://www.facebook.com/tesco");
 insert into Contact_Info values (111, "0345 026 9090", "customer.service@tesco.co.uk", "https://www.tesco.com/groceries/?icid=dchp_groceriesshopgroceries","https://www.facebook.com/tesco");
@@ -241,6 +254,8 @@ insert into Contact_Info values (122, "023 9230 1120", NULL, "https://help.sains
 insert into Contact_Info values (123, "023 9284 1800", "customer.service@asda.co.uk", "https://groceries.asda.com/", "https://www.facebook.com/asda");
 insert into Contact_Info values (124, "023 9287 5532", "fresh@morrisons.com", "https://groceries.morrisons.com/", "https://www.facebook.com/Morrisons");
 insert into Contact_Info values (125, "0800 977 7766", "customer.services@lidl.co.uk", "https://www.lidl.co.uk/", "https://www.facebook.com/lidluk");
+
+
 /*Work Times*/
 /*Inserting into Time. Every item in the establishment table has opening times, and these are added here.*/
 /*Resturant times , some resturants close during the day time and resume sevice after 5 ish*/
