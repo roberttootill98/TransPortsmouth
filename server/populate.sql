@@ -536,4 +536,23 @@ insert into Shop (Est_Id, Type) values (125, "Supermarket, Chain, Budget");
 /*Review Data NOTE: We only need about 20 total for proof of concept.
 There should be about 2-3 in one establishment and multiple with only 1 in the same category. Also have more in other
 cateogries to prove this*/
-
+/*Reviews for various establishments, some establishments have one review, some have multiples. This shows the reviews can be output.*/
+insert into Review(Est_Id, Author, Content, Score) values (32, "John Smith", "Food was cold, and waiters were rude when I asked for it to be returned to the kitchen", "1");
+insert into Review(Est_Id, Author, Content, Score) values (32, "Giorgio del Potro", "The most authentic Italian food I've had outside of Italy, the chef is a true Italian", "10");
+insert into Review(Est_Id, Author, Content, Score) values (32, "Melissa West", "Went here with my family, friendly and sufficient", "7");
+insert into Review(Est_Id, Author, Content, Score) values (12, "Mr Heisenberg", "Perfect for couples, classy and high quality food. Waiters know what they're talking about when it comes to wine.", "8");
+insert into Review(Est_Id, Author, Content, Score) values (12, "Emily Boyle", "Had a lovely meal here, a bit on the expensive side though", "7");
+insert into Review(Est_Id, Author, Content, Score) values (53, "Charles Bond", "Lots of space to work and good studios and computers, but often a bit busy", "7");
+insert into Review(Est_Id, Author, Content, Score) values (58, "Chloe Chan", "The lecture thearter is good and there's a few PCs but the Cafe isn't good", "5");
+insert into Review(Est_Id, Author, Content, Score) values (78, "Anna Matthews", "Really nice since the refurb, had some good nights here", "8");
+insert into Review(Est_Id, Author, Content, Score) values (78, "Ella Donker", "Good music and good variety but drinks are more expensive than other clubs", "6");
+insert into Review(Est_Id, Author, Content, Score) values (82, "Steve Williams", "Good proper British local, not filled with students or hipsters, serves proper drinks", "10");
+insert into Review(Est_Id, Author, Content, Score) values (89, "Masie Michaels", "Cheap drinks and cheap meals, but you get what you pay for", "6");
+insert into Review(Est_Id, Author, Content, Score) values (89, "Nick Nicholas", "Always reliable and a large range of drinks", "8");
+insert into Review(Est_Id, Author, Content, Score) values (99, "Douglas McDonald", "Proper hardcore gym,not great for beginners", "7");
+insert into Review(Est_Id, Author, Content, Score) values (99, "Milly Black", "Not enough classes on but good for personal training", "7");
+insert into Review(Est_Id, Author, Content, Score) values (118, "Tom Graham", "Very large superstore, always well stocked", "9");
+insert into Review(Est_Id, Author, Content, Score) values (125, "Lucy Coombes", "Budget shop, always good deals but own brand stuff", "6");
+insert into Review(Est_Id, Author, Content, Score) values (77, "Lilly McFaden", "Always fun times, good music and cheap drinks", "9");
+insert into Review(Est_Id, Author, Content, Score) values (65, "Paul Pear", "Staff are a bit clueless but good resources", "6");
+insert into Review(Est_Id, Author, Content, Score) values (65, "Gillian Derby", "Always been able to get work done but when it's busy it's REALLY busy");
