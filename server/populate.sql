@@ -122,22 +122,22 @@ insert into Establishment (Name, Address, Town, Postcode, Description, Category)
 
 /*Shop*/
 /*109*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Express", "Round House, Ground Floor, Gunwharf Quays", "Portsmouth", "PO1 3SF", "", "Shop");
-insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Express", "5 Isambard Brunel Road", "Portsmouth", "PO1 2FT", "", "Shop");
-insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Express", "59-61 Elm Grove", "Portsmouth", "PO5 1JF", "", "Shop");
-insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Express", "10-12 Palmerston Road", "Portsmouth", "PO5 3QH", "", "Shop");
-insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Express", "183-191 Albert Road", "Portsmouth", "PO4 0JP", "", "Shop");
-insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Express", "Eastney Road", "Portsmouth", "PO4 9JB", "", "Shop");
-insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Express", "133-137 Goldsmith Avenue", "Portsmouth", "PO4 8QZ", "", "Shop");
-insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Express", "13-17 Kingston Road", "Portsmouth", "PO1 5RX", "", "Shop");
-insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Extra", "Fratton Way", "Portsmouth", "PO4 8FD", "", "Shop");
-insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Superstore", "Crasswell Street", "Portsmouth", "PO1 1RS", "", "Shop");
-insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Sainsbury's", "315 Commercial Road", "Portsmouth", "PO1 4BS", "", "Shop");
-insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Sainsbury's", "5-7 Guildhall Walk", "Portsmouth", "PO1 2RY", "", "Shop");
-insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Sainsbury's", "77-79 Palmerston Road", "Portsmouth", "PO5 3PP", "", "Shop");
-insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Sainsbury's", "196-204 Albert Road, Bella Mews", "Portsmouth", "PO4 0JT", "", "Shop");
-insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Asda", "The Bridge Shopping Center, Somers Road North", "Portsmouth", "PO1 1SL", "", "Shop");
-insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Morrisons", "Victory Retail Park, Flathouse Road", "Portsmouth", "PO1 4QP", "", "Shop");
-/*125*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Lidl", "Denmark House, 205 Goldsmith Venue", "Portsmouth", "PO4 0AN", "", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Express", "5 Isambard Brunel Road", "Portsmouth", "PO1 2FT", "Chain supermarket's small version of it's supermarket", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Express", "59-61 Elm Grove", "Portsmouth", "PO5 1JF", "Chain supermarket's small version of it's supermarket", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Express", "10-12 Palmerston Road", "Portsmouth", "PO5 3QH", "Chain supermarket's small version of it's supermarket", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Express", "183-191 Albert Road", "Portsmouth", "PO4 0JP", "Chain supermarket's small version of it's supermarket", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Express", "Eastney Road", "Portsmouth", "PO4 9JB", "Chain supermarket's small version of it's supermarket", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Express", "133-137 Goldsmith Avenue", "Portsmouth", "PO4 8QZ", "Chain supermarket's small version of it's supermarket", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Express", "13-17 Kingston Road", "Portsmouth", "PO1 5RX", "Chain supermarket's small version of it's supermarket", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Extra", "Fratton Way", "Portsmouth", "PO4 8FD", "Chain supermarket's small version of it's supermarket", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Tesco Superstore", "Crasswell Street", "Portsmouth", "PO1 1RS", "Chain supermarket's superstore supermarket", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Sainsbury's", "315 Commercial Road", "Portsmouth", "PO1 4BS", "Chain supermarket's small version of it's supermarket store", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Sainsbury's", "5-7 Guildhall Walk", "Portsmouth", "PO1 2RY", "Chain supermarket's small version of it's supermarket store", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Sainsbury's", "77-79 Palmerston Road", "Portsmouth", "PO5 3PP", "Chain supermarket's small version of it's supermarket store", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Sainsbury's", "196-204 Albert Road, Bella Mews", "Portsmouth", "PO4 0JT", "Chain supermarket's small version of it's supermarket store", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Asda", "The Bridge Shopping Center, Somers Road North", "Portsmouth", "PO1 1SL", "Chain supermarket's superstore supermarket", "Shop");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Morrisons", "Victory Retail Park, Flathouse Road", "Portsmouth", "PO1 4QP", "Chain supermarket's superstore supermarket", "Shop");
+/*125*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Lidl", "Denmark House, 205 Goldsmith Venue", "Portsmouth", "PO4 0AN", "Budget Supermarket Chain", "Shop");
 
 
 /*Contacts*/
@@ -224,23 +224,23 @@ insert into Contact_Info values (105, "023 9299 0017", NULL, "http://tasteofport
 insert into Contact_Info values (106, "023 9283 2854", "info@southseabeachcafe.co.uk", "http://www.southseabeachcafe.co.uk/", "https://en-gb.facebook.com/southseabeachcafe/");
 insert into Contact_Info values (107, NULL, NULL, "http://tasteofportsmouth.co.uk/cafe/smile-cafe/", "https://en-gb.facebook.com/smilecafesouthsea/");
 insert into Contact_Info values (108, "023 9307 9501", NULL, "http://www.southseacoffee.co.uk/", "https://en-gb.facebook.com/southseacoffee/");
-insert into Contact_Info values (109, "0345 675 7128", "customer.service@tesco.co.uk","https://www.facebook.com/tesco");
-insert into Contact_Info values (110, "0345 610 6723", "customer.service@tesco.co.uk","https://www.facebook.com/tesco");
-insert into Contact_Info values (111, "0345 026 9090", "customer.service@tesco.co.uk","https://www.facebook.com/tesco");
-insert into Contact_Info values (112, "0345 610 6337", "customer.service@tesco.co.uk","https://www.facebook.com/tesco");
-insert into Contact_Info values (113, "0345 677 9623", "customer.service@tesco.co.uk","https://www.facebook.com/tesco");
-insert into Contact_Info values (114, "0345 610 2713", "customer.service@tesco.co.uk","https://www.facebook.com/tesco");
-insert into Contact_Info values (115, "0345 671 9256", "customer.service@tesco.co.uk","https://www.facebook.com/tesco");
-insert into Contact_Info values (116, "0345 671 9546", "customer.service@tesco.co.uk","https://www.facebook.com/tesco");
-insert into Contact_Info values (117, "0345 610 6712", "customer.service@tesco.co.uk","https://www.facebook.com/tesco");
-insert into Contact_Info values (118, "0345 677 9555", "customer.service@tesco.co.uk","https://www.facebook.com/tesco");
-insert into Contact_Info values (119, "023 9282 2828", "https://help.sainsburys.co.uk/help/contact_us","https://www.facebook.com/sainsburys/");
-insert into Contact_Info values (120, "023 9230 1130", "https://help.sainsburys.co.uk/help/contact_us","https://www.facebook.com/sainsburys/");
-insert into Contact_Info values (121, "023 9230 1111", "https://help.sainsburys.co.uk/help/contact_us","https://www.facebook.com/sainsburys/");
-insert into Contact_Info values (122, "023 9230 1120", "https://help.sainsburys.co.uk/help/contact_us","https://www.facebook.com/sainsburys/");
-insert into Contact_Info values (123, "023 9284 1800", "customer.service@asda.co.uk","https://www.facebook.com/asda");
-insert into Contact_Info values (124, "023 9287 5532", "fresh@morrisons.com","https://www.facebook.com/Morrisons");
-insert into Contact_Info values (125, "0800 977 7766", "customer.services@lidl.co.uk","https://www.facebook.com/lidluk");
+insert into Contact_Info values (109, "0345 675 7128", "customer.service@tesco.co.uk", "https://www.tesco.com/groceries/?icid=dchp_groceriesshopgroceries", "https://www.facebook.com/tesco");
+insert into Contact_Info values (110, "0345 610 6723", "customer.service@tesco.co.uk", "https://www.tesco.com/groceries/?icid=dchp_groceriesshopgroceries", "https://www.tesco.com/groceries/?icid=dchp_groceriesshopgroceries","https://www.facebook.com/tesco");
+insert into Contact_Info values (111, "0345 026 9090", "customer.service@tesco.co.uk", "https://www.tesco.com/groceries/?icid=dchp_groceriesshopgroceries","https://www.facebook.com/tesco");
+insert into Contact_Info values (112, "0345 610 6337", "customer.service@tesco.co.uk", "https://www.tesco.com/groceries/?icid=dchp_groceriesshopgroceries","https://www.facebook.com/tesco");
+insert into Contact_Info values (113, "0345 677 9623", "customer.service@tesco.co.uk", "https://www.tesco.com/groceries/?icid=dchp_groceriesshopgroceries","https://www.facebook.com/tesco");
+insert into Contact_Info values (114, "0345 610 2713", "customer.service@tesco.co.uk", "https://www.tesco.com/groceries/?icid=dchp_groceriesshopgroceries","https://www.facebook.com/tesco");
+insert into Contact_Info values (115, "0345 671 9256", "customer.service@tesco.co.uk", "https://www.tesco.com/groceries/?icid=dchp_groceriesshopgroceries","https://www.facebook.com/tesco");
+insert into Contact_Info values (116, "0345 671 9546", "customer.service@tesco.co.uk", "https://www.tesco.com/groceries/?icid=dchp_groceriesshopgroceries","https://www.facebook.com/tesco");
+insert into Contact_Info values (117, "0345 610 6712", "customer.service@tesco.co.uk", "https://www.tesco.com/groceries/?icid=dchp_groceriesshopgroceries","https://www.facebook.com/tesco");
+insert into Contact_Info values (118, "0345 677 9555", "customer.service@tesco.co.uk", "https://www.tesco.com/groceries/?icid=dchp_groceriesshopgroceries","https://www.facebook.com/tesco");
+insert into Contact_Info values (119, "023 9282 2828", NULL, "https://help.sainsburys.co.uk/help/contact_us","https://www.facebook.com/sainsburys/");
+insert into Contact_Info values (120, "023 9230 1130", NULL, "https://help.sainsburys.co.uk/help/contact_us","https://www.facebook.com/sainsburys/");
+insert into Contact_Info values (121, "023 9230 1111", NULL, "https://help.sainsburys.co.uk/help/contact_us","https://www.facebook.com/sainsburys/");
+insert into Contact_Info values (122, "023 9230 1120", NULL, "https://help.sainsburys.co.uk/help/contact_us","https://www.facebook.com/sainsburys/");
+insert into Contact_Info values (123, "023 9284 1800", "customer.service@asda.co.uk", "https://groceries.asda.com/", "https://www.facebook.com/asda");
+insert into Contact_Info values (124, "023 9287 5532", "fresh@morrisons.com", "https://groceries.morrisons.com/", "https://www.facebook.com/Morrisons");
+insert into Contact_Info values (125, "0800 977 7766", "customer.services@lidl.co.uk", "https://www.lidl.co.uk/", "https://www.facebook.com/lidluk");
 /*Work Times*/
 /*Inserting into Time. Every item in the establishment table has opening times, and these are added here.*/
 /*Resturant times , some resturants close during the day time and resume sevice after 5 ish*/
