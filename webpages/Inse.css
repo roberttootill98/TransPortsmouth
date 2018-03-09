@@ -52,11 +52,27 @@ header{
 #dataContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
 }
 .estab {
   hover: cyan;
   cursor: pointer;
+  border: 2.5px solid #311531;
+  margin: 15px;
+  list-style-type: none;
+
 }
+
+.estab > p {
+  color: black;
+  padding: 60px;
+  text-align: -webkit-center;
+  
+}
+.estab > h1 {
+  color: #a821bd;
+}
+
 #leaveReview {
   text-align: center;
   display:inline-grid;
