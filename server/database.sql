@@ -106,7 +106,7 @@ Gym_Id int primary key auto_increment,
 Est_Id int not null,
 Monthly_Fee double(2,2),
 Offer_Trials bool default 0,
-Classes_Available varchar(400),
+Classes_Available varchar(1000),
 constraint FKestGym foreign key (Est_Id) references Establishment(Est_Id)
 );
 
