@@ -171,6 +171,7 @@ function displayReviewOnMainPage(reviews) {
   const container = document.getElementById("reviewContainer");
 
   for(let review of reviews) {
+    const li = document.createElement("li");
     const author = document.createElement("h1");
     const content = document.createElement("p");
     const score = document.createElement("p");
@@ -179,9 +180,11 @@ function displayReviewOnMainPage(reviews) {
     content.textContent = review.Content;
     score.textContent = review.Score;
 
-    container.appendChild(author);
-    container.appendChild(content);
-    container.appendChild(score);
+    li.appendChild(author);
+    li.appendChild(content);
+    li.appendChild(score);
+
+    container.appendChild(li);
   }
 }
 
