@@ -28,9 +28,9 @@ async function whereAll(table, condition, checkfield) {
   return rows[0];
 }
 
-async function addReview(est_id, title, content, score) {
-  const query = 'INSERT INTO Review (Est_Id, Title, Content, Score)';
-  const values = ` VALUES (${est_id}, "${title}", "${content}", "${score}");`;
+async function addReview(est_id, author, content, score) {
+  const query = 'INSERT INTO Review (Est_Id, Author, Content, Score)';
+  const values = ` VALUES (${est_id}, "${author}", "${content}", "${score}");`;
   const insertQuery = query + values;
 
   const formattedQuery = sql.format(insertQuery);
