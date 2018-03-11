@@ -7,13 +7,29 @@ async function boot() {
   if(window.location.pathname == "/review.html") {
     const id = window.location.search.substr(4);
     console.log(await getReviews(id));
+    addListenersReview();
   } else {
     await getCategories();
-    addListeners();
+    addListenersMain();
   }
 }
 
-function addListeners() {
+function addListenersReview() {
+  const submit = document.getElementById("Submit");
+  submit.addEventListener("click", submitReview);
+}
+
+async function submitReview() {
+  const author = document.getElementById("author").textContent;
+  const content = document.getElementById("writeup").textContent;
+  const score = document.getElementById("score").textContent;
+
+  //validation
+
+
+}
+
+function addListenersMain() {
   const categories = document.querySelectorAll(".category");
   for(let cat of categories) {
     cat.addEventListener("click", selectCategory);
