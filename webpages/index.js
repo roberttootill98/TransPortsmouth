@@ -27,9 +27,9 @@ async function submitReview() {
 
   //validation
 
-  const url = '/api/review?establishment=${est_id}&author=${author}&content=${content}&score=${score}';
+  const url = `/api/review?establishment=${est_id}&author=${author}&content=${content}&score=${score}`;
 
-  const response = fetch(url);
+  const response = await fetch(url);
   if(response.ok) {
     console.log("added review");
   } else {
