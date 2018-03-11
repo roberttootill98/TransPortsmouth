@@ -4,8 +4,13 @@ let estabs = [];
 let estabId;
 
 async function boot() {
-  await getCategories();
-  addListeners();
+  if(window.location.pathname == "review.html") {
+    const id = window.location.search.substr(1);
+    console.log(await getReviews(id));
+  } else if(window.location == "index.hmtl") {
+    await getCategories();
+    addListeners();
+  }
 }
 
 function addListeners() {
