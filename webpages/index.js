@@ -202,7 +202,7 @@ function removeButtons() {
 
 async function leaveReview() {
   estabId = estabs[0].Est_Id;
-  window.open('review.html');
+  window.open('review.html?id=' + estabId);
 }
 
 function getDirections() {
