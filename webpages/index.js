@@ -7,7 +7,7 @@ async function boot() {
   if(window.location.pathname == "/review.html") {
     const id = window.location.search.substr(4);
     const reviews = await getReviews(id);
-    displayReivews(reviews);
+    displayReviews(reviews);
     addListenersReview();
   } else {
     await getCategories();
@@ -106,7 +106,7 @@ async function getEstablishment(e) {
   if(response.ok) {
     displayEstab(await response.json());
     const reviews = await getReviews(id);
-    displayReview(reviews);
+    displayReviews(reviews);
   } else {
     console.error('error getting establishment', response.status, response.statusText);
     //document.querySelector('body > main').innerHTML = 'sorry, something went wrong...';
@@ -204,7 +204,7 @@ function displayEstab(establishment) {
 
 function displayReviews(reviews) {
   const container = document.getElementBy("reviewContainer");
-  
+
   for(let review of reviews) {
     const li = document.createElement("li");
     const author = document.createElement("h1");
