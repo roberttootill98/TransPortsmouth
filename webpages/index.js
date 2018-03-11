@@ -4,7 +4,7 @@ let estabs = [];
 let estabId;
 
 async function boot() {
-  if(window.location.pathname == "review.html") {
+  if(window.location.pathname == "/review.html") {
     const id = window.location.search.substr(1);
     console.log(await getReviews(id));
   } else {
