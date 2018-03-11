@@ -20,13 +20,21 @@ function addListenersReview() {
 }
 
 async function submitReview() {
-  const author = document.getElementById("author").textContent;
-  const content = document.getElementById("writeup").textContent;
-  const score = document.getElementById("score").textContent;
+  const est_id = window.location.search.substr(4);
+  const author = document.getElementById("author").value;
+  const content = document.getElementById("writeup").value;
+  const score = document.getElementById("score").value;
 
   //validation
 
+  const url = '/api/review?establishment=${est_id}&author=${author}&content=${content}&score=${score}';
 
+  const response = fetch(url);
+  if(response.ok) {
+    console.log("added review");
+  } else {
+    console.error('error adding review', response.status, response.statusText);
+  }
 }
 
 function addListenersMain() {
