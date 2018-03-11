@@ -203,7 +203,7 @@ function displayEstab(establishment) {
 }
 
 function displayReviews(reviews) {
-  const container = document.getElementBy("reviewContainer");
+  const container = document.getElementById("reviewContainer");
 
   for(let review of reviews) {
     const li = document.createElement("li");
