@@ -246,7 +246,7 @@ function getDirections() {
   const destination = `${estab.Address}+${estab.Town}+${estab.Postcode}`
   const origin = document.getElementById("location").value;
   if(origin) {
-    mapUrl += `/dir/?api=1&origin=${origin}&destination=${destination}`;
+    mapUrl += `maps/dir/?api=1&origin=${origin}&destination=${destination}`;
   } else {
     mapUrl += `?q=${destination}`;
   }
