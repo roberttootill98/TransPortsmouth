@@ -242,12 +242,19 @@ function getDirections() {
     console.log(data);
   }
 
-
-  const mapUrl = `http://maps.google.com/?q=${estab.Address} ${estab.Town} ${estab.Postcode}`;
+  let mapUrl = "https://maps.google.com/";
+  const destination = `${estab.Address}+${estab.Town}+${estab.Postcode}`
+  const origin = document.getElementById("location").value;
+  if(origin) {
+    mapUrl += `/dir/?api=1&origin=${origin}&destination=${destination}`;
+  } else {
+    mapUrl += `?q=${origin}`;
+  }
   window.open(mapUrl);
 }
 
 //https://www.google.com/maps/?ll=longitude,latitude
 //http://maps.google.com/?q=your+query (query as address in format "number-road-town")
+//https://maps.google.com/maps/dir/?api=1&origin=place1&destination=place2
 
 window.addEventListener("load", boot)
