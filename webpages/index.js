@@ -248,7 +248,7 @@ function getDirections() {
   if(origin) {
     mapUrl += `/dir/?api=1&origin=${origin}&destination=${destination}`;
   } else {
-    mapUrl += `?q=${origin}`;
+    mapUrl += `?q=${destination}`;
   }
   window.open(mapUrl);
 }
