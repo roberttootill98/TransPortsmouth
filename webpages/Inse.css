@@ -204,30 +204,31 @@ header nav ul li a:hover{
   }
 }
 
-@media only screen and  (min-width:440px) and (max-width: 800px){
- 
-  #dataContainer{
-    grid-template-columns: 1fr 1fr;
-  }
-  #categoryContainer{
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  header{
-    height:120%
-  }
-
-}
 @media only screen and (min-width:150px) and (max-width: 440px){
  
   #dataContainer{
     grid-template-columns: 1fr;
   }
-  #categoryContainer{
-    grid-template-columns: 1fr 1fr;
-  }
   header{
-    height:120%
+    height:20%
+  }
+
+  .cateory{
+    display: table-cell;
+    float: none;
+    width: auto;
+  }
+
+  #categoryContainer {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
   }
 
 }
+
+
 
