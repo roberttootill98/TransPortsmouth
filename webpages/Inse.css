@@ -20,8 +20,10 @@ header{
 #Heading{
   color: white;
   margin-right: 0.5em;
-  float: right;
+  float: center;
+  margin-top:-1.5em;
   font-size: 1.6em;
+  text-align:center
 }
 
 .category:hover {
