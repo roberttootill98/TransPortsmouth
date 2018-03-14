@@ -39,6 +39,8 @@ async function submitReview() {
   if(isNaN(score) || score < 0 || score > 10) {
     console.log("review must be int!");
     alert("Review must be between 0 and 10!");
+  } else if(content == "" || author == "") {
+    alert("Please fill in all fields");
   } else {
     //clear inputs
     document.getElementById("author").value = "";
