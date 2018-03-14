@@ -14,16 +14,14 @@ body{
 header{
   height: 140px;
   background: purple;
-  text-align: center;
+  text-align: left;
 }
 
 #Heading{
   color: white;
   margin-right: 0.5em;
-  float: center;
-  margin-top:-1.5em;
+  float: right;
   font-size: 1.6em;
-  text-align:center
 }
 
 .category:hover {
@@ -33,6 +31,7 @@ header{
 #main{
   height: 300px;
 }
+
 #footer{
   border-top: 1px solid grey;
   height: 40px;
@@ -56,6 +55,7 @@ header{
   margin: 20px;
   text-align: center;
 }
+
 #dataContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -85,6 +85,7 @@ header{
   float: none;
   text-align: center;
 }
+
 #estabContainer > h1{
   color: #00efff;
   text-align: center;
@@ -115,6 +116,7 @@ header{
   margin-right: auto;
   background-color: #87c5c5;
 }
+
 #leaveReview {
   text-align: center;
   display:grid;
@@ -125,6 +127,7 @@ header{
   min-width: 5em;
   max-width: 50em;
 }
+
 #reviewContainer {
   list-style-type: none;
   border: 3px solid #2de8d7;
@@ -133,7 +136,10 @@ header{
   margin-top: 20px;
   color: #11114a;
   background-color:#7a8a98;
+  margin-left: 5em;
+  margin-right: 5em;
 }
+
 #buttonContainer{
   display: grid;
   min-width: 3em;
