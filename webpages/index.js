@@ -20,6 +20,11 @@ function addListenersReview() {
   submit.addEventListener("click", submitReview);
 }
 
+function emptyContainers() {
+  removeButtons(document.getElementById("dataContainer"));
+  removeButtons(document.getElementById("estabContainer"));
+}
+
 async function submitReview() {
   const est_id = window.location.search.substr(4);
   const author = document.getElementById("author").value;
@@ -126,9 +131,9 @@ function displayCategories(categories) {
 async function displayCategory(establishments) {
   estabs = [];
 
-  const container = document.getElementById("dataContainer");
-  removeButtons(container);
+  emptyContainers();
 
+  const container = document.getElementById("dataContainer");
   for (let cat of establishments) {
     const li = document.createElement("li");
     const h = document.createElement("h1");
@@ -149,9 +154,9 @@ async function displayCategory(establishments) {
 function displayEstab(establishment) {
   estabs = [];
 
-  const data = document.getElementById("dataContainer")
-  removeButtons(data);
+  emptyContainers();
 
+  const data = document.getElementById("dataContainer");
   const container = document.getElementById("estabContainer");
 
   for(let detail of establishment) {
