@@ -12,7 +12,7 @@ async function boot() {
 
     const estab = await getEstablishment(id);
     const reviewTitle = document.getElementById("reviewTitle");
-    reviewTitle.textContent = estab.name;
+    reviewTitle.textContent = estab.Name;
   } else {
     await getCategories();
     addListenersMain();
@@ -120,17 +120,18 @@ function selectEstablishment(e) {
       break;
     }
   }
-  return id;
+  const estabs = await getEstablishment(id);
+  displayEstab(estabs);
+  const reviews = await getReviews(id);
+  displayReviews(reviews);
 }
 
 async function getEstablishment(id) {
   const url = '/api/establishment?id=' + id;
-  const response = await fetch(url);
 
+  const response = await fetch(url);
   if(response.ok) {
-    displayEstab(await response.json());
-    const reviews = await getReviews(id);
-    displayReviews(reviews);
+    return await response.json();
   } else {
     console.error('error getting establishment', response.status, response.statusText);
     //document.querySelector('body > main').innerHTML = 'sorry, something went wrong...';
