@@ -11,7 +11,8 @@ async function boot() {
     addListenersReview();
 
     const estab = await getEstablishment(id);
-    document.getElementById("reviewTitle").textContent = estab.name;
+    const reviewTitle = document.getElementById("reviewTitle");
+    reviewTitle.textContent = estab.name;
   } else {
     await getCategories();
     addListenersMain();
