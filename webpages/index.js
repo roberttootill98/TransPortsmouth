@@ -29,17 +29,20 @@ async function submitReview() {
   const est_id = window.location.search.substr(4);
   const author = document.getElementById("author").value;
   const content = document.getElementById("writeup").value;
-  const score = document.getElementById("score").value;
+  const score = parseInt(document.getElementById("score").value);
 
   //validation
-
-  const url = `/api/review?establishment=${est_id}&author=${author}&content=${content}&score=${score}`;
-
-  const response = await fetch(url, { method: 'POST' });
-  if(response.ok) {
-    console.log("added review");
+  if(score == NaN) {
+    console.log("review must be int!");
   } else {
-    console.error('error adding review', response.status, response.statusText);
+    const url = `/api/review?establishment=${est_id}&author=${author}&content=${content}&score=${score}`;
+
+    const response = await fetch(url, { method: 'POST' });
+    if(response.ok) {
+      console.log("added review");
+    } else {
+      console.error('error adding review', response.status, response.statusText);
+    }
   }
 }
 
