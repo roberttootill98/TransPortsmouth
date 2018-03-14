@@ -169,11 +169,14 @@ function displayEstab(establishment) {
     const Town = document.createElement("p");
     const Postcode = document.createElement("p");
     const reviewContainer = document.createElement("ul");
+    const reviewTitle = document.createElement("h2");
 
     name.textContent = detail.Name;
     Address.textContent = detail.Address;
     Town.textContent = detail.Town;
     Postcode.textContent = detail.Postcode;
+
+    reviewTitle.textContent = "Reviews";
 
     reviewContainer.id = "reviewContainer";
     infoContainer.id = "infoContainer";
@@ -183,6 +186,8 @@ function displayEstab(establishment) {
     infoContainer.appendChild(Address);
     infoContainer.appendChild(Town);
     infoContainer.appendChild(Postcode);
+
+    reviewContainer.appendChild(reviewTitle);
 
     container.appendChild(infoContainer)
     container.appendChild(reviewContainer);
