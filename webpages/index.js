@@ -39,7 +39,8 @@ async function submitReview() {
     console.log (url)
     const response = await fetch(url, { method: 'POST' });
     if(response.ok) {
-      console.log("added review");
+      const reviews = await getReviews(est_id);
+      displayReviews(reviews);
     } else {
       console.error('error submitting review', response.status, response.statusText);
     }
