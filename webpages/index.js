@@ -108,7 +108,7 @@ async function getCategory(category) {
   }
 }
 
-async function getEstablishment(e) {
+function selectEstablishment(e) {
   let id;
   for(let estab of estabs) {
     let parentText = e.target.parentNode.textContent;
@@ -119,7 +119,10 @@ async function getEstablishment(e) {
       break;
     }
   }
+  return id;
+}
 
+async function getEstablishment(id) {
   const url = '/api/establishment?id=' + id;
   const response = await fetch(url);
 
@@ -160,7 +163,7 @@ async function displayCategory(establishments) {
 
     li.classList.add("estab");
     container.appendChild(li);
-    li.addEventListener("click", getEstablishment);
+    li.addEventListener("click", selectEstablishment);
 
     estabs.push(cat);
   }
