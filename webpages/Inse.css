@@ -79,7 +79,7 @@ header{
   float: none;
   text-align: center;
 }
-#estabContainer > section > h1{
+#estabContainer > h1{
   color: #00efff;
   text-align: center;
 
@@ -119,6 +119,8 @@ header{
   border-radius: 10px;
   padding: 3px;
   margin-top: 20px;
+  color: #11114a;
+  background-color:#7a8a98;
 }
 
 header nav{
@@ -169,3 +171,4 @@ header nav ul li a:hover{
     font-size: .8em;
   }
 }
+
