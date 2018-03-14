@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico|Montserrat);
+
 * {
   padding: 0;
 }
@@ -7,7 +9,7 @@ body{
   width: 100%;
   height: 100%;
   margin: auto;
-  font-family: Times New Roman;
+  font-family: Montserrat;
   background-color: grey;
 }
 
@@ -21,9 +23,11 @@ header{
   color: white;
   margin-right: 0.5em;
   float: center;
-  margin-top:-1.5em;
-  font-size: 1.6em;
-  text-align:center
+  margin-top:-1.1em;
+  font-size: 2em;
+  text-align:center;
+  font-family:Pacifico;
+  margin-bottom: -0.6em
 }
 
 .category:hover {
@@ -56,6 +60,7 @@ header{
   list-style-type: none;
   margin: 20px;
   text-align: center;
+  font-family:Montserrat;
 }
 
 #dataContainer {
@@ -212,7 +217,7 @@ header nav ul li a:hover{
   }
 
 }
-@media only screen and (min-width:150px) and (max-width: 419px){
+@media only screen and (min-width:150px) and (max-width: 440px){
  
   #dataContainer{
     grid-template-columns: 1fr;
