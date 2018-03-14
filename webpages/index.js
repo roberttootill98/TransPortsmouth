@@ -36,9 +36,9 @@ async function submitReview() {
     console.log("review must be int!");
   } else {
     //clear inputs
-    author.value = "";
-    content.value = "";
-    score.value = "";
+    document.getElementById("author").value = "";
+    document.getElementById("writeup").value = "";
+    document.getElementById("score").value = "";
 
     //post review
     const url = `/api/review?establishment=${est_id}&author=${author}&content=${content}&score=${score}`;
