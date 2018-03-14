@@ -29,9 +29,9 @@ async function whereAll(table, condition, checkfield) {
 }
 
 async function addReview(est_id, author, content, score) {
-  author = decodeURIComponent(author)
-  content = decodeURIComponent(content)
-  score = decodeURIComponent(score)
+  //author = decodeURIComponent(author)
+  //content = decodeURIComponent(content)
+  //score = decodeURIComponent(score)
 
   const query = 'INSERT INTO Review (Est_Id, Author, Content, Score)';
   const values = ` VALUES (${est_id}, "${author}", "${content}", "${score}");`;
