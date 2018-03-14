@@ -41,7 +41,7 @@ async function submitReview() {
     if(response.ok) {
       console.log("added review");
     } else {
-      const url = `/api/review?establishment=${est_id}&author=${author}&content=${content}&score=${score}`;
+      console.error('error submitting review', response.status, response.statusText);
     }
   }
 }
