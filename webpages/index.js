@@ -241,10 +241,6 @@ async function leaveReview() {
 function getDirections() {
   const estab = estabs[0];
 
-  for(let data of estabs) {
-    console.log(data);
-  }
-
   let mapUrl = "https://maps.google.com/";
   const destination = `${estab.Address}+${estab.Town}+${estab.Postcode}`
   const origin = document.getElementById("location").value;
@@ -261,3 +257,7 @@ function getDirections() {
 //https://maps.google.com/maps/dir/?api=1&origin=place1&destination=place2
 
 window.addEventListener("load", boot)
+
+module.exports = {
+  leaveReview: leaveReview
+}
