@@ -118,9 +118,14 @@ async function getCategory(category) {
 //gets id of establishment and runs functions to display
 async function selectEstablishment(e) {
   let id;
+  let parentText;
+
   for(let estab of estabs) {
-    let parentText = e.target.parentNode.textContent;
-    console.log(estab.Address)
+    if(e.target.nodeName == "LI") {
+      parentText = e.target.textContent;
+    } else {
+      parentText = e.target.parentNode.textContent;
+    }
     if(parentText.includes(estab.Name) && parentText.includes(estab.Address)) {
 
       id = estab.Est_Id;
