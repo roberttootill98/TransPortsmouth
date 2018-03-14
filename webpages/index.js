@@ -120,8 +120,8 @@ async function selectEstablishment(e) {
       break;
     }
   }
-  const estabs = await getEstablishment(id);
-  displayEstab(estabs);
+  const establishments = await getEstablishment(id);
+  displayEstab(establishments);
   const reviews = await getReviews(id);
   displayReviews(reviews);
 }
