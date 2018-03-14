@@ -270,7 +270,3 @@ function getDirections() {
 //https://maps.google.com/maps/dir/?api=1&origin=place1&destination=place2
 
 window.addEventListener("load", boot)
-
-module.exports = {
-  leaveReview: leaveReview
-}
