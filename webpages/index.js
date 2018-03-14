@@ -32,8 +32,17 @@ async function submitReview() {
   const score = parseInt(document.getElementById("score").value);
 
   //validation
+<<<<<<< HEAD
   if(score == NaN) {
     console.log("review must be int!");
+=======
+
+  const url = `/api/review?establishment=${est_id}&author=${author}&content=${content}&score=${score}`;
+  console.log (url)
+  const response = await fetch(url, { method: 'POST' });
+  if(response.ok) {
+    console.log("added review");
+>>>>>>> d261a753668638f6e5324e9753665b06659ef4b7
   } else {
     const url = `/api/review?establishment=${est_id}&author=${author}&content=${content}&score=${score}`;
 
