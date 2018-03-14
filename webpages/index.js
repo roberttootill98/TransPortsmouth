@@ -149,12 +149,10 @@ async function displayCategory(establishments) {
 function displayEstab(establishment) {
   estabs = [];
 
-    let container = document.getElementById("estabContainer");
-  removeButtons(container);
+  const data = document.getElementById("dataContainer")
+  removeButtons(data);
 
-  const estabContainer = document.createElement("section");
-  container.appendChild(estabContainer);
-  container = estabContainer;
+  const container = document.getElementById("estabContainer");
 
   for(let detail of establishment) {
     const name = document.createElement("h1");
