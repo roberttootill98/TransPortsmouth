@@ -34,20 +34,14 @@ async function submitReview() {
   //validation
   if(score == NaN) {
     console.log("review must be int!");
-
-  const url = `/api/review?establishment=${est_id}&author=${author}&content=${content}&score=${score}`;
-  console.log (url)
-  const response = await fetch(url, { method: 'POST' });
-  if(response.ok) {
-    console.log("added review");
   } else {
     const url = `/api/review?establishment=${est_id}&author=${author}&content=${content}&score=${score}`;
-
+    console.log (url)
     const response = await fetch(url, { method: 'POST' });
     if(response.ok) {
       console.log("added review");
     } else {
-      console.error('error adding review', response.status, response.statusText);
+      const url = `/api/review?establishment=${est_id}&author=${author}&content=${content}&score=${score}`;
     }
   }
 }
@@ -269,4 +263,4 @@ function getDirections() {
 //http://maps.google.com/?q=your+query (query as address in format "number-road-town")
 //https://maps.google.com/maps/dir/?api=1&origin=place1&destination=place2
 
-window.addEventListener("load", boot)
+window.addEventListener("load", boot);
