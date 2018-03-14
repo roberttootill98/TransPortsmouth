@@ -1,3 +1,7 @@
+* {
+  padding: 0;
+}
+
 body{
   padding: 0px;
   width: 100%;
@@ -119,10 +123,14 @@ header{
   list-style-type: none;
   border: 3px solid #2de8d7;
   border-radius: 10px;
-  padding: 3px;
+  padding: 4px;
   margin-top: 20px;
   color: #11114a;
   background-color:#7a8a98;
+  min-width: 5em;
+  max-width: 50em;
+  margin-left: auto;
+  margin-right: auto;
 }
 #buttonContainer{
   display: grid;
