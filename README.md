@@ -14,6 +14,20 @@ cd into the directory: cd TransPortsmouth
 then you do node: server/server
 Doing this will now start the server. to get onto the server paste the IP into the search bar and add /index.html to the end.
 
+User Aliases 
+
+UP817427 = Et2211     
+
+UP811906 = roberttootill98 
+
+UP804960 = up804960  
+
+UP819561 = yashsawlani
+
+UP839804 = nrisley     
+
+UP814632 = mattglen3103    
+
 
 <<TEST CASES>>
 
