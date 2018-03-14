@@ -109,7 +109,9 @@ async function getEstablishment(e) {
   let id;
   for(let estab of estabs) {
     let parentText = e.target.parentNode.textContent;
-    if(parentText.includes(estab.Name)) {
+    console.log(estab.Address)
+    if(parentText.includes(estab.Name) && parentText.includes(estab.Address)) {
+
       id = estab.Est_Id;
       break;
     }
