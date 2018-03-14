@@ -38,6 +38,7 @@ async function submitReview() {
   //validation
   if(isNaN(score) || score < 0 || score > 10) {
     console.log("review must be int!");
+    alert("Review must be between 0 and 10!");
   } else {
     //clear inputs
     document.getElementById("author").value = "";
@@ -50,6 +51,7 @@ async function submitReview() {
     const response = await fetch(url, { method: 'POST' });
     if(response.ok) {
       const reviews = await getReviews(est_id);
+      alert("Submitted Review");
       displayReviews(reviews);
     } else {
       console.error('error submitting review', response.status, response.statusText);
