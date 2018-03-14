@@ -1,11 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Lobster | Corben:bold);
-
 body{
   padding: 0px;
   width: 100%;
   height: 100%;
   margin: auto;
-  font-family: Corben;
+  font-family: Times New Roman;
   background-color: grey;
 }
 
@@ -23,11 +21,7 @@ header{
 }
 
 .category:hover {
-  color: White
-}
-
-#text{
-  font-family: Corben;
+  color: white;
 }
 
 #main{
@@ -85,24 +79,33 @@ header{
   float: none;
   text-align: center;
 }
+#estabContainer > section > h1{
+  color: #00efff;
+  text-align: center;
+
+}
 
 #dataContainer > section > h1 {
   color: #11114a;
   border: 4px solid #91d4d4; 
   text-align: center;
   border-radius: 10px;
+
 }
 
 #dataContainer > section > p{
   color: blue;
   border: 5px solid purple;
+
 }
 
 #infoContainer{
   border: 3px solid aquamarine;
   border-radius: 10px;
   text-align: center;
-
+  margin-left: 250px;
+  margin-right: 250px;
+  background-color: #87c5c5;
 }
 #leaveReview {
   text-align: center;
@@ -129,7 +132,6 @@ header nav ul li{
   display: inline;
   padding: 1px 8px 1px 20px;
   font-size: 20px;
-  font-family: "Lobster";
 }
 
 header nav a{
