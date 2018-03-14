@@ -125,9 +125,10 @@ function displayCategories(categories) {
 
 async function displayCategory(establishments) {
   estabs = [];
-  removeButtons();
 
   const container = document.getElementById("dataContainer");
+  removeButtons(container);
+
   for (let cat of establishments) {
     const li = document.createElement("li");
     const h = document.createElement("h1");
@@ -148,9 +149,9 @@ async function displayCategory(establishments) {
 function displayEstab(establishment) {
   estabs = [];
 
-  removeButtons()
+    let container = document.getElementById("estabContainer");
+  removeButtons(container);
 
-  let container = document.getElementById("estabContainer");
   const estabContainer = document.createElement("section");
   container.appendChild(estabContainer);
   container = estabContainer;
@@ -223,8 +224,7 @@ function displayReviews(reviews) {
   }
 }
 
-function removeButtons() {
-  const container = document.getElementById("dataContainer");
+function removeButtons(container) {
   while (container.firstChild) { //deletes buttons currently onscreen
     container.removeChild(container.firstChild);
   }
