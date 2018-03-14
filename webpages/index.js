@@ -10,9 +10,9 @@ async function boot() {
     displayReviews(reviews);
     addListenersReview();
 
-    const estab[0] = await getEstablishment(id);
+    const estab = await getEstablishment(id);
     const reviewTitle = document.getElementById("reviewTitle");
-    reviewTitle.textContent += estab.Name;
+    reviewTitle.textContent += estab[0].Name;
   } else {
     await getCategories();
     addListenersMain();
