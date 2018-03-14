@@ -188,6 +188,7 @@ function displayEstab(establishment) {
   }
 
   //add buttons
+  const buttonContainer = document.createElement("section");
   const review = document.createElement("button");
   const direction = document.createElement("button");
   const location = document.createElement("input");
@@ -201,9 +202,12 @@ function displayEstab(establishment) {
   location.placeholder = "Your location";
   location.id = "location";
 
-  container.appendChild(review);
-  container.appendChild(direction);
-  container.appendChild(location);
+  buttonContainer.id = "buttonContainer";
+
+  buttonContainer.appendChild(review);
+  buttonContainer.appendChild(direction);
+  buttonContainer.appendChild(location);
+  container.appendChild(buttonContainer);
 }
 
 function displayReviews(reviews) {
