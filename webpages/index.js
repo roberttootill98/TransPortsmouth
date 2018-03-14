@@ -109,7 +109,7 @@ async function getCategory(category) {
   }
 }
 
-function selectEstablishment(e) {
+async function selectEstablishment(e) {
   let id;
   for(let estab of estabs) {
     let parentText = e.target.parentNode.textContent;
