@@ -32,7 +32,7 @@ async function submitReview() {
   const score = parseInt(document.getElementById("score").value);
 
   //validation
-  if(score == NaN) {
+  if(isNaN(score) || score < 0 || score > 10) {
     console.log("review must be int!");
   } else {
     const url = `/api/review?establishment=${est_id}&author=${author}&content=${content}&score=${score}`;
