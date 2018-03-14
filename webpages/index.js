@@ -150,7 +150,7 @@ function displayEstab(establishment) {
 
   removeButtons()
 
-  let container = document.getElementById("dataContainer");
+  let container = document.getElementById("estabContainer");
   const estabContainer = document.createElement("section");
   container.appendChild(estabContainer);
   container = estabContainer;
