@@ -16,17 +16,17 @@ Doing this will now start the server. to get onto the server paste the IP into t
 
 User Aliases 
 
-Et2211              = up817427
+UP817427 = Et2211     
 
-roberttootill98     = up811906
+UP811906 = roberttootill98 
 
-up804960            = up804960
+UP804960 = up804960  
 
-yashsawlani         = up819561
+UP819561 = yashsawlani
 
-nrisley             = up839804
+UP839804 = nrisley     
 
-mattglen3103        = up814632
+UP814632 = mattglen3103    
 
 
 <<TEST CASES>>
