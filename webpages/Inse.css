@@ -174,3 +174,16 @@ header nav ul li a:hover{
   }
 }
 
+@media only screen and  (min-width:440px) and (max-width: 800px){
+ 
+  #dataContainer{
+    grid-template-columns: 1fr 1fr;
+  }
+  #categoryContainer{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  header{
+    height:120%
+  }
+
+}
