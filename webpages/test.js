@@ -34,7 +34,9 @@ async function test() {
     }
   }
 
-  console.log(working);
+  if(working) {
+    console.log("All tests pass!");
+  }
 }
 
 //for review.html
