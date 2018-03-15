@@ -29,10 +29,7 @@ async function reviewTest() {
   invalidResult.push(await submitReviewTest("Me", "It's a Restaurant", -1));
   invalidResult.push(await submitReviewTest("Me", "It's a Restaurant", 11));
 
-  console.log("results:");
-  console.log(validResult);
-  console.log(invalidResult);
-
+  //checks all results are valid
   for(let result of validResult) {
     if(result != 200) {
       working = false;
@@ -40,8 +37,9 @@ async function reviewTest() {
     }
   }
 
+  //checks all results are invalid
   for(let result of invalidResult) {
-    if(result != 400) {
+    if(!(result === undefined)) {
       working = false;
       break;
     }
@@ -50,6 +48,7 @@ async function reviewTest() {
   console.log(working);
 }
 
+//creates a review of an establishment
 async function submitReviewTest(auth, cont, scr) {
   const author = document.getElementById("author");
   const content = document.getElementById("writeup");

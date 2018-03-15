@@ -111,7 +111,6 @@ async function getCategories() {
 async function getCategory(category) {
   //category as id
   const url = '/api/category?cat=' + category;
-  console.log(url);
 
   const response = await fetch(url);
   if(response.ok) {
