@@ -14,7 +14,9 @@ cd into the directory: cd TransPortsmouth
 then you type 'node server/server'
 Doing this will now start the server. To connect to the server go to the IP on your VM.
 
-To run the tests there are two functions; if you are on index.html then run 'test()' in the console, and if you are on review.html then run 'reviewTest()' in the console.
+To run the tests there are two functions; if you are on index.html then run 'test()' in the console, and if you are on review.html then run 'reviewTest()' in the console. 
+
+For tests that fail errors may appear in the console, but if 'All Tests Pass' it is still functioning correctly.
 
 User Aliases 
 
