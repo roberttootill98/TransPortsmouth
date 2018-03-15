@@ -7,7 +7,16 @@ async function test() {
   let working = true;
 
   //valid cases
-  validResult.push(await getReviews(32));
+  let review = (await getReviews(32))[0];
+  if(!(review.Author == "John Smith" && review.Content == "Food was cold, and waiters were rude when I asked for it to be returned to the kitchen" && review.Score == 1)) {
+    working = false;
+  }
+  /*
+  {Est_Id: 32
+  Author: "John Smith"
+  Content: "Food was cold, and waiters were rude when I asked for it to be returned to the kitchen"
+  Score: 1}
+  */
   //getCategories etc
   //getEstablishment etc
 
@@ -17,8 +26,15 @@ async function test() {
   //type error
   invalidResult.push(await getReviews("visdfjidsf"));
 
-  console.log(validResult);
-  console.log(invalidResult);
+  //if any results are obtained from the invalid tests then they are passing with incorrect params
+  for(let result of invalidResult) {
+    if(result.length != 0) {
+      working = false;
+      break;
+    }
+  }
+
+  console.log(working);
 }
 
 //for review.html
