@@ -8,7 +8,9 @@ async function test() {
 
   //valid cases
   let review = (await getReviews(32))[0];
-  if(!(review.Author == "John Smith" && review.Content == "Food was cold, and waiters were rude when I asked for it to be returned to the kitchen" && review.Score == 1)) {
+  if(!(review.Author == "John Smith" &&
+  review.Content == "Food was cold, and waiters were rude when I asked for it to be returned to the kitchen" &&
+  review.Score == 1)) {
     working = false;
   }
   /*
