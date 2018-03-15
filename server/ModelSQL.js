@@ -13,7 +13,7 @@ async function init() {
 
 /**
 * gets records from given table
-* @param {table} table to be selected from
+* @param {table} table to be queried
 * @return {records} result of query
 */
 async function showAll(table) {
@@ -23,6 +23,13 @@ async function showAll(table) {
   return rows[0];
 }
 
+/**
+* gets all records where the condition is met
+* @param {table} table to be queried
+* @param {condition} data to be searched on
+* @param {checkfield} field from table to checked
+* @return {records} result of query
+*/
 async function whereAll(table, condition, checkfield) {
   const query = `SELECT * FROM ${table} WHERE ${checkfield} = "${condition}";`;
   const formattedQuery = sql.format(query);
@@ -30,12 +37,24 @@ async function whereAll(table, condition, checkfield) {
   return rows[0];
 }
 
+/**
+* adds a new review to the database
+* @param {est_id} id of the establishment
+* @param {author} author of the review
+* @param {content} content of the review
+* @param {score} score of the review
+*/
 async function addReview(est_id, author, content, score) {
   const query = 'INSERT INTO Review SET ? ;';
   const formattedQuery = sql.format(query, {est_id, author, content, score});
   await sql.query(formattedQuery);
 }
 
+/**
+* gets all of the data about the establishment and all opening times
+* @param table to be queried from, must be category, eg. Restaurant
+* @return {records} result of query
+*/
 async function showCategory(table) {
   const query = "SELECT Establishment.Est_Id, Establishment.Name, Establishment.Address, Establishment.Town," +
   " Work_Time.Mon_Open, Work_Time.Mon_Close, Work_Time.Tue_Open,Work_Time.Tue_Close, Work_Time.Wed_Open, Work_Time.Wed_Close, Work_Time.Thu_Open, Work_Time.Thu_Close, Work_Time.Fri_Open, Work_Time.Fri_Close,Work_Time.Sat_Open, Work_Time.Sat_Close, Work_Time.Sun_Open, Work_Time.Sun_Close" +
