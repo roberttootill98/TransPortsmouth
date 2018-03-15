@@ -51,16 +51,21 @@ async function submitReview() {
     document.getElementById("score").value = "";
 
     //post review
-    const url = `/api/review?establishment=${est_id}&author=${author}&content=${content}&score=${score}`;
-    const response = await fetch(url, { method: 'POST' });
-    if(response.ok) {
-      const reviews = await getReviews(est_id);
-      alert("Submitted Review");
-      displayReviews(reviews);
-    } else {
-      console.error('error submitting review', response.status, response.statusText);
-    }
+    await postReview(est_id, author, content, score);
   }
+}
+
+async function postReview(id, author, content, score) {
+  const url = `/api/review?establishment=${id}&author=${author}&content=${content}&score=${score}`;
+  const response = await fetch(url, { method: 'POST' });
+  if(response.ok) {
+    const reviews = await getReviews(id);
+    alert("Submitted Review");
+    displayReviews(reviews);
+  } else {
+    console.error('error submitting review', response.status, response.statusText);
+  }
+  return response.status;
 }
 
 //adds listeners to every category
