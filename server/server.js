@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const fs = ('require');
 const db = require('./ModelSQL.js');
 
 app.get('/api/categories', getCategories);
