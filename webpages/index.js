@@ -3,7 +3,9 @@
 let estabs = [];
 let estabId;
 
-//startup function checks for html in use
+/**
+* Runs when website is loaded, calls relevent functions, dependant on whjat page you are on
+*/
 async function boot() {
   if(window.location.pathname == "/review.html") {
     const id = window.location.search.substr(4);
@@ -20,19 +22,26 @@ async function boot() {
     addListenersMain();
   }
 }
-
+/**
+* adds event listeners to submit button in reveiw page.
+*/
 function addListenersReview() {
   const submit = document.getElementById("Submit");
   submit.addEventListener("click", submitReview);
 }
 
-//empties both containers
+/**
+* empties both containers
+*/
 function emptyContainers() {
   removeButtons(document.getElementById("dataContainer"));
   removeButtons(document.getElementById("estabContainer"));
 }
 
-//adds a review to the database
+/**
+* extracts text from the textboxes and adds a review to the database
+* @return {est_id, author, content, score} textbox values
+*/
 async function submitReview() {
   const est_id = window.location.search.substr(4);
   const author = document.getElementById("author").value;
@@ -54,6 +63,10 @@ async function submitReview() {
   }
 }
 
+/**
+* @param {est_id, author, content, score} values to be placed in url
+* @return {status} Ststus of the url fetch
+*/
 async function postReview(id, author, content, score) {
   const url = `/api/review?establishment=${id}&author=${author}&content=${content}&score=${score}`;
 
@@ -68,7 +81,9 @@ async function postReview(id, author, content, score) {
   return response.status;
 }
 
-//adds listeners to every category
+/**
+* adds listeners to every category
+*/
 function addListenersMain() {
   const categories = document.querySelectorAll(".category");
   for(let cat of categories) {
@@ -76,11 +91,17 @@ function addListenersMain() {
   }
 }
 
+/**
+* @param {event} event of a catagory being clicked on
+* collects where user clicked and passes this target to getCategory
+*/
 async function selectCategory(e) {
   await getCategory(e.target.textContent);
 }
 
-//gets all reviews
+/**
+* gets all reviews
+*/
 async function getReviews(id) {
   const url = '/api/review?id=' + id; //estab id
 
@@ -93,7 +114,10 @@ async function getReviews(id) {
   return response.status;
 }
 
-//gets all categories
+/**
+* gets all categories
+* @return {status} Ststus of the url fetch
+*/
 async function getCategories() {
   const url = '/api/categories';
 
@@ -107,7 +131,11 @@ async function getCategories() {
   return response.status;
 }
 
-//gets all establishments for one category
+/**
+* gets all establishments for one category
+* @param {category} the selected catagory
+* @return {status} Ststus of the url fetch
+*/
 async function getCategory(category) {
   //category as id
   const url = '/api/category?cat=' + category;
@@ -122,7 +150,10 @@ async function getCategory(category) {
   return response.status;
 }
 
-//gets id of establishment and runs functions to display
+/**
+*gets id of establishment and runs functions to display
+* @param {event} event of a establishment being clicked on
+*/
 async function selectEstablishment(e) {
   let id;
   let parentText;
@@ -145,7 +176,12 @@ async function selectEstablishment(e) {
   displayReviews(reviews);
 }
 
-//returns establishment given id
+/**
+*returns establishment given id
+@param {id} id of the establihsment
+@return {status} Ststus of the url fetch
+*/
+
 async function getEstablishment(id) {
   const url = '/api/establishment?id=' + id;
 
@@ -159,7 +195,10 @@ async function getEstablishment(id) {
   return response.status;
 }
 
-//puts categories in header
+/**
+*puts categories in header
+@param {categories} list of categories
+*/
 function displayCategories(categories) {
   const container = document.getElementById("categoryContainer");
   for (let cat of categories) {
@@ -170,7 +209,10 @@ function displayCategories(categories) {
   }
 }
 
-//displays establishments in main page
+/**
+* displays establishments in main page
+* @param {establihsment} array containing establihsments
+*/
 async function displayCategory(establishments) {
   estabs = [];
 
@@ -206,7 +248,10 @@ async function displayCategory(establishments) {
     estabs.push(estab);
   }
 }
-
+/**
+*checks to see if an establihsment is currently open
+*@param {etstab} one establihsment
+*/
 function checkOpen(estab) {
   let open = false;
 
@@ -246,7 +291,11 @@ function checkOpen(estab) {
   return open;
 }
 
-//displays establihsment in main page
+/**
+* displays one establihsment in main page
+@param {establishment}  one establishment
+*/
+
 function displayEstab(establishment) {
   estabs = [];
 
@@ -311,8 +360,11 @@ function displayEstab(establishment) {
   container.appendChild(buttonContainer);
 }
 
+/**
+@param {reviews} array containing reviews
 //displays reviews in container
 //works on both pages
+*/
 function displayReviews(reviews) {
   const container = document.getElementById("reviewContainer");
 
@@ -334,17 +386,25 @@ function displayReviews(reviews) {
   }
 }
 
+/**
+@param {container} area where information is placed on the HTML document
+* removes all elements in the dataContainer element
+*/
 function removeButtons(container) {
   while (container.firstChild) { //deletes buttons currently onscreen
     container.removeChild(container.firstChild);
   }
 }
-
+/**
+* opens a new window passing the review id in the URL
+*/
 async function leaveReview() {
   estabId = estabs[0].Est_Id;
   window.open('review.html?id=' + estabId);
 }
-
+/**
+*takes trhe value of the location textbox and passes it to the google maps URL to give directions
+*/
 function getDirections() {
   const estab = estabs[0];
 
