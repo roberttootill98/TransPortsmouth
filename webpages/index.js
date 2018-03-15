@@ -90,6 +90,7 @@ async function getReviews(id) {
   } else {
     console.error('error getting reviews', response.status, response.statusText);
   }
+  return response.status;
 }
 
 //gets all categories
@@ -103,6 +104,7 @@ async function getCategories() {
     console.error('error getting categories', response.status, response.statusText);
     //document.querySelector('body > main').innerHTML = 'sorry, something went wrong...';
   }
+  return response.status;
 }
 
 //gets all establishments for one category
@@ -118,6 +120,7 @@ async function getCategory(category) {
     console.error('error getting establishments', response.status, response.statusText);
     //document.querySelector('body > main').innerHTML = 'sorry, something went wrong...';
   }
+  return response.status;
 }
 
 //gets id of establishment and runs functions to display
@@ -154,6 +157,7 @@ async function getEstablishment(id) {
     console.error('error getting establishment', response.status, response.statusText);
     //document.querySelector('body > main').innerHTML = 'sorry, something went wrong...';
   }
+  return response.status;
 }
 
 //puts categories in header
