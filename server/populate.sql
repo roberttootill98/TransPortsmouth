@@ -102,16 +102,16 @@ insert into Establishment (Name, Address, Town, Postcode, Description, Category)
 /*93*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Brewhouse and Kitchen", "26 Guildhall Walk", "Portsmouth", "PO1 2DD", "More expensive than most pubs, but great traditional Ales and food options", "Bar");
 
 /*Gym*/
-/*94*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("PureGym", "31 Arundel Street", "Portsmouth", "PO1 1NB", "", "Gym");
-insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Fit4less", "Connaught Drill Hall, Stanhope Road", "Portsmouth", "PO1 1DU", "", "Gym");
-insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("St Paul's Gym", "St Paul's Road", "Portsmouth", "PO5 4AQ", "", "Gym");
-insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Pyramids Centre", "Clarance Esplande", "Portsmouth", "PO5 3ST", "", "Gym");
-insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Wimbledon Park Sports Centre", "Taswell Road", "Portsmouth", "PO5 2RG", "", "Gym");
-insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Lougars Gym", "2A Hellyer Road", "Portsmouth", "PO4 9DH", "", "Gym");
-insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Gym", "The Pompey Centre, Rodney Road", "Portsmouth", "PO4 8SX", "", "Gym");
-insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Gym 01", "The Partnership Park, Unit 16, Rodney Road", "Portsmouth", "PO4 8DF", "", "Gym");
-insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Better Gym", "6 Dickinson Road", "Portsmouth", "PO4 8SH", "", "Gym");
-/*103*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Box-Portsmouth", "235-237 Commercial Road", "Portsmouth", "PO1 4BJ", "", "Gym");
+/*94*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("PureGym", "31 Arundel Street", "Portsmouth", "PO1 1NB", "it is a chain of gym's which is open for 24 hours", "Gym");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Fit4less", "Connaught Drill Hall, Stanhope Road", "Portsmouth", "PO1 1DU", "chain of gym's", "Gym");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("St Paul's Gym", "St Paul's Road", "Portsmouth", "PO5 4AQ", "it is the university gym", "Gym");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Pyramids Centre", "Clarance Esplande", "Portsmouth", "PO5 3ST", "part of chain of gym's however it includes various activities and has swimming pool", "Gym");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Wimbledon Park Sports Centre", "Taswell Road", "Portsmouth", "PO5 2RG", "it is part of chain of gym's", "Gym");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Lougars Gym", "2A Hellyer Road", "Portsmouth", "PO4 9DH", "local gym in portsmouth", "Gym");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Gym", "The Pompey Centre, Rodney Road", "Portsmouth", "PO4 8SX", "chain of gym's which is open fro 24 hours and has parking", "Gym");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Gym 01", "The Partnership Park, Unit 16, Rodney Road", "Portsmouth", "PO4 8DF", "it is a gym of martial arts , there are multiple fighting styles taught", "Gym");
+insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("Better Gym", "6 Dickinson Road", "Portsmouth", "PO4 8SH", "local gymin portsmouth", "Gym");
+/*103*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Box-Portsmouth", "235-237 Commercial Road", "Portsmouth", "PO1 4BJ", "it is a boxing gym", "Gym");
 
 /*Cafe*/
 /*104*/insert into Establishment (Name, Address, Town, Postcode, Description, Category) values ("The Parade Tea Rooms", "Western Parade, Southsea Common", "Portsmouth", "PO5 3JF", "Cosy and personal tea room with a speciality in cakes", "Cafe");
