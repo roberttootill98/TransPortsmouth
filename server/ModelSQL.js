@@ -6,14 +6,16 @@ const config = require('./config');
 const mysql = require('mysql2/promise');
 let sql;
 
-// promisify some filesystem functions
-//fs.unlinkAsync = fs.unlinkAsync || util.promisify(fs.unlink);
-//fs.renameAsync = fs.renameAsync || util.promisify(fs.rename);
 
 async function init() {
   sql = await mysql.createConnection(config.mysql);
 }
 
+/**
+* gets records from given table
+* @param {table} table to be selected from
+* @return {records} result of query
+*/
 async function showAll(table) {
   const query = `SELECT * FROM ${table}`;
   const formattedQuery = sql.format(query);
