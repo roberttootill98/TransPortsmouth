@@ -50,13 +50,13 @@ async function submitReview() {
     document.getElementById("writeup").value = "";
     document.getElementById("score").value = "";
 
-    //post review
-    await postReview(est_id, author, content, score);
+    return await postReview(est_id, author, content, score);
   }
 }
 
 async function postReview(id, author, content, score) {
   const url = `/api/review?establishment=${id}&author=${author}&content=${content}&score=${score}`;
+
   const response = await fetch(url, { method: 'POST' });
   if(response.ok) {
     const reviews = await getReviews(id);

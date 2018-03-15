@@ -1,21 +1,26 @@
 'use strict'
 
 //for index.html
-function test() {
+async function test() {
 
 }
 
 //for review.html
-function reviewTest() {
+async function reviewTest() {
   let result = [];
   console.log("starting test");
 
-  result[0] = submitReviewTest("Me", "It's a Restaurant", 5);
+  //valid case
+  result[0] = await submitReviewTest("Me", "It's a Restaurant", 5);
+  //invalid cases
 
+  //boundary cases
+
+  console.log("results:");
   console.log(result);
 }
 
-function submitReviewTest(auth, cont, scr) {
+async function submitReviewTest(auth, cont, scr) {
   const author = document.getElementById("author");
   const content = document.getElementById("writeup");
   const score = document.getElementById("score");
@@ -24,5 +29,5 @@ function submitReviewTest(auth, cont, scr) {
   content.value = cont;
   score.value = scr;
 
-  submitReview();
+  return await submitReview();
 }
