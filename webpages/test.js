@@ -2,7 +2,23 @@
 
 //for index.html
 async function test() {
+  let validResult = []; //stores status of all requests that should be valid
+  let invalidResult = []; //stores status of all requests that should be invalid
+  let working = true;
 
+  //valid cases
+  validResult.push(await getReviews(32));
+  //getCategories etc
+  //getEstablishment etc
+
+  //invalid cases
+  //id doesn't exist
+  invalidResult.push(await getReviews(99999));
+  //type error
+  invalidResult.push(await getReviews("visdfjidsf"));
+
+  console.log(validResult);
+  console.log(invalidResult);
 }
 
 //for review.html
