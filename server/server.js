@@ -25,7 +25,19 @@ async function getCategories(req, res) {
 * @param {res} response object
 */
 async function getCategory(req, res) {
-  res.json(await db.showCategory(req.query.cat));
+  let found;
+  for(let category of categories) {
+    if(category.description == req.query.cat) {
+      res.json(await db.showCategory(req.query.cat));
+      found = true;
+      break;
+    }
+  }
+  if(found) {
+    res.json(categories);
+  } else {
+    res.sendStatus(404);
+  }
 }
 
 /**

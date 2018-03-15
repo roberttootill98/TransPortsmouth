@@ -30,11 +30,28 @@ async function test() {
     working = false;
   }
 
+
+
   //invalid cases
+
   //id doesn't exist
   invalidResult.push(await getReviews(99999));
+  invalidResult.push(await getEstablishment(97429734));
+
+  category = await getCategory("Fake Estab");
+  if(category != 404) {
+    working = false;
+  }
+
+
   //type error
   invalidResult.push(await getReviews("visdfjidsf"));
+  invalidResult.push(await getEstablishment("sudhdfsdhifuhs"));
+
+  category = await getCategory(29343942834);
+  if(category != 404) {
+    working = false;
+  }
 
   //if any results are obtained from the invalid tests then they are passing with incorrect params
   for(let result of invalidResult) {
@@ -66,11 +83,12 @@ async function reviewTest() {
 
   //type errors
   invalidResult.push(await submitReviewTest("Me", "It's a Restaurant", "difjsdjif"));
-
   //boundary cases
+
   //inside boundary
   validResult.push(await submitReviewTest("Me", "It's a Restaurant", 0));
   validResult.push(await submitReviewTest("Me", "It's a Restaurant", 10));
+
   //outside boundary
   invalidResult.push(await submitReviewTest("Me", "It's a Restaurant", -1));
   invalidResult.push(await submitReviewTest("Me", "It's a Restaurant", 11));
