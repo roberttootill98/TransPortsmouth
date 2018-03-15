@@ -66,7 +66,6 @@ async function showCategory(table) {
   ` INNER JOIN ${table} on Establishment.Est_Id = ${table}.Est_Id` +
   " INNER JOIN Work_Time on Establishment.Est_Id = Work_Time.Est_Id;"
   const formattedQuery = sql.format(query);
-  console.log(formattedQuery);
   const rows = await sql.query(formattedQuery);
   return rows[0];
 }
