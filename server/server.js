@@ -11,27 +11,47 @@ app.post('/api/review', postReview);
 
 db.init();
 
-//static list of categories
+/**
+* responds with static list of categories
+* @param {req} request object
+* @param {res} response object
+*/
 async function getCategories(req, res) {
   res.json(categories);
 }
 
-//list of establishments of type category
+/**
+* responds with list of establishments of type category with opening and closing times
+* @param {req} request object
+* @param {res} response object
+*/
 async function getCategory(req, res) {
   res.json(await db.showCategory(req.query.cat));
 }
 
-//one category with full details and DIRECTIONS
+/**
+* responds with one establishment
+* @param {req} request object
+* @param {res} response object
+*/
 async function getEstablishment(req, res) {
   res.json(await db.whereAll("Establishment", req.query.id, 'Est_Id'));
 }
 
-//list of reviews
+/**
+* responds with list of reviews
+* @param {req} request object
+* @param {res} response object
+*/
 async function getReview(req, res) {
   res.json(await db.whereAll("Review", req.query.id, "Est_Id"));
 }
 
-//add one new review
+/**
+* add one new review
+* @param {req} request object
+* @param {res} response object
+*/
 async function postReview(req, res) {
   try {
     await db.addReview(req.query.establishment, req.query.author, req.query.content, req.query.score);
@@ -47,8 +67,6 @@ app.listen(8080);
 app.use('/', express.static('webpages', { extensions: ['html'] }));
 
 //in-memory
-
-//@rob, should this be i ModelSQL.js file?
 let categories = [
   {
     "id": "1",

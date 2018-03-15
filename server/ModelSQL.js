@@ -7,6 +7,10 @@ const mysql = require('mysql2/promise');
 let sql;
 
 
+/**
+* initialises database connection
+* only run once
+*/
 async function init() {
   sql = await mysql.createConnection(config.mysql);
 }
