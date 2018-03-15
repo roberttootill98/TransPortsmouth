@@ -9,8 +9,8 @@ async function test() {
   //valid cases
   let review = (await getReviews(32))[0];
   if(!(review.Author == "John Smith" &&
-  review.Content == "Food was cold, and waiters were rude when I asked for it to be returned to the kitchen" &&
-  review.Score == 1)) {
+    review.Content == "Food was cold, and waiters were rude when I asked for it to be returned to the kitchen" &&
+    review.Score == 1)) {
     working = false;
   }
 
@@ -19,8 +19,14 @@ async function test() {
     working = false;
   }
 
-  let establishment = await getEstablishment(32);
-  if(establishment != 200) {
+  let establishment = (await getEstablishment(32))[0];
+  if(!(establishment.Address == "108 Palmerston Road" &&
+    establishment.Category == "Restaurant" &&
+    establishment.Description == "Neighbourhood restaurant with tables outdoors and a wide-ranging menu including lunchtime paninis." &&
+    establishment.Est_Id == 32 &&
+    establishment.Name == "Soprano's" &&
+    establishment.Postcode == "PO5 2PT" &&
+    establishment.Town == "Portsmouth")) {
     working = false;
   }
 
@@ -40,6 +46,8 @@ async function test() {
 
   if(working) {
     console.log("All tests pass!");
+  } else {
+    console.log("At least one test fails...");
   }
 }
 
@@ -85,6 +93,8 @@ async function reviewTest() {
 
   if(working) {
     console.log("All tests pass!");
+  } else {
+    console.log("At least one test fails...");
   }
 }
 

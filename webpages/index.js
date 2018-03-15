@@ -192,7 +192,6 @@ async function getEstablishment(id) {
     console.error('error getting establishment', response.status, response.statusText);
     //document.querySelector('body > main').innerHTML = 'sorry, something went wrong...';
   }
-  return response.status;
 }
 
 /**
