@@ -75,8 +75,6 @@ async function postReview(id, author, content, score) {
     const reviews = await getReviews(id);
     alert("Submitted Review");
     displayReviews(reviews);
-  } else {
-    console.error('error submitting review', response.status, response.statusText);
   }
   return response.status;
 }
@@ -109,8 +107,6 @@ async function getReviews(id) {
   const response = await fetch(url);
   if(response.ok) {
     return await response.json();
-  } else {
-    console.error('error getting reviews', response.status, response.statusText);
   }
 }
 
@@ -124,9 +120,6 @@ async function getCategories() {
   const response = await fetch(url);
   if(response.ok) {
     displayCategories(await response.json());
-  } else {
-    console.error('error getting categories', response.status, response.statusText);
-    //document.querySelector('body > main').innerHTML = 'sorry, something went wrong...';
   }
   return response.status;
 }
@@ -143,9 +136,6 @@ async function getCategory(category) {
   const response = await fetch(url);
   if(response.ok) {
     displayCategory(await response.json());
-  } else {
-    console.error('error getting establishments', response.status, response.statusText);
-    //document.querySelector('body > main').innerHTML = 'sorry, something went wrong...';
   }
   return response.status;
 }
@@ -188,9 +178,6 @@ async function getEstablishment(id) {
   const response = await fetch(url);
   if(response.ok) {
     return await response.json();
-  } else {
-    console.error('error getting establishment', response.status, response.statusText);
-    //document.querySelector('body > main').innerHTML = 'sorry, something went wrong...';
   }
 }
 
