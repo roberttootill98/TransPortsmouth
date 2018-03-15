@@ -178,21 +178,73 @@ async function displayCategory(establishments) {
   emptyContainers();
 
   const container = document.getElementById("dataContainer");
-  for (let cat of establishments) {
+  for (let estab of establishments) {
+    let open = checkOpen(estab);
+
     const li = document.createElement("li");
     const h = document.createElement("h1");
-    h.textContent = cat.Name;
-    li.appendChild(h);
+    const isOpen = document.createElement("h2");
     const p = document.createElement("p");
-    p.textContent = cat.Address;
+
+    if(open) {
+      isOpen.textContent = "Open";
+    } else {
+      isOpen.textContent = "Closed";
+    }
+
+    h.textContent = estab.Name;
+    p.textContent = estab.Address;
+
+    li.appendChild(h);
+    li.appendChild(isOpen);
     li.appendChild(p);
 
-    li.classList.add("estab");
     container.appendChild(li);
+
+    li.classList.add("estab");
     li.addEventListener("click", selectEstablishment);
 
-    estabs.push(cat);
+    estabs.push(estab);
   }
+}
+
+function checkOpen(estab) {
+  let open = false;
+
+  const date = new Date();
+  const day = date.getDay();
+  const time = `${date.getHours()}:${date.getMinutes()}`;
+
+  if(day == 0) {
+    if(time >= estab.Mon_Open && time <= estab.Mon_Close) {
+      open = true;
+    }
+  } else if(day == 1) {
+    if(time >= estab.Tue_Open && time <= estab.Tue_Close) {
+      open = true;
+    }
+  } else if(day == 3) {
+    if(time >= estab.Wed_Open && time <= estab.Wed_Close) {
+      open = true;
+    }
+  } else if(day == 4) {
+    if(time >= estab.Thu_Open && time <= estab.Thu_Close) {
+      open = true;
+    }
+  } else if(day == 5) {
+    if(time >= estab.Fri_Open && time <= estab.Fri_Close) {
+      open = true;
+    }
+  } else if(day == 6) {
+    if(time >= estab.Sat_Open && time <= estab.Sat_Close) {
+      open = true;
+    }
+  } else if(day == 7) {
+    if(time >= estab.Sun_Open && time <= estab.Sun_Close) {
+      open = true;
+    }
+  }
+  return open;
 }
 
 //displays establihsment in main page
