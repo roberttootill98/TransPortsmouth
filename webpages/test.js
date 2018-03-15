@@ -14,11 +14,15 @@ async function test() {
     working = false;
   }
 
-  let category = (await getCategory("Restaurant"));
+  let category = await getCategory("Restaurant");
   if(category != 200) {
     working = false;
   }
-  //getEstablishment etc
+
+  let establishment = await getEstablishment(32);
+  if(establishment != 200) {
+    working = false;
+  }
 
   //invalid cases
   //id doesn't exist
@@ -79,7 +83,9 @@ async function reviewTest() {
     }
   }
 
-  console.log(working);
+  if(working) {
+    console.log("All tests pass!");
+  }
 }
 
 //creates a review of an establishment
