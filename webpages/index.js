@@ -101,6 +101,7 @@ async function selectCategory(e) {
 
 /**
 * gets all reviews
+* @return {reviews} all reviews
 */
 async function getReviews(id) {
   const url = '/api/review?id=' + id; //estab id
@@ -111,7 +112,6 @@ async function getReviews(id) {
   } else {
     console.error('error getting reviews', response.status, response.statusText);
   }
-  return response.status;
 }
 
 /**
@@ -178,8 +178,8 @@ async function selectEstablishment(e) {
 
 /**
 *returns establishment given id
-@param {id} id of the establihsment
-@return {status} Ststus of the url fetch
+* @param {id} id of the establihsment
+* @return {status} Ststus of the url fetch
 */
 
 async function getEstablishment(id) {
@@ -196,8 +196,8 @@ async function getEstablishment(id) {
 }
 
 /**
-*puts categories in header
-@param {categories} list of categories
+* puts categories in header
+* @param {categories} list of categories
 */
 function displayCategories(categories) {
   const container = document.getElementById("categoryContainer");
@@ -249,8 +249,8 @@ async function displayCategory(establishments) {
   }
 }
 /**
-*checks to see if an establihsment is currently open
-*@param {etstab} one establihsment
+* checks to see if an establihsment is currently open
+* @param {etstab} one establihsment
 */
 function checkOpen(estab) {
   let open = false;
@@ -293,7 +293,7 @@ function checkOpen(estab) {
 
 /**
 * displays one establihsment in main page
-@param {establishment}  one establishment
+* @param {establishment}  one establishment
 */
 
 function displayEstab(establishment) {
@@ -361,9 +361,9 @@ function displayEstab(establishment) {
 }
 
 /**
-@param {reviews} array containing reviews
-//displays reviews in container
-//works on both pages
+* displays reviews in container
+* works on both pages
+* @param {reviews} array containing reviews
 */
 function displayReviews(reviews) {
   const container = document.getElementById("reviewContainer");
@@ -387,14 +387,15 @@ function displayReviews(reviews) {
 }
 
 /**
-@param {container} area where information is placed on the HTML document
 * removes all elements in the dataContainer element
+* @param {container} area where information is placed on the HTML document
 */
 function removeButtons(container) {
   while (container.firstChild) { //deletes buttons currently onscreen
     container.removeChild(container.firstChild);
   }
 }
+
 /**
 * opens a new window passing the review id in the URL
 */
@@ -402,8 +403,9 @@ async function leaveReview() {
   estabId = estabs[0].Est_Id;
   window.open('review.html?id=' + estabId);
 }
+
 /**
-*takes trhe value of the location textbox and passes it to the google maps URL to give directions
+* takes the value of the location textbox and passes it to the google maps URL to give directions
 */
 function getDirections() {
   const estab = estabs[0];
@@ -418,9 +420,5 @@ function getDirections() {
   }
   window.open(mapUrl);
 }
-
-//https://www.google.com/maps/?ll=longitude,latitude
-//http://maps.google.com/?q=your+query (query as address in format "number-road-town")
-//https://maps.google.com/maps/dir/?api=1&origin=place1&destination=place2
 
 window.addEventListener("load", boot);

@@ -13,13 +13,11 @@ async function test() {
   review.Score == 1)) {
     working = false;
   }
-  /*
-  {Est_Id: 32
-  Author: "John Smith"
-  Content: "Food was cold, and waiters were rude when I asked for it to be returned to the kitchen"
-  Score: 1}
-  */
-  //getCategories etc
+
+  let category = (await getCategory("Restaurant"));
+  if(category != 200) {
+    working = false;
+  }
   //getEstablishment etc
 
   //invalid cases
