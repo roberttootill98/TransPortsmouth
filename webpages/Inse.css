@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico|Montserrat);
 
+//This a standard padding across all the code.
 * {
   padding: 0;
 }
@@ -23,7 +24,7 @@ h2{
   padding-left: 3em
 }
 
-
+//Styling for our heading name (Transport)
 #Heading{
   color: white;
   margin-right: 0.5em;
@@ -34,7 +35,7 @@ h2{
   font-family:Pacifico;
   margin-bottom: -0.6em
 }
-
+//creates a hover for the categories below the heading title
 .category:hover {
   color: white;
 }
@@ -42,7 +43,7 @@ h2{
 #main{
   height: 300px;
 }
-
+//alligns the footer at the bottom of the page and adds a border
 #footer{
   border-top: 1px solid grey;
   height: 40px;
@@ -51,11 +52,13 @@ h2{
   margin-top: 10px;
 }
 
+//Puts the categories into a container of 7 fractions to evenly spread out the page
 #categoryContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
+//styles the categories and adds a pointer to show when each category is selected
 .category {
   color: blue;
   cursor: pointer;
@@ -68,11 +71,13 @@ h2{
   font-family:Montserrat;
 }
 
+//displays the data from categories in a grid style of 5 evenly spread out fractions
 #dataContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
+//styles the establishments with a background color and seperates them with a margin 
 .estab {
   cursor: pointer;
   border: 2.5px solid #311531;
@@ -82,28 +87,30 @@ h2{
   list-style-type: none;
 }
 
+//styles the paragraphs p within the establishments and adds padding, color and alligns them center
 .estab > p {
   color: black;
   padding: 30px;
   text-align: center;
 }
 
+//adds cyan background hover to establishments
 .estab:hover {
   background: cyan;
 }
-
+//styles the heading1 blue and aligns it center in establishments
 .estab > h1 {
   color: blue;
   float: none;
   text-align: center;
 }
-
+//styles all establishments in the containerand aligns them center
 #estabContainer > h1{
   color: #00efff;
   text-align: center;
 
 }
-
+//styles the heading1 in dataContainer with color, a border, a radius for that border and aligns it center
 #dataContainer > section > h1 {
   color: #11114a;
   border: 4px solid #91d4d4;
@@ -111,13 +118,13 @@ h2{
   border-radius: 10px;
 
 }
-
+//styles all the p paragraphs in dataContainer to the color blue and adds a purple border
 #dataContainer > section > p{
   color: blue;
   border: 5px solid purple;
 
 }
-
+//styles infoContainer with a border, alignment, width, background-color and and margin 
 #infoContainer{
   border: 3px solid aquamarine;
   border-radius: 10px;
@@ -128,7 +135,11 @@ h2{
   margin-right: auto;
   background-color: #87c5c5;
 }
-
+/*styles the review page with alignments, displays uneven grids with fractions 3, 1 and 1
+adds padding
+adds margins
+adds width
+*/
 #leaveReview {
   text-align: center;
   display:grid;
@@ -139,7 +150,9 @@ h2{
   min-width: 5em;
   max-width: 50em;
 }
-
+/*styles the all the reviews
+adds a border with a radius, padding, margin, color, background color, and margins
+*/
 #reviewContainer {
   list-style-type: none;
   border: 3px solid #2de8d7;
@@ -151,7 +164,9 @@ h2{
   margin-left: 5em;
   margin-right: 5em;
 }
-
+/*styles buttons in a display grid 
+width has been defined and margins set to auto
+*/
 #buttonContainer{
   display: grid;
   min-width: 3em;
