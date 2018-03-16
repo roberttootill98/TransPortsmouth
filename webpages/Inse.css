@@ -179,16 +179,7 @@ header nav{
   margin-top: -30px;
   text-align: center;
 }
-
-header nav a{
-  text-decoration: none;
-  color: white;
-}
-
-header nav ul li a:hover{
-  color: yellow;
-}
-
+/*styles the image in the top right with width*/
 .clsimg {
   width:100%;
   max-width: 100px;
