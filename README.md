@@ -32,9 +32,9 @@ UP839804 = nrisley
 
 UP814632 = mattglen3103    
 
-Video Demo: UP814632 and UP819561 for recording the video.
+Video Demo Credits: UP814632 and UP819561 for recording the video.
 
-UP817427 for recording software and hosting server, UP804960 for audio equipement, UP811906 for script 
+UP817427, UP804960, UP811906 & UP839804 for minor assistances  
 
 <<TEST CASES>>
 
