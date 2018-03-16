@@ -20,10 +20,6 @@ header{
   text-align: left;
 }
 
-h2{
-  padding-left: 3em
-}
-
 /*Styling for our heading name (Transport)*/
 #Heading{
   color: white;
@@ -75,6 +71,11 @@ h2{
 #dataContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.estab > h2{
+  
+  text-align: center;
 }
 
 /*styles the establishments with a background color and seperates them with a margin*/ 
